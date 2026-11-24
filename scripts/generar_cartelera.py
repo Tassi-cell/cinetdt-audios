@@ -74,12 +74,18 @@ def tmdb(path, **p):
 
 
 _cache = {}
-_omdb = {}
+CACHE_FILE = os.environ.get("CACHE_FILE", "cache_omdb.json")
+try:
+    with open(CACHE_FILE, encoding="utf-8") as _f:
+        _omdb = json.load(_f)
+except Exception:
+    _omdb = {}
 
 
 def omdb_score(imdb_id, title, year):
     """Nota de la crítica (0-10): Metascore/10; si no hay, Rotten Tomatoes/10."""
-    key = imdb_id or (title, year)
+    global OMDB_KEY
+    key = imdb_id or f"{title}|{year}"
     if key in _omdb:
         return _omdb[key]
     score = None
@@ -96,6 +102,10 @@ def omdb_score(imdb_id, title, year):
                     score = round(int(rt[:-1]) / 10, 1)
     except Exception as e:
         print("OMDb:", title, e)
+        if "401" in str(e):
+            OMDB_KEY = ""
+            print("OMDb desactivado: clave no válida, no activada o límite diario alcanzado. Se sigue sin más notas de la crítica.")
+        return None
     _omdb[key] = score
     return score
 
@@ -212,6 +222,8 @@ def main():
         if TMDB_KEY or OMDB_KEY:
             for it in items:
                 enrich(it)
+    with open(CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(_omdb, f, ensure_ascii=False)
     out = {"generated": datetime.now(TZ).isoformat(timespec="minutes"), "source": EPG_URLS, "days": dict(sorted(days.items()))}
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
