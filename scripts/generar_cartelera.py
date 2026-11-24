@@ -112,6 +112,8 @@ def omdb_score(imdb_id, title, year):
 
 def enrich(it):
     """Completa con TMDB solo si el título coincide exactamente (sin adivinar)."""
+    if len(it["title"]) > 120:
+        return
     key = (it["title"], it["year"])
     if key not in _cache:
         data = None
@@ -181,10 +183,17 @@ def main():
             channel = canon(p.get("channel"), names.get(p.get("channel")))
             if channel in target and minutes >= 80:
                 longcats.update(categories or ["(sin categoría)"])
+            if channel not in target:
+                continue
             cats.update(categories)
             title = txt(p, "title")
             low = [c.lower() for c in categories]
-            is_movie = any(w in c for c in low for w in MOVIE_WORDS) or title.lower().startswith("cine")
+            cr = p.find("credits")
+            has_dir = cr is not None and cr.find("director") is not None
+            has_year = bool(re.match(r"\d{4}", txt(p, "date")))
+            by_cat = any(w in c for c in low for w in MOVIE_WORDS) or title.lower().startswith("cine")
+            by_meta = (not categories) and 85 <= minutes <= 240 and has_dir and has_year
+            is_movie = by_cat or by_meta
             if not (is_movie and minutes >= MIN_MINUTES and title):
                 continue
             day = a.date()
