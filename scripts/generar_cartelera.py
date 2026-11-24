@@ -7,7 +7,30 @@ from collections import Counter
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
-EPG_URL = os.environ.get("EPG_URL", "https://www.tdtchannels.com/epg/TV.xml.gz")
+EPG_URLS = [u.strip() for u in os.environ.get("EPG_URLS", ",".join([
+    "https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv_sincolor.xml.gz",
+    "https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiaiptv.xml",
+    "https://www.tdtchannels.com/epg/TV.xml.gz",
+])).split(",") if u.strip()]
+CANON = {
+    "la1": "La 1", "tve1": "La 1", "la2": "La 2", "tve2": "La 2", "antena3": "Antena 3",
+    "cuatro": "Cuatro", "telecinco": "Telecinco", "tele5": "Telecinco", "lasexta": "laSexta",
+    "paramount": "Paramount Network", "paramountnetwork": "Paramount Network", "bemad": "Be Mad",
+    "13": "Trece", "13tv": "Trece", "trece": "Trece", "bom": "Bom Cine", "bomcine": "Bom Cine",
+    "canalsur": "Canal Sur", "canalsurandalucia": "Canal Sur", "canalsur2": "ATV", "atv": "ATV",
+    "andaluciatv": "ATV", "neox": "Neox", "nova": "Nova", "mega": "Mega", "fdf": "FDF",
+    "energy": "Energy", "divinity": "Divinity", "dmax": "DMAX", "squirrel": "Squirrel",
+    "ten": "Ten", "dkiss": "DKISS",
+}
+
+
+def canon(label_id, label_name):
+    for c in (label_name, label_id):
+        t = re.sub(r"\.(tv|es)$", "", c or "", flags=re.I)
+        t = re.sub(r"[_\s]*(hd|uhd|4k|sd)$", "", t, flags=re.I)
+        if norm(t) in CANON:
+            return CANON[norm(t)]
+    return re.sub(r"\.(tv|es)$", "", label_name or label_id or "", flags=re.I).replace("_", " ").strip()
 TMDB_KEY = os.environ.get("TMDB_API_KEY", "").strip()
 OMDB_KEY = os.environ.get("OMDB_API_KEY", "").strip()
 TZ = ZoneInfo("Europe/Madrid")
@@ -122,48 +145,64 @@ def enrich(it):
 
 
 def main():
-    raw = get(EPG_URL)
-    if raw[:2] == b"\x1f\x8b":
-        raw = gzip.decompress(raw)
-    root = ET.fromstring(raw)
-    names = {c.get("id"): txt(c, "display-name") for c in root.findall("channel")}
     today = datetime.now(TZ).date()
     days, cats, seen = {}, Counter(), set()
-    for p in root.findall("programme"):
-        a, b = parse_ts(p.get("start")), parse_ts(p.get("stop"))
-        if not a or not b:
+    target = set(CANON.values())
+    present, longcats, used = set(), Counter(), []
+    for url in EPG_URLS:
+        try:
+            raw = get(url)
+            if raw[:2] == b"\x1f\x8b":
+                raw = gzip.decompress(raw)
+            root = ET.fromstring(raw)
+        except Exception as e:
+            print("No se pudo leer", url, "->", e)
             continue
-        minutes = int((b - a).total_seconds() // 60)
-        categories = [(c.text or "").strip() for c in p.findall("category")]
-        cats.update(categories)
-        title = txt(p, "title")
-        low = [c.lower() for c in categories]
-        is_movie = any(w in c for c in low for w in MOVIE_WORDS) or title.lower().startswith("cine")
-        if not (is_movie and minutes >= MIN_MINUTES and title):
-            continue
-        day = a.date()
-        if not (today - timedelta(days=1) <= day <= today + timedelta(days=7)):
-            continue
-        title = re.sub(r"^\s*cine[^:]{0,25}:\s*", "", title, flags=re.I)
-        channel = names.get(p.get("channel"), p.get("channel"))
-        k = (channel, a.isoformat(), title)
-        if k in seen:
-            continue
-        seen.add(k)
-        credits = p.find("credits")
-        generic = [c for c in categories if not any(w in c.lower() for w in MOVIE_WORDS)]
-        year = re.match(r"\d{4}", txt(p, "date"))
-        it = {
-            "time": a.strftime("%H:%M"), "channel": channel, "title": title,
-            "originalTitle": txt(p, "title"), "year": int(year.group()) if year else None,
-            "duration": f"{minutes} min", "genre": generic[0] if generic else "Cine",
-            "director": ", ".join(d.text for d in credits.findall("director")) if credits is not None else "",
-            "cast": [x.text for x in credits.findall("actor")][:4] if credits is not None else [],
-            "criticScore": None, "audienceScore": None,
-            "synopsis": txt(p, "desc"), "poster": "",
-        }
-        it["originalTitle"] = title
-        days.setdefault(day.isoformat(), []).append(it)
+        names = {c.get("id"): txt(c, "display-name") for c in root.findall("channel")}
+        n_before = sum(len(v) for v in days.values())
+        for c in root.findall("channel"):
+            present.add(canon(c.get("id"), names.get(c.get("id"))))
+        for p in root.findall("programme"):
+            a, b = parse_ts(p.get("start")), parse_ts(p.get("stop"))
+            if not a or not b:
+                continue
+            minutes = int((b - a).total_seconds() // 60)
+            categories = [(c.text or "").strip() for c in p.findall("category")]
+            channel = canon(p.get("channel"), names.get(p.get("channel")))
+            if channel in target and minutes >= 80:
+                longcats.update(categories or ["(sin categoría)"])
+            cats.update(categories)
+            title = txt(p, "title")
+            low = [c.lower() for c in categories]
+            is_movie = any(w in c for c in low for w in MOVIE_WORDS) or title.lower().startswith("cine")
+            if not (is_movie and minutes >= MIN_MINUTES and title):
+                continue
+            day = a.date()
+            if not (today - timedelta(days=1) <= day <= today + timedelta(days=7)):
+                continue
+            title = re.sub(r"^\s*cine[^:]{0,25}:\s*", "", title, flags=re.I)
+            k = (channel, a.strftime("%Y%m%d%H"), norm(title))
+            if k in seen:
+                continue
+            seen.add(k)
+            credits = p.find("credits")
+            generic = [c for c in categories if not any(w in c.lower() for w in MOVIE_WORDS)]
+            year = re.match(r"\d{4}", txt(p, "date"))
+            it = {
+                "time": a.strftime("%H:%M"), "channel": channel, "title": title,
+                "originalTitle": title, "year": int(year.group()) if year else None,
+                "duration": f"{minutes} min", "genre": generic[0] if generic else "Cine",
+                "director": ", ".join(d.text for d in credits.findall("director")) if credits is not None else "",
+                "cast": [x.text for x in credits.findall("actor")][:4] if credits is not None else [],
+                "criticScore": None, "audienceScore": None,
+                "synopsis": txt(p, "desc"), "poster": "",
+            }
+            days.setdefault(day.isoformat(), []).append(it)
+        used.append((url, sum(len(v) for v in days.values()) - n_before))
+    print("Películas aportadas por cada guía:", used)
+    print("Cadenas objetivo presentes en las guías:", sorted(present & target))
+    print("Cadenas objetivo AUSENTES de las guías:", sorted(target - present))
+    print("Categorías de programas largos (>=80 min) de las cadenas objetivo:", longcats.most_common(20))
     total = sum(len(v) for v in days.values())
     if total == 0:
         print("No se detectó ninguna película. Categorías vistas:", cats.most_common(25))
@@ -173,7 +212,7 @@ def main():
         if TMDB_KEY or OMDB_KEY:
             for it in items:
                 enrich(it)
-    out = {"generated": datetime.now(TZ).isoformat(timespec="minutes"), "source": EPG_URL, "days": dict(sorted(days.items()))}
+    out = {"generated": datetime.now(TZ).isoformat(timespec="minutes"), "source": EPG_URLS, "days": dict(sorted(days.items()))}
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     print(f"{total} películas en {len(days)} días. Canales:", sorted({i['channel'] for v in days.values() for i in v}))
