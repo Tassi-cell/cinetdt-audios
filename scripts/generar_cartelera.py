@@ -9,6 +9,7 @@ from zoneinfo import ZoneInfo
 
 EPG_URL = os.environ.get("EPG_URL", "https://www.tdtchannels.com/epg/TV.xml.gz")
 TMDB_KEY = os.environ.get("TMDB_API_KEY", "").strip()
+OMDB_KEY = os.environ.get("OMDB_API_KEY", "").strip()
 TZ = ZoneInfo("Europe/Madrid")
 MOVIE_WORDS = ("película", "pelicula", "cine", "movie", "film")
 MIN_MINUTES = 70
@@ -50,6 +51,30 @@ def tmdb(path, **p):
 
 
 _cache = {}
+_omdb = {}
+
+
+def omdb_score(imdb_id, title, year):
+    """Nota de la crítica (0-10): Metascore/10; si no hay, Rotten Tomatoes/10."""
+    key = imdb_id or (title, year)
+    if key in _omdb:
+        return _omdb[key]
+    score = None
+    try:
+        q = {"i": imdb_id} if imdb_id else ({"t": title, "y": year} if year else None)
+        if q:
+            q["apikey"] = OMDB_KEY
+            d = json.loads(get("https://www.omdbapi.com/?" + urllib.parse.urlencode(q)))
+            if d.get("Response") == "True" and (imdb_id or norm(d.get("Title")) == norm(title)):
+                rt = next((r["Value"] for r in d.get("Ratings", []) if r["Source"] == "Rotten Tomatoes"), "")
+                if str(d.get("Metascore", "")).isdigit():
+                    score = round(int(d["Metascore"]) / 10, 1)
+                elif rt.endswith("%"):
+                    score = round(int(rt[:-1]) / 10, 1)
+    except Exception as e:
+        print("OMDb:", title, e)
+    _omdb[key] = score
+    return score
 
 
 def enrich(it):
@@ -58,6 +83,8 @@ def enrich(it):
     if key not in _cache:
         data = None
         try:
+            if not TMDB_KEY:
+                raise LookupError()
             q = {"query": it["title"]}
             if it["year"]:
                 q["year"] = it["year"]
@@ -65,10 +92,16 @@ def enrich(it):
                 if norm(it["title"]) in (norm(r.get("title")), norm(r.get("original_title"))):
                     data = tmdb(f"/movie/{r['id']}", append_to_response="credits")
                     break
+        except LookupError:
+            pass
         except Exception as e:
             print("TMDB:", it["title"], e)
         _cache[key] = data
     d = _cache[key]
+    if OMDB_KEY:
+        s = omdb_score(d.get("imdb_id") if d else None, it["title"], it["year"])
+        if s is not None:
+            it["criticScore"] = s
     if not d:
         return
     crew = d.get("credits", {}).get("crew", [])
@@ -137,7 +170,7 @@ def main():
         sys.exit(1)
     for items in days.values():
         items.sort(key=lambda x: x["time"])
-        if TMDB_KEY:
+        if TMDB_KEY or OMDB_KEY:
             for it in items:
                 enrich(it)
     out = {"generated": datetime.now(TZ).isoformat(timespec="minutes"), "source": EPG_URL, "days": dict(sorted(days.items()))}
