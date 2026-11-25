@@ -161,6 +161,8 @@ def main():
     days, cats, seen = {}, Counter(), set()
     target = set(CANON.values())
     present, longcats, used = set(), Counter(), []
+    BIG = {"La 1", "Antena 3", "Cuatro", "Telecinco", "laSexta"}
+    samples = {}
     for url in EPG_URLS:
         try:
             raw = get(url)
@@ -194,6 +196,11 @@ def main():
             by_cat = any(w in c for c in low for w in MOVIE_WORDS) or title.lower().startswith("cine")
             by_meta = (not categories) and 85 <= minutes <= 240 and has_dir and has_year
             is_movie = by_cat or by_meta
+            if (not is_movie and channel in BIG and minutes >= 85
+                    and today <= a.date() <= today + timedelta(days=1)):
+                lst = samples.setdefault(channel, [])
+                if len(lst) < 10:
+                    lst.append((a.strftime("%d %H:%M"), title[:45], categories[:2], minutes, has_dir, has_year))
             if not (is_movie and minutes >= MIN_MINUTES and title):
                 continue
             day = a.date()
@@ -222,6 +229,10 @@ def main():
     print("Cadenas objetivo presentes en las guías:", sorted(present & target))
     print("Cadenas objetivo AUSENTES de las guías:", sorted(target - present))
     print("Categorías de programas largos (>=80 min) de las cadenas objetivo:", longcats.most_common(20))
+    for ch, lst in samples.items():
+        print("MUESTRA no detectadas", ch)
+        for row in lst:
+            print("   ", row)
     total = sum(len(v) for v in days.values())
     if total == 0:
         print("No se detectó ninguna película. Categorías vistas:", cats.most_common(25))
