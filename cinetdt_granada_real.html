@@ -2027,5 +2027,16 @@
       preloadAllAudioSlots();
     });
   </script>
+  <script>
+    // Modo público: oculta los botones y ventanas de configuración.
+    // Para verlos, abre la página añadiendo #admin al final de la dirección.
+    (function () {
+      if (/(^|[#?&])admin(=|&|$)/.test(location.hash + location.search)) return;
+      ["btn-drive-media-config", "btn-direct-sites-export", "drive-media-modal", "sites-export-modal"].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) el.remove();
+      });
+    })();
+  </script>
 </body>
 </html>
