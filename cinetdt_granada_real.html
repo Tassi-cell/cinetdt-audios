@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cine Doré · CineTDT Granada — Cartelera de Cine en Abierto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --dore-burgundy-darkest: #120206;
+      --dore-burgundy-deep: #24050e;
+      --dore-burgundy: #3d0b19;
+      --dore-velvet-red: #591125;
+      --dore-gold: #d4af37;
+      --dore-gold-light: #f6dc84;
+      --dore-gold-antique: #9f7922;
+      --dore-cream: #faf2e4;
+      --dore-cream-muted: #e5d5bc;
+      --dore-fluorescent: #00f0ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--dore-burgundy-darkest);
+      color: var(--dore-cream);
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    .font-dore {
+      font-family: 'Cinzel', Georgia, serif;
+      font-variant: small-caps;
+      letter-spacing: 0.05em;
+    }
+
+    .font-editorial {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+
+    /* Fondo arquitectónico y terciopelo teatral Cine Doré */
+    .dore-velvet-backdrop {
+      background:
+        radial-gradient(ellipse at 50% -10%, rgba(212, 175, 55, 0.28) 0%, rgba(89, 17, 37, 0.48) 38%, rgba(18, 2, 6, 0.96) 82%),
+        repeating-linear-gradient(
+          90deg,
+          rgba(61, 11, 25, 0.42) 0px,
+          rgba(26, 4, 10, 0.68) 24px,
+          rgba(78, 14, 32, 0.36) 48px
+        );
+      transition: background 0.6s ease;
+    }
+
+    /* Veladura más transparente cuando está activa la imagen de fondo de sala */
+    .dore-velvet-backdrop.has-bg-image {
+      background:
+        radial-gradient(ellipse at 50% 10%, rgba(212, 175, 55, 0.16) 0%, rgba(45, 8, 19, 0.46) 48%, rgba(14, 2, 5, 0.78) 92%),
+        linear-gradient(180deg, rgba(18, 2, 6, 0.42) 0%, rgba(18, 2, 6, 0.68) 100%);
+    }
+
+    /* Cortinajes laterales de terciopelo */
+    .dore-curtain-left {
+      background: repeating-linear-gradient(
+        90deg,
+        rgba(84, 12, 31, 0.85) 0px,
+        rgba(34, 4, 12, 0.95) 18px,
+        rgba(105, 16, 40, 0.78) 36px
+      );
+      mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.35) 65%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.35) 65%, transparent 100%);
+    }
+
+    .dore-curtain-right {
+      background: repeating-linear-gradient(
+        270deg,
+        rgba(84, 12, 31, 0.85) 0px,
+        rgba(34, 4, 12, 0.95) 18px,
+        rgba(105, 16, 40, 0.78) 36px
+      );
+      mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.35) 65%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.35) 65%, transparent 100%);
+    }
+
+    /* Marquesina Art-Déco Cine Doré */
+    .dore-marquee {
+      background: linear-gradient(180deg, rgba(56, 10, 23, 0.95) 0%, rgba(26, 4, 10, 0.97) 100%);
+      border: 1.5px solid rgba(212, 175, 55, 0.55);
+      box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.75),
+        0 0 35px rgba(212, 175, 55, 0.14),
+        inset 0 0 0 4px rgba(18, 2, 6, 0.75),
+        inset 0 0 0 5px rgba(246, 220, 132, 0.25);
+    }
+
+    /* Tarjetas de terciopelo y filete dorado */
+    .dore-panel {
+      background: linear-gradient(165deg, rgba(48, 9, 20, 0.93) 0%, rgba(22, 4, 9, 0.96) 100%);
+      border: 1px solid rgba(212, 175, 55, 0.36);
+      box-shadow:
+        0 14px 34px rgba(0, 0, 0, 0.62),
+        inset 0 1px 0 rgba(246, 220, 132, 0.18);
+      transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease;
+    }
+
+    .dore-panel:hover {
+      transform: translateY(-4px);
+      border-color: rgba(246, 220, 132, 0.75);
+      box-shadow:
+        0 20px 42px rgba(0, 0, 0, 0.78),
+        0 0 22px rgba(212, 175, 55, 0.22);
+    }
+
+    /* Resplandor fluorescente azulado turquesa SOLO en el margen del cuadro */
+    .consensus-glow {
+      border: 2px solid #00f0ff !important;
+      box-shadow:
+        0 0 14px rgba(0, 240, 255, 0.55),
+        0 0 28px rgba(0, 212, 255, 0.26) !important;
+      animation: doreConsensusPulse 3s infinite ease-in-out;
+    }
+
+    .ranking-fluorescent-row {
+      background: rgba(20, 4, 9, 0.72) !important;
+      border: 1.5px solid #00f0ff !important;
+      box-shadow: 0 0 11px rgba(0, 240, 255, 0.42) !important;
+    }
+
+    .ranking-fluorescent-row:hover {
+      background: rgba(34, 8, 16, 0.85) !important;
+      box-shadow: 0 0 16px rgba(0, 240, 255, 0.65) !important;
+    }
+
+    @keyframes doreConsensusPulse {
+      0%, 100% {
+        box-shadow:
+          0 0 12px rgba(0, 240, 255, 0.48),
+          0 0 24px rgba(0, 212, 255, 0.22);
+      }
+      50% {
+        box-shadow:
+          0 0 20px rgba(0, 240, 255, 0.76),
+          0 0 38px rgba(0, 212, 255, 0.34);
+      }
+    }
+
+    .gold-button {
+      background: linear-gradient(135deg, #d4af37 0%, #f6dc84 48%, #b68a20 100%);
+      color: #190308;
+      box-shadow: 0 4px 16px rgba(212, 175, 55, 0.32);
+    }
+
+    .gold-button:hover {
+      filter: brightness(1.08);
+      box-shadow: 0 6px 22px rgba(246, 220, 132, 0.45);
+    }
+
+    .dore-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.6) 50%, transparent 100%);
+    }
+
+    input[type="date"] {
+      color-scheme: dark;
+    }
+
+    /* Scrollbar personalizado dorado */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #140206;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(212, 175, 55, 0.45);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(246, 220, 132, 0.78);
+    }
+  </style>
+</head>
+<body class="relative selection:bg-amber-300 selection:text-stone-950">
+
+  <!-- Escenografía de fondo Cine Doré -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <!-- Imagen de sala configurable (Drive / GitHub) -->
+    <img
+      id="cinema-drive-bg-img"
+      alt="Arquitectura Sala Cine Doré"
+      class="w-full h-full object-cover opacity-45 scale-105 transition-opacity duration-700 hidden"
+      onerror="this.classList.add('hidden')"
+    />
+    <!-- Terciopelo radial -->
+    <div id="dore-velvet-layer" class="absolute inset-0 dore-velvet-backdrop"></div>
+    <!-- Cortinajes laterales -->
+    <div class="hidden md:block fixed top-0 bottom-0 left-0 w-24 lg:w-36 dore-curtain-left opacity-80"></div>
+    <div class="hidden md:block fixed top-0 bottom-0 right-0 w-24 lg:w-36 dore-curtain-right opacity-80"></div>
+    <!-- Arco ornamental superior estilo Cine Doré -->
+    <svg class="w-full max-w-6xl mx-auto opacity-20 text-amber-300" viewBox="0 0 1200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M40 180 C40 60, 1160 60, 1160 180" stroke="currentColor" stroke-width="2" />
+      <path d="M90 180 C90 85, 1110 85, 1110 180" stroke="currentColor" stroke-width="1" stroke-dasharray="6 6" />
+      <circle cx="600" cy="48" r="18" stroke="currentColor" stroke-width="1.5" />
+      <path d="M560 48 H420 M640 48 H780" stroke="currentColor" stroke-width="1.2" />
+    </svg>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-5 sm:py-8">
+
+    <!-- MARQUESINA PRINCIPAL CINE DORÉ -->
+    <header class="rounded-3xl dore-marquee p-5 sm:p-8 mb-8 relative overflow-hidden">
+      <!-- Cenefa superior art-déco -->
+      <div class="flex items-center justify-between gap-2 text-[11px] sm:text-xs text-amber-300/85 uppercase tracking-[0.22em] mb-3">
+        <span>✦ Filmoteca TDT · Granada</span>
+        <span class="hidden sm:inline text-amber-400/50">━━━━━━━━━━ 🎭 ━━━━━━━━━━</span>
+        <span id="current-date-label" class="font-semibold text-amber-200">Sesión de Hoy</span>
+      </div>
+
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+        <div>
+          <h1 class="font-dore text-3xl sm:text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-b from-amber-100 via-amber-300 to-amber-500 drop-shadow-[0_2px_12px_rgba(212,175,55,0.28)]">
+            Cine Doré · Cartelera TDT Granada
+          </h1>
+          <p class="font-editorial italic text-lg sm:text-xl text-amber-100/90 mt-1.5">
+            «El gran cine en abierto de la televisión española, valorado en doble tribuna de Crítica y Público»
+          </p>
+          <p class="text-xs sm:text-sm text-amber-200/75 mt-1 max-w-2xl">
+            Programación diaria de cine en abierto (La 1, La 2, Canal Sur, Paramount, Be Mad, Trece, Bom Cine, laSexta, Antena 3, Cuatro y DMAX) con <span class="text-[#00f0ff] font-semibold">marco fluorescente turquesa por doble puntuación alta</span>.
+          </p>
+        </div>
+
+        <!-- Botonera teatral derecha -->
+        <div class="flex flex-wrap items-center gap-2.5 sm:gap-3 shrink-0">
+          <button
+            id="btn-ambient-toggle"
+            type="button"
+            onclick="toggleAmbientMusic()"
+            class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-[#2c0711] hover:bg-[#410b19] border border-amber-400/50 text-amber-100 text-xs sm:text-sm font-semibold shadow-lg transition cursor-pointer"
+          >
+            <span id="ambient-dot" class="w-2.5 h-2.5 rounded-full bg-amber-400/50"></span>
+            <span id="ambient-btn-label">Ambiente de Sala</span>
+          </button>
+
+          <button
+            id="btn-drive-media-config"
+            type="button"
+            onclick="toggleDriveMediaModal(true)"
+            class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-950/90 hover:bg-emerald-900 border border-emerald-400/55 text-emerald-200 text-xs sm:text-sm font-semibold shadow-lg transition cursor-pointer"
+          >
+            <span>🎞️ Multimedia Drive</span>
+          </button>
+
+          <button
+            id="btn-direct-sites-export"
+            type="button"
+            onclick="openGoogleSitesExportModal()"
+            class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-sky-950/90 hover:bg-sky-900 border border-sky-400/55 text-sky-200 text-xs sm:text-sm font-semibold shadow-lg transition cursor-pointer"
+          >
+            <span>🌐 Exportar a Google Sites</span>
+          </button>
+
+          <button
+            type="button"
+            onclick="refreshListingsWithAudio()"
+            class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl gold-button text-xs sm:text-sm font-extrabold transition cursor-pointer"
+          >
+            <span>🔄 Actualizar cartelera</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="dore-divider my-5"></div>
+
+      <!-- Barra de selección de jornada y filtros -->
+      <div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+        <!-- Pestañas de días + Campo de fecha -->
+        <div class="flex flex-wrap items-center gap-2.5 self-start">
+          <div class="inline-flex rounded-xl bg-black/55 p-1 border border-amber-400/30">
+            <button
+              type="button"
+              data-offset="0"
+              onclick="selectDateOffset(0)"
+              class="date-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-extrabold transition cursor-pointer gold-button"
+            >
+              Hoy
+            </button>
+            <button
+              type="button"
+              data-offset="1"
+              onclick="selectDateOffset(1)"
+              class="date-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold text-amber-100/80 hover:text-amber-200 transition cursor-pointer"
+            >
+              Mañana
+            </button>
+            <button
+              type="button"
+              data-offset="2"
+              onclick="selectDateOffset(2)"
+              class="date-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold text-amber-100/80 hover:text-amber-200 transition cursor-pointer"
+            >
+              Pasado mañana
+            </button>
+          </div>
+
+          <label class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-black/60 border border-amber-400/40 text-amber-200 text-xs sm:text-sm font-semibold">
+            <span>📅 Fecha:</span>
+            <input
+              id="date-picker-input"
+              type="date"
+              onchange="onCustomDateChange(this.value)"
+              aria-label="Seleccionar fecha a consultar"
+              class="bg-transparent text-amber-100 font-bold text-xs sm:text-sm focus:outline-none cursor-pointer"
+            />
+          </label>
+        </div>
+
+        <!-- Filtros y búsqueda -->
+        <div class="flex flex-wrap items-center gap-2.5">
+          <input
+            id="filter-search"
+            type="text"
+            oninput="renderAllViews()"
+            placeholder="Buscar título o dirección..."
+            class="px-3.5 py-2 rounded-xl bg-black/60 border border-amber-400/35 text-amber-100 placeholder-amber-200/45 text-xs sm:text-sm focus:outline-none focus:border-amber-300 w-44 sm:w-52"
+          />
+
+          <select
+            id="filter-channel"
+            onchange="onFilterChange()"
+            class="px-3.5 py-2 rounded-xl bg-black/60 border border-amber-400/35 text-amber-100 text-xs sm:text-sm focus:outline-none focus:border-amber-300"
+          >
+            <option value="ALL">Todas las cadenas TDT</option>
+          </select>
+
+          <select
+            id="filter-genre"
+            onchange="onFilterChange()"
+            class="px-3.5 py-2 rounded-xl bg-black/60 border border-amber-400/35 text-amber-100 text-xs sm:text-sm focus:outline-none focus:border-amber-300"
+          >
+            <option value="ALL">Todos los géneros</option>
+          </select>
+
+          <button
+            id="btn-consensus-filter"
+            type="button"
+            onclick="toggleConsensusFilter()"
+            class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-black/60 border border-[#00f0ff]/75 text-cyan-200 text-xs sm:text-sm font-semibold hover:bg-cyan-950/40 transition cursor-pointer"
+          >
+            <span class="w-2.5 h-2.5 rounded-full bg-[#00f0ff] shadow-[0_0_10px_#00f0ff]"></span>
+            <span>Solo Consenso Turquesa</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- TRIBUNA DOBLE: LISTAS PARALELAS UNA AL LADO DE LA OTRA -->
+    <section class="mb-9">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-3.5">
+        <h2 class="font-dore text-lg sm:text-xl font-bold text-amber-200">
+          ⚖️ Clasificación Comparada · Crítica vs. Público
+        </h2>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/65 border border-[#00f0ff] text-[11px] sm:text-xs text-cyan-200 font-semibold shadow-[0_0_12px_rgba(0,240,255,0.35)]">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#00f0ff] shadow-[0_0_8px_#00f0ff]"></span>
+          <span>Borde fluorescente turquesa = Buena puntuación en ambos rankings (≥ 7.6)</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+        <!-- Lista Izquierda: Ranking de la Crítica -->
+        <div class="rounded-2xl dore-panel p-4 sm:p-6">
+          <div class="flex items-center justify-between gap-3 pb-3.5 mb-4 border-b border-amber-400/25">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="w-10 h-10 rounded-xl bg-amber-400/15 border border-amber-400/45 flex items-center justify-center text-xl shrink-0">
+                🏛️
+              </div>
+              <div class="min-w-0">
+                <h3 class="font-dore text-base sm:text-lg font-bold text-amber-300 truncate">
+                  Tribuna de la Crítica
+                </h3>
+                <p class="text-xs text-amber-100/70 truncate">
+                  Ranking por rigor cinematográfico
+                </p>
+              </div>
+            </div>
+            <span class="px-2.5 py-1 rounded-full bg-amber-400/15 border border-amber-400/35 text-amber-300 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider shrink-0">
+              Lista Crítica
+            </span>
+          </div>
+          <div id="ranking-critics-list" class="space-y-2.5"></div>
+        </div>
+
+        <!-- Lista Derecha: Ranking del Público -->
+        <div class="rounded-2xl dore-panel p-4 sm:p-6">
+          <div class="flex items-center justify-between gap-3 pb-3.5 mb-4 border-b border-amber-400/25">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="w-10 h-10 rounded-xl bg-rose-500/20 border border-rose-400/45 flex items-center justify-center text-xl shrink-0">
+                👏
+              </div>
+              <div class="min-w-0">
+                <h3 class="font-dore text-base sm:text-lg font-bold text-amber-300 truncate">
+                  Aplauso del Público
+                </h3>
+                <p class="text-xs text-amber-100/70 truncate">
+                  Ranking por valoración de audiencia
+                </p>
+              </div>
+            </div>
+            <span class="px-2.5 py-1 rounded-full bg-rose-500/20 border border-rose-400/35 text-rose-200 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider shrink-0">
+              Lista Público
+            </span>
+          </div>
+          <div id="ranking-audience-list" class="space-y-2.5"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTELERA PRINCIPAL EN ABIERTO -->
+    <section>
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
+        <div class="flex items-center gap-3">
+          <h2 class="font-dore text-xl sm:text-2xl font-extrabold text-amber-200">
+            🎬 Programa Completo de Proyecciones TDT
+          </h2>
+          <span id="movies-count-badge" class="px-3 py-1 rounded-full bg-amber-400/20 border border-amber-400/40 text-amber-300 text-xs font-bold">
+            0 películas
+          </span>
+        </div>
+
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/65 border border-[#00f0ff]/85 text-xs text-cyan-200 shadow-[0_0_10px_rgba(0,240,255,0.28)]">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#00f0ff] shadow-[0_0_10px_#00f0ff]"></span>
+          <span>Marco fluorescente turquesa = Consenso Crítica + Público (≥ 7.6)</span>
+        </div>
+      </div>
+
+      <div id="movies-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"></div>
+    </section>
+
+    <!-- Pie de sala -->
+    <footer class="mt-14 pt-6 border-t border-amber-400/25 text-center text-xs text-amber-100/65 space-y-1">
+      <p class="font-dore text-sm text-amber-300/85">Cine Doré · CineTDT Granada</p>
+      <p>Cartelera de Cine en Abierto · Doble Baremo Crítica &amp; Público · Emisión TDT Andalucía y Nacional</p>
+    </footer>
+  </div>
+
+  <!-- MODAL DE FICHA DE PELÍCULA -->
+  <div
+    id="movie-detail-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-sm"
+    onclick="if (event.target === this) closeMovieModal()"
+  >
+    <div class="w-full max-w-3xl rounded-3xl dore-marquee p-6 sm:p-8 relative max-h-[92vh] overflow-y-auto">
+      <button
+        type="button"
+        onclick="closeMovieModal()"
+        class="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/70 hover:bg-rose-900 border border-amber-400/45 text-amber-200 flex items-center justify-center font-bold cursor-pointer transition"
+        aria-label="Cerrar ficha"
+      >
+        ✕
+      </button>
+      <div id="movie-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- MODAL DE CONFIGURACIÓN MULTIMEDIA (GOOGLE DRIVE / GITHUB / DROPBOX) -->
+  <div
+    id="drive-media-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-sm"
+    onclick="if (event.target === this) toggleDriveMediaModal(false)"
+  >
+    <div class="w-full max-w-2xl rounded-2xl bg-[#071913] border border-emerald-400/45 shadow-2xl p-5 sm:p-7 relative max-h-[92vh] overflow-y-auto text-emerald-50">
+      <div class="flex items-start justify-between gap-4 pb-4 border-b border-emerald-400/25">
+        <div class="flex items-start gap-3">
+          <span class="text-2xl mt-0.5">🎞️</span>
+          <div>
+            <h2 class="font-dore text-lg sm:text-xl font-bold text-amber-300">
+              Conectar Carpeta de Google Drive y Exportar a Google Sites
+            </h2>
+            <p class="text-xs text-emerald-300/85 mt-0.5">
+              Descarga automática a flujo binario local (<code>Blob</code> + caché <code>IndexedDB</code>) para Google Drive, GitHub y Dropbox.
+            </p>
+          </div>
+        </div>
+        <button
+          type="button"
+          onclick="toggleDriveMediaModal(false)"
+          class="w-9 h-9 rounded-full bg-emerald-950 hover:bg-emerald-900 border border-emerald-400/40 text-emerald-200 flex items-center justify-center font-bold cursor-pointer shrink-0"
+          aria-label="Cerrar"
+        >
+          ✕
+        </button>
+      </div>
+
+      <div class="space-y-4 mt-5">
+        <!-- Campo 1: Imagen de Fondo -->
+        <div>
+          <label class="block text-xs sm:text-sm font-bold text-amber-300 mb-1.5">
+            🖼️ 1. Enlace o ID de Google Drive / GitHub — Imagen de Fondo de Sala (.jpg / .png)
+          </label>
+          <input
+            id="drive-bg-input"
+            type="text"
+            oninput="syncDriveInputsDraft()"
+            placeholder="Pega enlace de Google Drive o GitHub..."
+            class="w-full px-3.5 py-2.5 rounded-xl bg-black/60 border border-amber-400/40 text-amber-100 text-xs sm:text-sm focus:outline-none focus:border-amber-300"
+          />
+        </div>
+
+        <!-- Campo 2: Audio Ambiente -->
+        <div>
+          <label class="block text-xs sm:text-sm font-bold text-amber-300 mb-1.5">
+            💬 2. Enlace de Google Drive / GitHub — Audio Ambiente de Cine (.mp3)
+          </label>
+          <div class="flex items-center gap-2">
+            <input
+              id="drive-ambient-input"
+              type="text"
+              oninput="syncDriveInputsDraft()"
+              placeholder="Enlace de Google Drive o GitHub..."
+              class="flex-1 px-3.5 py-2.5 rounded-xl bg-black/60 border border-amber-400/40 text-amber-100 text-xs sm:text-sm focus:outline-none focus:border-amber-300"
+            />
+            <button
+              type="button"
+              onclick="testDriveAudioInput('ambient')"
+              class="w-10 h-10 rounded-xl bg-amber-500/20 hover:bg-amber-500/35 border border-amber-400/50 text-amber-300 flex items-center justify-center font-bold cursor-pointer shrink-0"
+              title="Probar pista"
+            >
+              ▶
+            </button>
+          </div>
+          <div class="flex flex-wrap items-center justify-between gap-2 mt-1 text-[11px]">
+            <span class="text-emerald-200/70">Se reproduce en bucle continuo al abrir o pulsar «Ambiente de Sala».</span>
+            <span id="status-ambient" class="text-emerald-400 font-medium"></span>
+          </div>
+        </div>
+
+        <!-- Campo 3: Audio Listas -->
+        <div>
+          <label class="block text-xs sm:text-sm font-bold text-amber-300 mb-1.5">
+            🔊 3. Enlace de Google Drive / GitHub — Audio al Solicitar Nuevas Listas (.mp3)
+          </label>
+          <div class="flex items-center gap-2">
+            <input
+              id="drive-list-input"
+              type="text"
+              oninput="syncDriveInputsDraft()"
+              placeholder="Enlace de Google Drive o GitHub..."
+              class="flex-1 px-3.5 py-2.5 rounded-xl bg-black/60 border border-amber-400/40 text-amber-100 text-xs sm:text-sm focus:outline-none focus:border-amber-300"
+            />
+            <button
+              type="button"
+              onclick="testDriveAudioInput('list')"
+              class="w-10 h-10 rounded-xl bg-amber-500/20 hover:bg-amber-500/35 border border-amber-400/50 text-amber-300 flex items-center justify-center font-bold cursor-pointer shrink-0"
+              title="Probar pista"
+            >
+              ▶
+            </button>
+          </div>
+          <div class="flex justify-end mt-1 text-[11px]">
+            <span id="status-list" class="text-emerald-400 font-medium"></span>
+          </div>
+        </div>
+
+        <!-- Campo 4A: Ficha Melodía 1 -->
+        <div>
+          <label class="block text-xs sm:text-sm font-bold text-amber-300 mb-1.5">
+            🎵 4A. Enlace de Google Drive / GitHub — Ficha de Película (Melodía 1)
+          </label>
+          <div class="flex items-center gap-2">
+            <input
+              id="drive-movie1-input"
+              type="text"
+              oninput="syncDriveInputsDraft()"
+              placeholder="Enlace de Google Drive o GitHub..."
+              class="flex-1 px-3.5 py-2.5 rounded-xl bg-black/60 border border-amber-400/40 text-amber-100 text-xs sm:text-sm focus:outline-none focus:border-amber-300"
+            />
+            <button
+              type="button"
+              onclick="testDriveAudioInput('movie1')"
+              class="w-10 h-10 rounded-xl bg-amber-500/20 hover:bg-amber-500/35 border border-amber-400/50 text-amber-300 flex items-center justify-center font-bold cursor-pointer shrink-0"
+              title="Probar pista"
+            >
+              ▶
+            </button>
+          </div>
+          <div class="flex justify-end mt-1 text-[11px]">
+            <span id="status-movie1" class="text-emerald-400 font-medium"></span>
+          </div>
+        </div>
+
+        <!-- Campo 4B: Ficha Melodía 2 -->
+        <div>
+          <label class="block text-xs sm:text-sm font-bold text-amber-300 mb-1.5">
+            🎵 4B. Enlace de Google Drive / GitHub — Ficha de Película (Melodía 2 - Alterna)
+          </label>
+          <div class="flex items-center gap-2">
+            <input
+              id="drive-movie2-input"
+              type="text"
+              oninput="syncDriveInputsDraft()"
+              placeholder="Enlace de Google Drive o GitHub..."
+              class="flex-1 px-3.5 py-2.5 rounded-xl bg-black/60 border border-amber-400/40 text-amber-100 text-xs sm:text-sm focus:outline-none focus:border-amber-300"
+            />
+            <button
+              type="button"
+              onclick="testDriveAudioInput('movie2')"
+              class="w-10 h-10 rounded-xl bg-amber-500/20 hover:bg-amber-500/35 border border-amber-400/50 text-amber-300 flex items-center justify-center font-bold cursor-pointer shrink-0"
+              title="Probar pista"
+            >
+              ▶
+            </button>
+          </div>
+          <div class="flex flex-wrap items-center justify-between gap-2 mt-1 text-[11px]">
+            <span class="text-emerald-200/70">Al abrir fichas de películas se alternarán automáticamente la Melodía 1 y la Melodía 2.</span>
+            <span id="status-movie2" class="text-emerald-400 font-medium"></span>
+          </div>
+        </div>
+
+        <!-- Caja informativa -->
+        <div class="rounded-xl bg-emerald-950/75 border border-emerald-400/35 p-3.5 text-xs text-emerald-200/90 leading-relaxed">
+          ℹ️ Cada archivo MP3 de Google Drive se descarga a un flujo binario local (<code>Blob</code>) y se guarda en la caché del navegador (<code>IndexedDB</code>) para sonar sin bloqueos CORS ni cortes. También admite enlaces directos de <strong>GitHub</strong> o <strong>Dropbox</strong>.
+        </div>
+
+        <!-- Confirmación de exportación -->
+        <div id="export-confirm-box" class="hidden rounded-xl bg-amber-500/15 border border-amber-400/45 p-3.5 text-xs text-amber-200 space-y-2.5"></div>
+
+        <!-- Botones de acción -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+          <button
+            type="button"
+            onclick="saveDriveMediaConfig()"
+            class="w-full py-3 px-4 rounded-xl gold-button font-bold text-sm transition cursor-pointer"
+          >
+            ✓ Aplicar y Probar Ahora
+          </button>
+          <button
+            type="button"
+            onclick="openGoogleSitesExportModal()"
+            class="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg transition cursor-pointer"
+          >
+            📋 Exportar HTML para Google Sites
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DEDICADO DE EXPORTACIÓN A GOOGLE SITES -->
+  <div
+    id="sites-export-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-sm"
+    onclick="if (event.target === this) closeGoogleSitesExportModal()"
+  >
+    <div class="w-full max-w-2xl rounded-2xl bg-[#071913] border border-sky-400/50 shadow-2xl p-5 sm:p-7 relative max-h-[92vh] overflow-y-auto text-emerald-50 space-y-4">
+      <div class="flex items-start justify-between gap-4 pb-3 border-b border-sky-400/25">
+        <div>
+          <h2 class="font-dore text-lg sm:text-xl font-bold text-amber-300">
+            🌐 Código HTML Listo para Google Sites
+          </h2>
+          <p class="text-xs text-sky-200/85 mt-1">
+            Incluye tus 5 enlaces fijos de GitHub y oculta automáticamente los paneles de edición.
+          </p>
+        </div>
+        <button
+          type="button"
+          onclick="closeGoogleSitesExportModal()"
+          class="w-9 h-9 rounded-full bg-black/60 hover:bg-rose-900 border border-amber-400/40 text-amber-200 flex items-center justify-center font-bold cursor-pointer shrink-0"
+          aria-label="Cerrar exportación"
+        >
+          ✕
+        </button>
+      </div>
+
+      <div id="sites-export-status" class="rounded-xl bg-amber-500/15 border border-amber-400/50 p-3 text-xs sm:text-sm text-amber-200 font-semibold">
+        Preparando código HTML...
+      </div>
+
+      <ol class="text-xs text-emerald-100/90 space-y-1 list-decimal list-inside bg-black/45 p-3.5 rounded-xl border border-emerald-400/25">
+        <li>Copia el código de abajo (pulsa <strong>«Copiar Código Ahora»</strong> o haz clic dentro del cuadro y pulsa <strong>Ctrl+C</strong> / <strong>Cmd+C</strong>).</li>
+        <li>Abre tu página en <strong>Google Sites</strong> → menú derecho <strong>Insertar</strong> → <strong>Insertar código</strong>.</li>
+        <li>Selecciona la pestaña <strong>Insertar código</strong>, pega el HTML (<strong>Ctrl+V</strong>) y pulsa <strong>Siguiente → Insertar</strong>.</li>
+      </ol>
+
+      <div>
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-amber-300">Código completo autoseleccionado</span>
+          <span id="sites-export-size" class="text-[11px] text-emerald-300/80"></span>
+        </div>
+        <textarea
+          id="sites-export-textarea"
+          readonly
+          rows="7"
+          onclick="this.focus(); this.select();"
+          class="w-full p-3 rounded-xl bg-black/85 border border-sky-400/45 text-emerald-200 font-mono text-[11px] leading-relaxed focus:outline-none focus:border-amber-300"
+        ></textarea>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+        <button
+          type="button"
+          onclick="selectAndCopyExportTextarea()"
+          class="w-full py-3 px-4 rounded-xl gold-button font-extrabold text-xs sm:text-sm transition cursor-pointer"
+        >
+          📋 Seleccionar y Copiar Código
+        </button>
+        <button
+          type="button"
+          onclick="openExportedHtmlInNewTab()"
+          class="w-full py-3 px-4 rounded-xl bg-sky-700 hover:bg-sky-600 text-white font-bold text-xs sm:text-sm shadow-lg transition cursor-pointer"
+        >
+          🪟 Abrir Código en Pestaña Nueva
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast flotante -->
+  <div
+    id="toast-banner"
+    class="fixed bottom-5 right-5 z-50 hidden max-w-sm px-4 py-3 rounded-xl bg-[#1a0409]/95 border border-amber-400/55 text-amber-100 text-xs sm:text-sm shadow-2xl"
+  ></div>
+
+  <script>
+    // <EMBEDDED_CONFIG_START>
+    const IS_PUBLISHED_SITES_EXPORT = false;
+    const EMBEDDED_DRIVE_CONFIG = {
+      bg: "https://github.com/Tassi-cell/cinetdt-audios/blob/main/CapturaCine.PNG",
+      ambient: "https://github.com/Tassi-cell/cinetdt-audios/blob/main/freesound_community-people-talking-in-cinema-before-movie-starts-65662.mp3",
+      list: "https://github.com/Tassi-cell/cinetdt-audios/blob/main/gregorquendel-cinematic-music-sketches-11-cinematic-percussion-sketch-116186.mp3",
+      movie1: "https://github.com/Tassi-cell/cinetdt-audios/blob/main/nesterouk-cinematic-piano-logo-144986.mp3",
+      movie2: "https://github.com/Tassi-cell/cinetdt-audios/blob/main/soundreality-downfall-3-208028.mp3"
+    };
+    // <EMBEDDED_CONFIG_END>
+
+    const STORAGE_KEY = "cinetdt_granada_media_v4";
+    const IDB_NAME = "CineDore_AudioVault_v2";
+    const IDB_STORE = "audio_blobs";
+
+    // Estado global de la cartelera y reproductores
+    let selectedDateOffset = 0;
+    let selectedDateISO = "";
+    let consensusOnly = false;
+    let currentMovies = [];
+    let currentOpenModalMovieId = null;
+    let nextMovieMelodySlot = "movie1";
+    let ambientUserRequested = true;
+    let driveConfig = { ...EMBEDDED_DRIVE_CONFIG };
+    let activeSessionRequestId = 0;
+
+    const realPosterCache = new Map();
+    const resolvedMediaUrlCache = new Map();
+    const inflightMediaPromises = new Map();
+    const sessionMoviesCache = new Map();
+    let exportedHtmlSnapshot = "";
+
+    const players = {
+      ambient: new Audio(),
+      list: new Audio(),
+      movie1: new Audio(),
+      movie2: new Audio()
+    };
+
+    players.ambient.loop = true;
+    players.ambient.preload = "auto";
+    players.ambient.volume = 0.42;
+    players.list.preload = "auto";
+    players.list.volume = 0.85;
+    players.movie1.preload = "auto";
+    players.movie1.volume = 0.85;
+    players.movie2.preload = "auto";
+    players.movie2.volume = 0.85;
+    ["list", "movie1", "movie2"].forEach((k) => {
+      players[k].addEventListener("ended", () => {
+        if (ambientUserRequested && !currentOpenModalMovieId) startAmbientAudio(true);
+      });
+    });
+
+    function esc(v) {
+      return String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    }
+
+    // Utilidad de avisos flotantes sin alert()
+    let toastTimer = null;
+    function showToast(message, durationMs = 3600) {
+      const banner = document.getElementById("toast-banner");
+      if (!banner) return;
+      banner.textContent = message;
+      banner.classList.remove("hidden");
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        banner.classList.add("hidden");
+      }, durationMs);
+    }
+
+    // Conversión de enlaces GitHub / Dropbox / Drive a URLs directas
+    function normalizeDirectMediaUrl(rawUrl) {
+      const url = (rawUrl || "").trim();
+      if (!url) return "";
+
+      // GitHub blob -> raw.githubusercontent.com
+      const ghBlobMatch = url.match(/^https?:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\/([^/]+)\/(.+)$/i);
+      if (ghBlobMatch) {
+        const [, owner, repo, branch, filePath] = ghBlobMatch;
+        return `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${filePath}`;
+      }
+
+      // Dropbox -> raw=1
+      if (/dropbox\.com/i.test(url)) {
+        if (url.includes("dl=0")) return url.replace("dl=0", "raw=1");
+        if (!url.includes("raw=1")) return url + (url.includes("?") ? "&raw=1" : "?raw=1");
+      }
+
+      return url;
+    }
+
+    function extractDriveId(input) {
+      const val = (input || "").trim();
+      if (!val) return "";
+      if (/^[a-zA-Z0-9_-]{25,45}$/.test(val)) return val;
+      const fileMatch = val.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
+      if (fileMatch) return fileMatch[1];
+      const openMatch = val.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+      if (openMatch) return openMatch[1];
+      return "";
+    }
+
+    function isGoogleDriveLink(url) {
+      return /drive\.google\.com|docs\.google\.com/i.test(url) || Boolean(extractDriveId(url));
+    }
+
+    // Caché persistente en IndexedDB para archivos de Google Drive
+    function openAudioVaultDb() {
+      return new Promise((resolve, reject) => {
+        try {
+          if (!window.indexedDB) {
+            reject(new Error("IndexedDB no disponible"));
+            return;
+          }
+          const req = indexedDB.open(IDB_NAME, 1);
+          req.onupgradeneeded = () => {
+            const db = req.result;
+            if (!db.objectStoreNames.contains(IDB_STORE)) {
+              db.createObjectStore(IDB_STORE);
+            }
+          };
+          req.onsuccess = () => resolve(req.result);
+          req.onerror = () => reject(req.error);
+        } catch (err) {
+          reject(err);
+        }
+      });
+    }
+
+    async function readBlobFromVault(key) {
+      try {
+        const db = await openAudioVaultDb();
+        return await new Promise((resolve) => {
+          const tx = db.transaction(IDB_STORE, "readonly");
+          const store = tx.objectStore(IDB_STORE);
+          const req = store.get(key);
+          req.onsuccess = () => resolve(req.result || null);
+          req.onerror = () => resolve(null);
+        });
+      } catch (_) {
+        return null;
+      }
+    }
+
+    async function writeBlobToVault(key, blob) {
+      try {
+        const db = await openAudioVaultDb();
+        await new Promise((resolve) => {
+          const tx = db.transaction(IDB_STORE, "readwrite");
+          const store = tx.objectStore(IDB_STORE);
+          store.put(blob, key);
+          tx.oncomplete = () => resolve();
+          tx.onerror = () => resolve();
+        });
+      } catch (_) {
+        // Ignorar si almacenamiento privado bloquea escritura
+      }
+    }
+
+    function detectAudioMimeFromBytes(bytes) {
+      if (!bytes || bytes.length < 12) return "audio/mpeg";
+      if (bytes[0] === 0x49 && bytes[1] === 0x44 && bytes[2] === 0x33) return "audio/mpeg";
+      if (bytes[0] === 0xff && (bytes[1] & 0xe0) === 0xe0) return "audio/mpeg";
+      if (bytes[0] === 0x4f && bytes[1] === 0x67 && bytes[2] === 0x67 && bytes[3] === 0x53) return "audio/ogg";
+      if (bytes[0] === 0x52 && bytes[1] === 0x49 && bytes[2] === 0x46 && bytes[3] === 0x46) return "audio/wav";
+      if (bytes[4] === 0x66 && bytes[5] === 0x74 && bytes[6] === 0x79 && bytes[7] === 0x70) return "audio/mp4";
+      return "audio/mpeg";
+    }
+
+    async function fetchDriveBinaryAsBlob(driveId) {
+      const cachedBlob = await readBlobFromVault(driveId);
+      if (cachedBlob instanceof Blob && cachedBlob.size > 1024) {
+        return URL.createObjectURL(cachedBlob);
+      }
+
+      const targetDirect = `https://drive.usercontent.google.com/download?id=${encodeURIComponent(driveId)}&export=download&confirm=t`;
+      const gateways = [
+        `https://corsproxy.io/?${encodeURIComponent(targetDirect)}`,
+        `https://api.allorigins.win/raw?url=${encodeURIComponent(targetDirect)}`,
+        `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetDirect)}`
+      ];
+
+      for (const gatewayUrl of gateways) {
+        try {
+          const controller = new AbortController();
+          const timer = setTimeout(() => controller.abort(), 9000);
+          const res = await fetch(gatewayUrl, { signal: controller.signal });
+          clearTimeout(timer);
+          if (!res.ok) continue;
+
+          const buf = await res.arrayBuffer();
+          const bytes = new Uint8Array(buf);
+          if (bytes.length < 2048) continue;
+          const headText = new TextDecoder().decode(bytes.slice(0, 64)).trim().toLowerCase();
+          if (headText.startsWith("<!doctype") || headText.startsWith("<html")) continue;
+
+          const mime = detectAudioMimeFromBytes(bytes);
+          const blob = new Blob([bytes], { type: mime });
+          await writeBlobToVault(driveId, blob);
+          return URL.createObjectURL(blob);
+        } catch (_) {
+          // Probar siguiente pasarela
+        }
+      }
+
+      return `https://drive.google.com/uc?export=download&id=${encodeURIComponent(driveId)}`;
+    }
+
+    async function resolvePlayableMediaUrl(rawInput) {
+      const trimmed = (rawInput || "").trim();
+      if (!trimmed) return "";
+
+      if (resolvedMediaUrlCache.has(trimmed)) {
+        return resolvedMediaUrlCache.get(trimmed);
+      }
+
+      if (inflightMediaPromises.has(trimmed)) {
+        return inflightMediaPromises.get(trimmed);
+      }
+
+      const promise = (async () => {
+        const normalized = normalizeDirectMediaUrl(trimmed);
+        if (!isGoogleDriveLink(normalized)) {
+          resolvedMediaUrlCache.set(trimmed, normalized);
+          return normalized;
+        }
+        const driveId = extractDriveId(normalized);
+        if (!driveId) {
+          resolvedMediaUrlCache.set(trimmed, normalized);
+          return normalized;
+        }
+        const blobOrDirectUrl = await fetchDriveBinaryAsBlob(driveId);
+        resolvedMediaUrlCache.set(trimmed, blobOrDirectUrl);
+        return blobOrDirectUrl;
+      })();
+
+      inflightMediaPromises.set(trimmed, promise);
+      try {
+        return await promise;
+      } finally {
+        inflightMediaPromises.delete(trimmed);
+      }
+    }
+
+    function setSlotStatus(slot, text, isError = false) {
+      const el = document.getElementById(`status-${slot}`);
+      if (!el) return;
+      el.textContent = text;
+      el.className = isError ? "text-rose-400 font-medium" : "text-emerald-400 font-medium";
+    }
+
+    async function prepareAudioSlot(slot) {
+      const rawUrl = driveConfig[slot] || "";
+      if (!rawUrl) {
+        setSlotStatus(slot, "Sin enlace configurado", true);
+        return "";
+      }
+      setSlotStatus(slot, "Cargando pista...", false);
+      try {
+        const playableUrl = await resolvePlayableMediaUrl(rawUrl);
+        if (playableUrl && players[slot].src !== playableUrl) {
+          players[slot].src = playableUrl;
+          players[slot].load();
+        }
+        setSlotStatus(slot, "✓ Audio listo", false);
+        return playableUrl;
+      } catch (_) {
+        setSlotStatus(slot, "Error al cargar pista", true);
+        return "";
+      }
+    }
+
+    async function preloadAllAudioSlots() {
+      await prepareAudioSlot("ambient");
+      if (ambientUserRequested) {
+        startAmbientAudio(true);
+      }
+      await prepareAudioSlot("list");
+      await prepareAudioSlot("movie1");
+      await prepareAudioSlot("movie2");
+    }
+
+    // Aplicar imagen de fondo de sala
+    async function applyDriveBackground() {
+      const imgEl = document.getElementById("cinema-drive-bg-img");
+      const velvetEl = document.getElementById("dore-velvet-layer");
+      if (!imgEl || !velvetEl) return;
+
+      const rawBg = (driveConfig.bg || "").trim();
+      if (!rawBg) {
+        imgEl.classList.add("hidden");
+        velvetEl.classList.remove("has-bg-image");
+        return;
+      }
+
+      let finalBgUrl = normalizeDirectMediaUrl(rawBg);
+      if (isGoogleDriveLink(finalBgUrl)) {
+        const id = extractDriveId(finalBgUrl);
+        if (id) {
+          finalBgUrl = `https://lh3.googleusercontent.com/d/${encodeURIComponent(id)}=w1920`;
+        }
+      }
+
+      imgEl.onload = () => {
+        imgEl.classList.remove("hidden");
+        velvetEl.classList.add("has-bg-image");
+      };
+      imgEl.onerror = () => {
+        imgEl.classList.add("hidden");
+        velvetEl.classList.remove("has-bg-image");
+      };
+      imgEl.src = finalBgUrl;
+    }
+
+    // Controles de audio teatral
+    function updateAmbientUi(isPlaying) {
+      const dot = document.getElementById("ambient-dot");
+      const label = document.getElementById("ambient-btn-label");
+      if (!dot || !label) return;
+      if (isPlaying) {
+        dot.className = "w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_10px_#34d399]";
+        label.textContent = "Ambiente Activo";
+      } else {
+        dot.className = "w-2.5 h-2.5 rounded-full bg-amber-400/50";
+        label.textContent = "Ambiente de Sala";
+      }
+    }
+
+    function stopOneShotPlayers() {
+      ["list", "movie1", "movie2"].forEach((key) => {
+        try {
+          players[key].pause();
+          players[key].currentTime = 0;
+        } catch (_) {}
+      });
+    }
+
+    function stopAmbientAudio() {
+      try {
+        players.ambient.pause();
+      } catch (_) {}
+      updateAmbientUi(false);
+    }
+
+    async function startAmbientAudio(silentFail = false) {
+      ambientUserRequested = true;
+      stopOneShotPlayers();
+      const url = await prepareAudioSlot("ambient");
+      if (!url) return;
+      try {
+        await players.ambient.play();
+        updateAmbientUi(true);
+      } catch (_) {
+        updateAmbientUi(false);
+        if (!silentFail) {
+          showToast("Pulsa en la sala para activar el sonido ambiente.");
+        }
+      }
+    }
+
+    function toggleAmbientMusic() {
+      if (!players.ambient.paused) {
+        ambientUserRequested = false;
+        stopAmbientAudio();
+        showToast("🔇 Ambiente de sala pausado");
+      } else {
+        startAmbientAudio(false);
+      }
+    }
+
+    async function playOneShotSlot(slot) {
+      stopAmbientAudio();
+      stopOneShotPlayers();
+      const url = await prepareAudioSlot(slot);
+      if (!url) return;
+      try {
+        players[slot].currentTime = 0;
+        await players[slot].play();
+      } catch (_) {
+        // Ignorar bloqueo de autoplay si ocurre
+      }
+    }
+
+    function triggerAlternatingMovieAudio() {
+      const slot = nextMovieMelodySlot;
+      nextMovieMelodySlot = nextMovieMelodySlot === "movie1" ? "movie2" : "movie1";
+      playOneShotSlot(slot);
+    }
+
+    async function testDriveAudioInput(slot) {
+      syncDriveInputsDraft();
+      resolvedMediaUrlCache.delete((driveConfig[slot] || "").trim());
+      if (slot === "ambient") {
+        await startAmbientAudio(false);
+      } else {
+        await playOneShotSlot(slot);
+      }
+    }
+
+    // Gestión de configuración multimedia y exportación a Google Sites
+    function loadInitialDriveConfig() {
+      if (IS_PUBLISHED_SITES_EXPORT) {
+        driveConfig = { ...EMBEDDED_DRIVE_CONFIG };
+        return;
+      }
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          driveConfig = {
+            bg: parsed.bg || EMBEDDED_DRIVE_CONFIG.bg,
+            ambient: parsed.ambient || EMBEDDED_DRIVE_CONFIG.ambient,
+            list: parsed.list || EMBEDDED_DRIVE_CONFIG.list,
+            movie1: parsed.movie1 || EMBEDDED_DRIVE_CONFIG.movie1,
+            movie2: parsed.movie2 || EMBEDDED_DRIVE_CONFIG.movie2
+          };
+        } else {
+          driveConfig = { ...EMBEDDED_DRIVE_CONFIG };
+        }
+      } catch (_) {
+        driveConfig = { ...EMBEDDED_DRIVE_CONFIG };
+      }
+    }
+
+    function populateDriveModalInputs() {
+      const map = {
+        "drive-bg-input": driveConfig.bg,
+        "drive-ambient-input": driveConfig.ambient,
+        "drive-list-input": driveConfig.list,
+        "drive-movie1-input": driveConfig.movie1,
+        "drive-movie2-input": driveConfig.movie2
+      };
+      Object.entries(map).forEach(([id, val]) => {
+        const el = document.getElementById(id);
+        if (el) el.value = val || "";
+      });
+    }
+
+    function toggleDriveMediaModal(show) {
+      const modal = document.getElementById("drive-media-modal");
+      if (!modal) return;
+      if (show) {
+        populateDriveModalInputs();
+        const confirmBox = document.getElementById("export-confirm-box");
+        if (confirmBox) confirmBox.classList.add("hidden");
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      } else {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      }
+    }
+
+    function syncDriveInputsDraft() {
+      const bgEl = document.getElementById("drive-bg-input");
+      const ambEl = document.getElementById("drive-ambient-input");
+      const listEl = document.getElementById("drive-list-input");
+      const m1El = document.getElementById("drive-movie1-input");
+      const m2El = document.getElementById("drive-movie2-input");
+
+      driveConfig = {
+        bg: (bgEl && bgEl.value.trim()) ? bgEl.value.trim() : (driveConfig.bg || EMBEDDED_DRIVE_CONFIG.bg),
+        ambient: (ambEl && ambEl.value.trim()) ? ambEl.value.trim() : (driveConfig.ambient || EMBEDDED_DRIVE_CONFIG.ambient),
+        list: (listEl && listEl.value.trim()) ? listEl.value.trim() : (driveConfig.list || EMBEDDED_DRIVE_CONFIG.list),
+        movie1: (m1El && m1El.value.trim()) ? m1El.value.trim() : (driveConfig.movie1 || EMBEDDED_DRIVE_CONFIG.movie1),
+        movie2: (m2El && m2El.value.trim()) ? m2El.value.trim() : (driveConfig.movie2 || EMBEDDED_DRIVE_CONFIG.movie2)
+      };
+    }
+
+    async function saveDriveMediaConfig() {
+      syncDriveInputsDraft();
+      resolvedMediaUrlCache.clear();
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(driveConfig));
+      } catch (_) {}
+
+      await applyDriveBackground();
+      await preloadAllAudioSlots();
+      showToast("✓ Enlaces aplicados y pistas verificadas");
+    }
+
+    function buildExportedGoogleSitesHtml() {
+      syncDriveInputsDraft();
+      const docClone = document.documentElement.cloneNode(true);
+
+      // Eliminar botones y modales de edición/exportación en la versión publicada para Google Sites
+      ["#btn-drive-media-config", "#btn-direct-sites-export", "#drive-media-modal", "#sites-export-modal"].forEach((sel) => {
+        const el = docClone.querySelector(sel);
+        if (el) el.remove();
+      });
+
+      // Limpiar estados transitorios de la vista previa antes de serializar
+      const toastClone = docClone.querySelector("#toast-banner");
+      if (toastClone) toastClone.classList.add("hidden");
+      const movieModalClone = docClone.querySelector("#movie-detail-modal");
+      if (movieModalClone) {
+        movieModalClone.classList.add("hidden");
+        movieModalClone.classList.remove("flex");
+      }
+
+      let rawHtml = "<!DOCTYPE html>\n" + docClone.outerHTML;
+
+      const startMarker = "// <EMBEDDED_CONFIG_START>";
+      const endMarker = "// <EMBEDDED_CONFIG_END>";
+      const startIdx = rawHtml.indexOf(startMarker);
+      const endIdx = rawHtml.indexOf(endMarker);
+
+      if (startIdx !== -1 && endIdx !== -1 && endIdx > startIdx) {
+        const embeddedBlock = `${startMarker}
+    const IS_PUBLISHED_SITES_EXPORT = true;
+    const EMBEDDED_DRIVE_CONFIG = ${JSON.stringify(driveConfig, null, 6)};
+    ${endMarker}`;
+        rawHtml = rawHtml.slice(0, startIdx) + embeddedBlock + rawHtml.slice(endIdx + endMarker.length);
+      }
+
+      return rawHtml;
+    }
+
+    function closeGoogleSitesExportModal() {
+      const modal = document.getElementById("sites-export-modal");
+      if (!modal) return;
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+
+    async function selectAndCopyExportTextarea() {
+      const textarea = document.getElementById("sites-export-textarea");
+      const statusBox = document.getElementById("sites-export-status");
+      if (!textarea) return;
+
+      textarea.focus();
+      textarea.select();
+      try {
+        textarea.setSelectionRange(0, textarea.value.length);
+      } catch (_) {}
+
+      let copied = false;
+      try {
+        copied = document.execCommand("copy");
+      } catch (_) {}
+
+      if (!copied && navigator.clipboard && navigator.clipboard.writeText) {
+        try {
+          await navigator.clipboard.writeText(textarea.value);
+          copied = true;
+        } catch (_) {}
+      }
+
+      if (statusBox) {
+        if (copied) {
+          statusBox.className = "rounded-xl bg-emerald-500/20 border border-emerald-400/60 p-3 text-xs sm:text-sm text-emerald-200 font-semibold";
+          statusBox.textContent = "✅ ¡Código copiado al portapapeles! Ve a Google Sites → Insertar → Insertar código y pégalo con Ctrl+V.";
+        } else {
+          statusBox.className = "rounded-xl bg-amber-500/20 border border-amber-400/65 p-3 text-xs sm:text-sm text-amber-200 font-semibold";
+          statusBox.textContent = "⚠️ El visor bloqueó el copiado automático, pero todo el código ya está marcado abajo: pulsa Ctrl+C (o Cmd+C en Mac) ahora mismo.";
+        }
+      }
+
+      showToast(
+        copied
+          ? "✅ Código HTML copiado al portapapeles"
+          : "Todo el código está seleccionado: pulsa Ctrl+C (o Cmd+C)"
+      );
+    }
+
+    function openExportedHtmlInNewTab() {
+      const htmlContent = exportedHtmlSnapshot || buildExportedGoogleSitesHtml();
+      const blob = new Blob([htmlContent], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const win = window.open(url, "_blank");
+      if (!win) {
+        selectAndCopyExportTextarea();
+        showToast("El navegador bloqueó la ventana nueva; usa Ctrl+C en el cuadro seleccionado.");
+      }
+    }
+
+    async function openGoogleSitesExportModal() {
+      toggleDriveMediaModal(false);
+      exportedHtmlSnapshot = buildExportedGoogleSitesHtml();
+
+      const modal = document.getElementById("sites-export-modal");
+      const textarea = document.getElementById("sites-export-textarea");
+      const sizeLabel = document.getElementById("sites-export-size");
+      if (!modal || !textarea) return;
+
+      textarea.value = exportedHtmlSnapshot;
+      if (sizeLabel) {
+        sizeLabel.textContent = `${Math.round(exportedHtmlSnapshot.length / 1024)} KB`;
+      }
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+
+      setTimeout(() => {
+        selectAndCopyExportTextarea();
+      }, 60);
+    }
+
+    function downloadConfiguredHtmlFile() {
+      const htmlContent = exportedHtmlSnapshot || buildExportedGoogleSitesHtml();
+      const blob = new Blob([htmlContent], { type: "text/html;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "CineDore_Cartelera_TDT_GoogleSites.html";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 4000);
+    }
+
+    async function copyConfiguredHtmlForGoogleSites() {
+      exportedHtmlSnapshot = buildExportedGoogleSitesHtml();
+      const confirmBox = document.getElementById("export-confirm-box");
+      if (!confirmBox) return;
+
+      confirmBox.innerHTML = `
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <span class="font-bold text-amber-300">✓ Código listo para pegar en Google Sites (sin botón Multimedia Drive y con tus enlaces fijos):</span>
+          <button
+            type="button"
+            onclick="downloadConfiguredHtmlFile()"
+            class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs cursor-pointer"
+          >
+            ⬇️ Descargar archivo .HTML
+          </button>
+        </div>
+        <textarea
+          id="exported-sites-textarea"
+          readonly
+          rows="4"
+          class="w-full p-2.5 rounded-lg bg-black/80 border border-amber-400/40 text-emerald-200 font-mono text-[11px] focus:outline-none"
+        ></textarea>
+      `;
+      confirmBox.classList.remove("hidden");
+
+      const textarea = document.getElementById("exported-sites-textarea");
+      if (textarea) {
+        textarea.value = exportedHtmlSnapshot;
+        textarea.focus();
+        textarea.select();
+        let copied = false;
+        try {
+          copied = document.execCommand("copy");
+        } catch (_) {}
+        if (!copied && navigator.clipboard && navigator.clipboard.writeText) {
+          try {
+            await navigator.clipboard.writeText(exportedHtmlSnapshot);
+            copied = true;
+          } catch (_) {}
+        }
+        showToast(
+          copied
+            ? "📋 HTML copiado al portapapeles listo para Google Sites"
+            : "Selecciona el cuadro o pulsa «Descargar archivo .HTML»"
+        );
+      }
+    }
+
+    function formatIsoDateLocal(dateObj) {
+      const y = dateObj.getFullYear();
+      const m = String(dateObj.getMonth() + 1).padStart(2, "0");
+      const d = String(dateObj.getDate()).padStart(2, "0");
+      return `${y}-${m}-${d}`;
+    }
+
+    function parseIsoDateLocal(isoStr) {
+      const [y, m, d] = (isoStr || "").split("-").map(Number);
+      if (!y || !m || !d) return new Date();
+      return new Date(y, m - 1, d);
+    }
+
+    function formatSpanishSessionHeader(isoStr) {
+      const dt = parseIsoDateLocal(isoStr);
+      const formatted = dt.toLocaleDateString("es-ES", {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+      });
+      return "Sesión · " + formatted.charAt(0).toUpperCase() + formatted.slice(1);
+    }
+
+    // Canales TDT en abierto disponibles en Granada (nacionales y autonómicos Andalucía)
+    const OPEN_TDT_CHANNELS = [
+      "La 1", "La 2", "Antena 3", "Cuatro", "Telecinco", "laSexta",
+      "Paramount Network", "Be Mad", "Trece", "Bom Cine",
+      "Canal Sur", "ATV", "Neox", "Nova", "Mega", "FDF",
+      "Energy", "Divinity", "DMAX", "Squirrel", "Ten", "DKISS"
+    ];
+
+    function normalizeTdtChannelName(rawChannel) {
+      const clean = (rawChannel || "").replace(/\s+(HD|UHD|4K|SD)\b/gi, "").trim();
+      if (!clean) return "";
+      const lower = clean.toLowerCase();
+      if (lower === "la 1" || lower === "tve 1" || lower === "tve1") return "La 1";
+      if (lower === "la 2" || lower === "tve 2" || lower === "tve2") return "La 2";
+      if (lower.includes("antena 3")) return "Antena 3";
+      if (lower === "cuatro") return "Cuatro";
+      if (lower.includes("telecinco") || lower === "tele 5") return "Telecinco";
+      if (lower.includes("sexta")) return "laSexta";
+      if (lower.includes("paramount")) return "Paramount Network";
+      if (lower.includes("be mad") || lower === "bemad") return "Be Mad";
+      if (lower === "trece" || lower === "13tv" || lower === "13 tv") return "Trece";
+      if (lower.includes("bom")) return "Bom Cine";
+      if (lower.includes("canal sur 2") || lower === "atv" || lower.includes("andalucía tv")) return "ATV";
+      if (lower.includes("canal sur")) return "Canal Sur";
+      if (lower === "neox") return "Neox";
+      if (lower === "nova") return "Nova";
+      if (lower === "mega") return "Mega";
+      if (lower === "fdf" || lower.includes("factoría")) return "FDF";
+      if (lower === "energy") return "Energy";
+      if (lower === "divinity") return "Divinity";
+      if (lower === "dmax") return "DMAX";
+      if (lower.includes("squirrel")) return "Squirrel";
+      if (lower === "ten") return "Ten";
+      if (lower === "dkiss") return "DKISS";
+      return clean;
+    }
+
+    function normalizeBroadcastTime(rawTime) {
+      const match = String(rawTime || "").match(/(\d{1,2})[:.hH](\d{2})/);
+      if (!match) return "22:00";
+      const hh = String(Math.min(23, Math.max(0, Number(match[1])))).padStart(2, "0");
+      const mm = String(Math.min(59, Math.max(0, Number(match[2])))).padStart(2, "0");
+      return `${hh}:${mm}`;
+    }
+
+    function scoreOrNull(v) {
+      const n = Number(v);
+      return Number.isFinite(n) && n > 0 ? Math.min(10, Math.round(n * 10) / 10) : null;
+    }
+
+    function fmtScore(v) {
+      return v === null || v === undefined ? "N/D" : Number(v).toFixed(1);
+    }
+
+    function normalizeMovieRecord(raw, isoStr, idx) {
+      const channel = normalizeTdtChannelName(raw.channel) || "TDT";
+      const title = String(raw.title || "").trim();
+      const critic = scoreOrNull(raw.criticScore);
+      const audience = scoreOrNull(raw.audienceScore);
+      return {
+        id: `${isoStr}-${idx}-${title.toLowerCase().replace(/[^a-z0-9]/g, "").slice(0, 14)}`,
+        time: normalizeBroadcastTime(raw.time),
+        channel,
+        title,
+        originalTitle: String(raw.originalTitle || title).trim(),
+        year: Number(raw.year) || null,
+        duration: raw.duration ? String(raw.duration).trim() : "",
+        genre: String(raw.genre || "Cine").trim(),
+        director: String(raw.director || "").trim(),
+        cast: Array.isArray(raw.cast) ? raw.cast.map((c) => String(c).trim()).filter(Boolean) : [],
+        criticScore: critic,
+        audienceScore: audience,
+        synopsis: String(raw.synopsis || "").trim(),
+        poster: raw.poster || "",
+        isConsensus: critic !== null && audience !== null && critic >= 7.6 && audience >= 7.6
+      };
+    }
+
+    // Fuente única: cartelera.json generado cada día por GitHub Actions desde una guía XMLTV real
+    const CARTELERA_URL = "https://raw.githubusercontent.com/Tassi-cell/cinetdt-audios/main/cartelera.json";
+    let carteleraPromise = null;
+
+    function loadCarteleraJson() {
+      if (!carteleraPromise) {
+        const ctrl = new AbortController();
+        const timer = setTimeout(() => ctrl.abort(), 15000);
+        carteleraPromise = fetch(`${CARTELERA_URL}?t=${Date.now()}`, { cache: "no-store", signal: ctrl.signal })
+          .then((res) => {
+            if (!res.ok) throw new Error(`No se pudo leer cartelera.json (HTTP ${res.status}). Revisa que el archivo exista en ${CARTELERA_URL}`);
+            return res.json();
+          })
+          .catch((err) => {
+            carteleraPromise = null;
+            if (err && err.name === "AbortError") throw new Error("Tiempo agotado al leer cartelera.json.");
+            if (err instanceof SyntaxError) throw new Error("cartelera.json no tiene un formato válido.");
+            throw err;
+          })
+          .finally(() => clearTimeout(timer));
+      }
+      return carteleraPromise;
+    }
+
+    async function fetchRealTdtMoviesForDate(isoStr) {
+      const data = await loadCarteleraJson();
+      const rows = (data && data.days && data.days[isoStr]) || [];
+      const seen = new Set();
+      const movies = [];
+      rows.forEach((item, idx) => {
+        if (!item || !item.title) return;
+        const norm = normalizeMovieRecord(item, isoStr, idx);
+        if (!OPEN_TDT_CHANNELS.some((ch) => ch.toLowerCase() === norm.channel.toLowerCase())) return;
+        const key = `${norm.channel}|${norm.time}|${norm.title}`.toLowerCase();
+        if (seen.has(key)) return;
+        seen.add(key);
+        movies.push(norm);
+      });
+      movies.sort((a, b) => a.time.localeCompare(b.time));
+      return movies;
+    }
+
+    function populateFilterSelects(movies) {
+      const channelSelect = document.getElementById("filter-channel");
+      const genreSelect = document.getElementById("filter-genre");
+      if (!channelSelect || !genreSelect) return;
+
+      const prevChannel = channelSelect.value;
+      const prevGenre = genreSelect.value;
+
+      const channels = Array.from(new Set(movies.map((m) => m.channel)));
+      const genres = Array.from(new Set(movies.map((m) => m.genre))).sort();
+
+      channelSelect.innerHTML =
+        `<option value="ALL">Todas las cadenas TDT (${channels.length})</option>` +
+        channels.map((ch) => `<option value="${esc(ch)}">${esc(ch)}</option>`).join("");
+
+      genreSelect.innerHTML =
+        `<option value="ALL">Todos los géneros</option>` +
+        genres.map((g) => `<option value="${esc(g)}">${esc(g)}</option>`).join("");
+
+      if (channels.includes(prevChannel)) channelSelect.value = prevChannel;
+      if (genres.includes(prevGenre)) genreSelect.value = prevGenre;
+    }
+
+    function updateDateTabsUi() {
+      document.querySelectorAll(".date-tab-btn").forEach((btn) => {
+        const off = Number(btn.getAttribute("data-offset"));
+        if (off === selectedDateOffset) {
+          btn.className = "date-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-extrabold transition cursor-pointer gold-button";
+        } else {
+          btn.className = "date-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold text-amber-100/80 hover:text-amber-200 transition cursor-pointer";
+        }
+      });
+    }
+
+    function renderLoadingScheduleState(isoStr) {
+      const countBadge = document.getElementById("movies-count-badge");
+      if (countBadge) {
+        countBadge.textContent = "Consultando parrilla real...";
+      }
+      const criticsEl = document.getElementById("ranking-critics-list");
+      const audienceEl = document.getElementById("ranking-audience-list");
+      const loadingRow = `
+        <div class="rounded-xl bg-black/45 border border-amber-400/25 p-4 text-center text-xs text-amber-200/80 animate-pulse">
+          Consultando programación real de cine en abierto (${isoStr})...
+        </div>
+      `;
+      if (criticsEl) criticsEl.innerHTML = loadingRow;
+      if (audienceEl) audienceEl.innerHTML = loadingRow;
+
+      const grid = document.getElementById("movies-grid");
+      if (grid) {
+        grid.innerHTML = `
+          <div class="col-span-full rounded-2xl dore-panel p-8 text-center space-y-2">
+            <p class="font-dore text-lg text-amber-300 animate-pulse">
+              🎬 Sincronizando cartelera real de TDT Granada (${isoStr})...
+            </p>
+            <p class="text-xs text-amber-100/75">
+              Leyendo la programación real de cada cadena en abierto.
+            </p>
+          </div>
+        `;
+      }
+    }
+
+    function renderScheduleError(message) {
+      const badge = document.getElementById("movies-count-badge");
+      if (badge) badge.textContent = "Sin datos";
+      ["ranking-critics-list", "ranking-audience-list"].forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = "";
+      });
+      const grid = document.getElementById("movies-grid");
+      if (grid) {
+        grid.innerHTML = `<div class="col-span-full rounded-2xl dore-panel p-8 text-center text-amber-200/90">⚠️ ${esc(message)}<br><span class="text-xs text-amber-100/70">No se muestran datos de ejemplo: solo programación real.</span></div>`;
+      }
+    }
+
+    async function loadSessionForIsoDate(isoStr, playListSound = false, forceRefresh = false) {
+      const requestId = ++activeSessionRequestId;
+      selectedDateISO = isoStr;
+
+      const picker = document.getElementById("date-picker-input");
+      if (picker && picker.value !== isoStr) picker.value = isoStr;
+
+      const headerLabel = document.getElementById("current-date-label");
+      if (headerLabel) headerLabel.textContent = formatSpanishSessionHeader(isoStr);
+
+      updateDateTabsUi();
+
+      if (playListSound) {
+        playOneShotSlot("list");
+      }
+
+      if (!forceRefresh && sessionMoviesCache.has(isoStr)) {
+        currentMovies = sessionMoviesCache.get(isoStr);
+        populateFilterSelects(currentMovies);
+        renderAllViews();
+        return;
+      }
+
+      renderLoadingScheduleState(isoStr);
+
+      let realMovies;
+      try {
+        realMovies = await fetchRealTdtMoviesForDate(isoStr);
+      } catch (err) {
+        if (requestId !== activeSessionRequestId) return;
+        currentMovies = [];
+        renderScheduleError(err.message || "No se pudo cargar la cartelera.");
+        return;
+      }
+      if (requestId !== activeSessionRequestId) return;
+
+      try {
+        sessionMoviesCache.set(isoStr, realMovies);
+        currentMovies = realMovies;
+        populateFilterSelects(currentMovies);
+        renderAllViews();
+      } catch (err) {
+        console.error(err);
+        renderScheduleError("Error al mostrar la cartelera: " + (err && err.message ? err.message : err));
+      }
+    }
+
+    function selectDateOffset(offset) {
+      selectedDateOffset = offset;
+      const d = new Date();
+      d.setDate(d.getDate() + offset);
+      loadSessionForIsoDate(formatIsoDateLocal(d), true, false);
+    }
+
+    function onCustomDateChange(isoValue) {
+      if (!isoValue) return;
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const picked = parseIsoDateLocal(isoValue);
+      picked.setHours(0, 0, 0, 0);
+      const diff = Math.round((picked - today) / 86400000);
+      selectedDateOffset = [0, 1, 2].includes(diff) ? diff : -1;
+      loadSessionForIsoDate(isoValue, true, false);
+    }
+
+    function refreshListingsWithAudio() {
+      const targetIso = selectedDateISO || formatIsoDateLocal(new Date());
+      sessionMoviesCache.delete(targetIso);
+      carteleraPromise = null;
+      loadSessionForIsoDate(targetIso, true, true);
+      showToast("🔄 Actualizando cartelera...");
+    }
+
+    function toggleConsensusFilter() {
+      consensusOnly = !consensusOnly;
+      const btn = document.getElementById("btn-consensus-filter");
+      if (btn) {
+        btn.className = consensusOnly
+          ? "inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-cyan-950/80 border-2 border-[#00f0ff] text-cyan-100 text-xs sm:text-sm font-bold shadow-[0_0_14px_rgba(0,240,255,0.45)] transition cursor-pointer"
+          : "inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-black/60 border border-[#00f0ff]/75 text-cyan-200 text-xs sm:text-sm font-semibold hover:bg-cyan-950/40 transition cursor-pointer";
+      }
+      renderAllViews();
+    }
+
+    function onFilterChange() {
+      renderAllViews();
+    }
+
+    function getFilteredMovies() {
+      const search = (document.getElementById("filter-search")?.value || "").trim().toLowerCase();
+      const channel = document.getElementById("filter-channel")?.value || "ALL";
+      const genre = document.getElementById("filter-genre")?.value || "ALL";
+
+      return currentMovies.filter((m) => {
+        if (consensusOnly && !m.isConsensus) return false;
+        if (channel !== "ALL" && m.channel !== channel) return false;
+        if (genre !== "ALL" && m.genre !== genre) return false;
+        if (search) {
+          const hay = `${esc(m.title)} ${esc(m.originalTitle)} ${esc(m.director || "No disponible")} ${esc(m.channel)}`.toLowerCase();
+          if (!hay.includes(search)) return false;
+        }
+        return true;
+      });
+    }
+
+    // Carátula SVG Art-Déco de respaldo y búsqueda de póster real en Wikipedia
+    function buildFallbackPosterSvg(movie) {
+      const titleSafe = (movie.title || "Cine Doré").replace(/[<>&"']/g, "");
+      const dirSafe = (movie.director || "").replace(/[<>&"']/g, "");
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560">
+        <defs>
+          <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#3d0b19"/>
+            <stop offset="100%" stop-color="#120206"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="560" fill="url(#bg)"/>
+        <rect x="18" y="18" width="364" height="524" rx="18" fill="none" stroke="#d4af37" stroke-width="2" stroke-opacity="0.65"/>
+        <rect x="28" y="28" width="344" height="504" rx="14" fill="none" stroke="#f6dc84" stroke-width="1" stroke-opacity="0.3"/>
+        <text x="200" y="75" text-anchor="middle" fill="#f6dc84" font-family="Georgia,serif" font-size="14" letter-spacing="4">CINE DORÉ · TDT</text>
+        <circle cx="200" cy="215" r="56" fill="none" stroke="#d4af37" stroke-width="2"/>
+        <text x="200" y="226" text-anchor="middle" fill="#f6dc84" font-size="38">🎬</text>
+        <text x="200" y="330" text-anchor="middle" fill="#faf2e4" font-family="Georgia,serif" font-weight="bold" font-size="22">${titleSafe.slice(0, 26)}</text>
+        <text x="200" y="365" text-anchor="middle" fill="#e5d5bc" font-family="sans-serif" font-size="14">${dirSafe.slice(0, 32)}</text>
+        <text x="200" y="475" text-anchor="middle" fill="#d4af37" font-family="sans-serif" font-weight="bold" font-size="15">${esc(movie.channel)} · ${esc(movie.time)} h</text>
+      </svg>`;
+      return "data:image/svg+xml;utf8," + encodeURIComponent(svg);
+    }
+
+    async function fetchRealPosterUrl(movie) {
+      return movie.poster || buildFallbackPosterSvg(movie);
+    }
+
+    function hydrateVisiblePosters(movies) {
+      movies.forEach(async (movie) => {
+        const imgEl = document.getElementById(`poster-${movie.id}`);
+        if (!imgEl) return;
+        const url = await fetchRealPosterUrl(movie);
+        if (imgEl && url) {
+          imgEl.src = url;
+        }
+      });
+    }
+
+    // Renderizado de listas paralelas y parrilla TDT
+    function renderParallelRankings(movies) {
+      const criticsEl = document.getElementById("ranking-critics-list");
+      const audienceEl = document.getElementById("ranking-audience-list");
+      if (!criticsEl || !audienceEl) return;
+
+      const byCritics = movies.filter((m) => m.criticScore !== null).sort((a, b) => b.criticScore - a.criticScore);
+      const byAudience = movies.filter((m) => m.audienceScore !== null).sort((a, b) => b.audienceScore - a.audienceScore);
+      const emptyNote = (t) => `<div class="rounded-xl bg-black/45 border border-amber-400/25 p-4 text-center text-xs text-amber-200/80">${t}</div>`;
+
+      const renderRow = (m, idx, mode) => {
+        const primaryScore = mode === "critic" ? m.criticScore : m.audienceScore;
+        const secondaryScore = mode === "critic" ? m.audienceScore : m.criticScore;
+        const secondaryLabel = mode === "critic" ? "Púb" : "Crít";
+        const rowClass = m.isConsensus
+          ? "ranking-fluorescent-row"
+          : "bg-black/45 hover:bg-black/65 border border-amber-400/20";
+
+        return `
+          <button
+            type="button"
+            onclick="openMovieModal('${m.id}')"
+            class="w-full text-left flex items-center justify-between gap-2.5 px-3 py-2.5 rounded-xl transition cursor-pointer ${rowClass}"
+          >
+            <div class="flex items-center gap-2.5 min-w-0">
+              <span class="w-6 h-6 rounded-lg bg-amber-400/20 border border-amber-400/40 text-amber-200 text-xs font-extrabold flex items-center justify-center shrink-0">
+                ${idx + 1}
+              </span>
+              <div class="min-w-0">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-bold text-xs sm:text-sm text-amber-50 truncate">${esc(m.title)}</span>
+                  ${m.isConsensus ? '<span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-cyan-950 border border-[#00f0ff] text-[#00f0ff] shrink-0">TOP 2</span>' : ""}
+                </div>
+                <p class="text-[11px] text-amber-200/70 truncate">
+                  ${esc(m.channel)} · ${esc(m.time)} h${m.year ? " · " + m.year : ""}
+                </p>
+              </div>
+            </div>
+            <div class="text-right shrink-0">
+              <div class="text-xs sm:text-sm font-black ${mode === "critic" ? "text-amber-300" : "text-rose-300"}">
+                ${primaryScore.toFixed(1)}
+              </div>
+              <div class="text-[10px] text-amber-100/60">
+                ${secondaryLabel}: ${fmtScore(secondaryScore)}
+              </div>
+            </div>
+          </button>
+        `;
+      };
+
+      criticsEl.innerHTML = byCritics.length ? byCritics.map((m, i) => renderRow(m, i, "critic")).join("") : emptyNote("Sin notas de la crítica disponibles.");
+      audienceEl.innerHTML = byAudience.length ? byAudience.map((m, i) => renderRow(m, i, "audience")).join("") : emptyNote("Sin notas del público disponibles.");
+    }
+
+    function renderMoviesGrid(movies) {
+      const grid = document.getElementById("movies-grid");
+      const countBadge = document.getElementById("movies-count-badge");
+      if (countBadge) {
+        countBadge.textContent = `${movies.length} ${movies.length === 1 ? "película" : "películas"}`;
+      }
+      if (!grid) return;
+
+      if (movies.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full rounded-2xl dore-panel p-8 text-center text-amber-200/80">
+            No hay emisiones que coincidan con los filtros seleccionados para esta fecha.
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = movies
+        .map((m) => {
+          const fallbackSvg = buildFallbackPosterSvg(m);
+          const consensusClass = m.isConsensus ? "consensus-glow" : "";
+          return `
+            <article
+              onclick="openMovieModal('${m.id}')"
+              class="rounded-2xl dore-panel overflow-hidden flex flex-col cursor-pointer ${consensusClass}"
+            >
+              <div class="relative h-56 bg-black/70 overflow-hidden">
+                <img
+                  id="poster-${m.id}"
+                  src="${fallbackSvg}"
+                  alt="Cartel de ${esc(m.title)}"
+                  onerror="this.onerror=null;this.src='${fallbackSvg}'"
+                  class="w-full h-full object-cover object-center opacity-90 hover:scale-105 transition duration-500"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#160308] via-black/30 to-transparent"></div>
+
+                <div class="absolute top-3 left-3 flex flex-wrap items-center gap-1.5">
+                  <span class="px-2.5 py-1 rounded-lg bg-black/80 border border-amber-400/50 text-amber-200 text-xs font-extrabold">
+                    📺 ${esc(m.channel)}
+                  </span>
+                  <span class="px-2.5 py-1 rounded-lg bg-amber-500/90 text-stone-950 text-xs font-black">
+                    🕒 ${esc(m.time)} h
+                  </span>
+                </div>
+
+                ${
+                  m.isConsensus
+                    ? `<span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-black/85 border border-[#00f0ff] text-[#00f0ff] text-[10px] font-extrabold shadow-[0_0_10px_rgba(0,240,255,0.5)]">
+                        ⚡ Consenso
+                      </span>`
+                    : ""
+                }
+
+                <div class="absolute bottom-3 left-4 right-4">
+                  <span class="text-[11px] uppercase tracking-wider text-amber-300/90 font-semibold">
+                    ${esc([m.genre, m.year, m.duration].filter(Boolean).join(" · "))}
+                  </span>
+                  <h3 class="font-dore text-lg sm:text-xl font-extrabold text-amber-50 leading-snug">
+                    ${esc(m.title)}
+                  </h3>
+                </div>
+              </div>
+
+              <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between gap-4">
+                <div>
+                  <p class="text-xs text-amber-200/80 mb-2">
+                    <strong class="text-amber-300">Dirección:</strong> ${esc(m.director || "No disponible")}
+                  </p>
+                  <p class="text-xs sm:text-sm text-amber-100/85 line-clamp-3 leading-relaxed">
+                    ${esc(m.synopsis || "Sinopsis no disponible.")}
+                  </p>
+                </div>
+
+                <div class="pt-3 border-t border-amber-400/20 flex items-center justify-between gap-2">
+                  <div class="flex items-center gap-3 text-xs">
+                    <span class="px-2.5 py-1 rounded-lg bg-amber-400/15 border border-amber-400/35 text-amber-300 font-bold">
+                      🏛️ Crítica: ${fmtScore(m.criticScore)}
+                    </span>
+                    <span class="px-2.5 py-1 rounded-lg bg-rose-500/15 border border-rose-400/35 text-rose-200 font-bold">
+                      👏 Público: ${fmtScore(m.audienceScore)}
+                    </span>
+                  </div>
+                  <span class="text-xs font-bold text-amber-300 hover:underline">
+                    Ficha →
+                  </span>
+                </div>
+              </div>
+            </article>
+          `;
+        })
+        .join("");
+
+      hydrateVisiblePosters(movies);
+    }
+
+    function renderAllViews() {
+      const filtered = getFilteredMovies();
+      renderParallelRankings(filtered);
+      renderMoviesGrid(filtered);
+    }
+
+    // Ficha detallada de película (alternando Melodía 1 y Melodía 2)
+    async function openMovieModal(movieId) {
+      const movie = currentMovies.find((m) => m.id === movieId);
+      if (!movie) return;
+
+      currentOpenModalMovieId = movieId;
+      triggerAlternatingMovieAudio();
+
+      const modal = document.getElementById("movie-detail-modal");
+      const body = document.getElementById("movie-modal-body");
+      if (!modal || !body) return;
+
+      const fallbackSvg = buildFallbackPosterSvg(movie);
+      const posterUrl = movie.poster || fallbackSvg;
+
+      body.innerHTML = `
+        <div class="flex flex-col sm:flex-row gap-6 items-start">
+          <img
+            id="modal-poster-img"
+            src="${posterUrl}"
+            alt="${esc(movie.title)}"
+            onerror="this.onerror=null;this.src='${fallbackSvg}'"
+            class="w-40 sm:w-48 rounded-2xl border border-amber-400/50 shadow-2xl shrink-0 mx-auto sm:mx-0"
+          />
+          <div class="space-y-3 flex-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-3 py-1 rounded-lg gold-button text-xs font-black">
+                📺 ${esc(movie.channel)} · ${esc(movie.time)} h
+              </span>
+              <span class="px-3 py-1 rounded-lg bg-black/60 border border-amber-400/40 text-amber-200 text-xs font-semibold">
+                ${esc([movie.genre, movie.year, movie.duration].filter(Boolean).join(" · "))}
+              </span>
+              ${
+                movie.isConsensus
+                  ? `<span class="px-3 py-1 rounded-full bg-black/80 border border-[#00f0ff] text-[#00f0ff] text-xs font-extrabold shadow-[0_0_12px_rgba(0,240,255,0.45)]">
+                      ⚡ Consenso Crítica + Público
+                    </span>`
+                  : ""
+              }
+            </div>
+
+            <h2 class="font-dore text-2xl sm:text-3xl font-black text-amber-200">
+              ${esc(movie.title)}
+            </h2>
+            <p class="text-xs italic text-amber-200/70">
+              Título original: ${esc(movie.originalTitle)}
+            </p>
+
+            <div class="grid grid-cols-2 gap-3 pt-1">
+              <div class="rounded-xl bg-amber-400/10 border border-amber-400/35 p-3">
+                <div class="text-[11px] uppercase text-amber-300/80 font-bold">🏛️ Tribuna Crítica</div>
+                <div class="text-2xl font-black text-amber-300">${fmtScore(movie.criticScore)} <span class="text-xs font-normal text-amber-200/60">/ 10</span></div>
+              </div>
+              <div class="rounded-xl bg-rose-500/10 border border-rose-400/35 p-3">
+                <div class="text-[11px] uppercase text-rose-200/80 font-bold">👏 Aplauso Público</div>
+                <div class="text-2xl font-black text-rose-300">${fmtScore(movie.audienceScore)} <span class="text-xs font-normal text-rose-200/60">/ 10</span></div>
+              </div>
+            </div>
+
+            <p class="text-sm text-amber-100/90 leading-relaxed pt-1">
+              ${esc(movie.synopsis || "Sinopsis no disponible.")}
+            </p>
+
+            <div class="pt-2 space-y-1 text-xs text-amber-200/85 border-t border-amber-400/20">
+              <p><strong class="text-amber-300">Dirección:</strong> ${esc(movie.director || "No disponible")}</p>
+              <p><strong class="text-amber-300">Reparto principal:</strong> ${esc(movie.cast.length ? movie.cast.join(", ") : "No disponible")}</p>
+            </div>
+          </div>
+        </div>
+      `;
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+
+      fetchRealPosterUrl(movie).then((url) => {
+        const img = document.getElementById("modal-poster-img");
+        if (img && url && currentOpenModalMovieId === movieId) img.src = url;
+      });
+    }
+
+    function closeMovieModal() {
+      currentOpenModalMovieId = null;
+      const modal = document.getElementById("movie-detail-modal");
+      if (modal) {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      }
+      stopOneShotPlayers();
+      if (ambientUserRequested) {
+        startAmbientAudio(true);
+      }
+    }
+
+    // Desbloqueo automático de audio ambiente en la primera interacción si el navegador bloqueó autoplay
+    function unlockAmbientOnFirstTouch(ev) {
+      if (ev.target && ev.target.closest && ev.target.closest("#btn-ambient-toggle")) return;
+      if (!ambientUserRequested || currentOpenModalMovieId) return;
+      document.removeEventListener("pointerdown", unlockAmbientOnFirstTouch);
+      if (players.ambient.paused && players.list.paused && players.movie1.paused && players.movie2.paused) {
+        startAmbientAudio(true);
+      }
+    }
+    document.addEventListener("pointerdown", unlockAmbientOnFirstTouch);
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key !== "Escape") return;
+      if (currentOpenModalMovieId) closeMovieModal();
+      toggleDriveMediaModal(false);
+      closeGoogleSitesExportModal();
+    });
+
+    // Arranque inicial de la cartelera y recursos multimedia
+    window.addEventListener("DOMContentLoaded", () => {
+      loadInitialDriveConfig();
+      applyDriveBackground();
+      const todayIso = formatIsoDateLocal(new Date());
+      loadSessionForIsoDate(todayIso, false);
+      preloadAllAudioSlots();
+    });
+  </script>
+</body>
+</html>
