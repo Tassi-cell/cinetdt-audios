@@ -1,878 +1,12 @@
 {
- "generated": "2026-11-25T05:36+01:00",
+ "generated": "2026-11-25T20:22+01:00",
  "source": [
   "https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv_sincolor.xml.gz",
   "https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiaiptv.xml",
   "https://www.tdtchannels.com/epg/TV.xml.gz"
  ],
  "days": {
-  "2026-11-24": [
-   {
-    "time": "01:16",
-    "channel": "Squirrel",
-    "title": "Robot de Compañía",
-    "originalTitle": "2050",
-    "year": 2019,
-    "duration": "104 min",
-    "genre": "Drama",
-    "director": "Princeton Holt",
-    "cast": [
-     "Dean Cain",
-     "David Vaughn",
-     "Irina Abraham",
-     "Devin Fuller"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "Michael, diseñador de videojuegos casado y padre de dos hijos, no encuentra la ocasión para intimar con su esposa. Su cuñado Drew ha comprado un robot sexual personalizable, así que el irá a encontrar su propia compañera perfecta.",
-    "poster": "https://image.tmdb.org/t/p/w500/ukbgDL7fBFmwTI6i1IO2WpQxhf3.jpg"
-   },
-   {
-    "time": "01:22",
-    "channel": "Bom Cine",
-    "title": "A quemarropa",
-    "originalTitle": "Point Blank",
-    "year": 1967,
-    "duration": "92 min",
-    "genre": "Crimen",
-    "director": "John Boorman",
-    "cast": [
-     "Lee Marvin",
-     "Angie Dickinson",
-     "John Vernon",
-     "Keenan Wynn"
-    ],
-    "criticScore": null,
-    "audienceScore": 7.1,
-    "synopsis": "(Cine,Acción,Policíaco,Drama) Un grupo de peligrosos psicópatas consigue escapar de la cárcel y se refugia en un centro comercial de Texas, en donde toman a varios clientes como rehenes.",
-    "poster": "https://image.tmdb.org/t/p/w500/B8vJOHZJgPpeaZq9BSbObpaiMf.jpg"
-   },
-   {
-    "time": "02:48",
-    "channel": "Bom Cine",
-    "title": "Campo del infierno",
-    "originalTitle": "Opposing Force",
-    "year": 1986,
-    "duration": "100 min",
-    "genre": "Acción",
-    "director": "Eric Karson",
-    "cast": [
-     "Tom Skerritt",
-     "Lisa Eichhorn",
-     "Anthony Zerbe",
-     "Richard Roundtree"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Acción,Suspense) Un grupo de soldados de élite llega a un siniestro campo de entrenamiento del ejército de los Estados Unidos. El día a día se convierte en un auténtico infierno, un sinfín de barbaridades y humillaciones se suceden con el beneplácito del general.\n· País: Estados Unidos\n· Dirección: Eric Karson.\n· Reparto: Tom Skerritt, Lisa Eichhorn, Anthony Zerbe, Richard Roundtree, Robert Wightman, John Considine, George Cheung, Paul Joynt, Jay Louden, Ken Wright.\n· Música: Marc Donahue.\n· Producción: Daniel J. Berk, Tamar E. Glaser.",
-    "poster": "https://image.tmdb.org/t/p/w500/v3LHYWkkf8pSoX37NYZLakdybFo.jpg"
-   },
-   {
-    "time": "02:59",
-    "channel": "Squirrel",
-    "title": "Check Point",
-    "originalTitle": "Check Point",
-    "year": 2017,
-    "duration": "100 min",
-    "genre": "Acción",
-    "director": "Thomas J. Churchill",
-    "cast": [
-     "William Forsythe",
-     "Kenny Johnson",
-     "Kane Hodder",
-     "Mindy Robinson"
-    ],
-    "criticScore": null,
-    "audienceScore": 6.1,
-    "synopsis": "Un 'sheriff' y un vagabundo luchan contra una célula terrorista durmiente, cuyo objetivo es adueñarse de los Estados Unidos.",
-    "poster": "https://image.tmdb.org/t/p/w500/92a6R4NgNqXpiDpZb9zdCstPx86.jpg"
-   },
-   {
-    "time": "04:20",
-    "channel": "Bom Cine",
-    "title": "Override",
-    "originalTitle": "Override",
-    "year": null,
-    "duration": "88 min",
-    "genre": "Acción",
-    "director": "Jordan Downey",
-    "cast": [
-     "Maria Bakalova",
-     "Frank Grillo",
-     "Cathal J. Ferris"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Ciencia Ficción,Suspense) En 2040, una I.A. humanoide es hackeada por su marido y obligada a secuestrar al hijo del vicepresidente de Estados Unidos y ejecutarlo en directo por televisión.\n· País: Reino Unido\n· Dirección: Richard Colton.\n· Reparto: Luke Goss, Dean Cain, Leon Ockenden, Amber Doig-Thorne, Charlie Clapham, Amar Adatia, Jess Impiazzi, Kimberly Wyatt.",
-    "poster": ""
-   },
-   {
-    "time": "04:30",
-    "channel": "Squirrel",
-    "title": "Dalí",
-    "originalTitle": "Dalí",
-    "year": 1991,
-    "duration": "106 min",
-    "genre": "Drama",
-    "director": "Antoni Ribas",
-    "cast": [
-     "Lorenzo Quinn",
-     "Sarah Douglas",
-     "Michael Catlin",
-     "Katherine Wallach"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "En 1940, Dalí y Gala llegan a Nueva York por primera vez. Los estadounidenses no conocen todavía al genial artista, pero Dalí no está dispuesto a permanecer en el anonimato por mucho tiempo. Con la ayuda de un periodista empieza a forjarse su fama. En una entrevista, el pintor le habla de la relación con sus padres; de su amistad con otras personalidades de la cultura, como Federico García Lorca, Luis Buñuel, Jean Cocteau, Henry Miller o Pablo Picasso; y de su vida privada, que comparte con su musa Gala.",
-    "poster": "https://image.tmdb.org/t/p/w500/9hLk4XfdAldJ6FwL0BIZfoNEkIL.jpg"
-   },
-   {
-    "time": "06:08",
-    "channel": "Be Mad",
-    "title": "El Niño",
-    "originalTitle": "El niño",
-    "year": 2026,
-    "duration": "123 min",
-    "genre": "Drama",
-    "director": "Mariano Barroso",
-    "cast": [
-     "Belén Cuesta",
-     "Karra Elejalde",
-     "Pep Ambròs",
-     "Raquel Ferri"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Acción) Frontera sur de Europa. Dos continentes, tres países, 14 kilómetros... tierra de contrabando. Los agentes Jesús y Eva llevan dos años tras la pista de la principal red de narcotráfico que opera en la zona.\n· País: España y Francia\n· Dirección: Daniel Monzón.\n· Reparto: Luis Tosar, Jesús Castro, Eduard Fernández, Sergi López, Bárbara Lennie, Ian McShane, Jesús Carroza, Moussa Maaskri.\n· Guion: Daniel Monzón, Jorge Guerricaechevarría.\n· Música: Roque Baños.\n· Producción: Álvaro Augustín, Ghislain Barrois, Borja Pena, Edmon Roch, Javier Ugarte.\n· Productora: Ikiru Films, Maestranza Films, StudioCanal, Telecinco Cinema, La Ferme! Productions.",
-    "poster": "https://image.tmdb.org/t/p/w500/6wLVChqjN2qsZ3uolEmetkCuzeO.jpg"
-   },
-   {
-    "time": "06:14",
-    "channel": "Squirrel",
-    "title": "Shutter Island",
-    "originalTitle": "Shutter Island",
-    "year": 2010,
-    "duration": "138 min",
-    "genre": "Drama",
-    "director": "Martin Scorsese",
-    "cast": [
-     "Leonardo DiCaprio",
-     "Mark Ruffalo",
-     "Ben Kingsley",
-     "Max von Sydow"
-    ],
-    "criticScore": null,
-    "audienceScore": 8.2,
-    "synopsis": "Verano de 1954. Los agentes judiciales Teddy Daniels y Chuck Aule son enviados a una remota isla del puerto de Boston para investigar la desaparición de una peligrosa asesina recluida en el hospital psiquiátrico Ashecliffe, un centro penitenciario para criminales perturbados dirigido por el siniestro doctor John Cawley. Pronto descubrirán que el centro guarda muchos secretos y que la isla esconde algo más peligroso que los pacientes.",
-    "poster": "https://image.tmdb.org/t/p/w500/56utveUWJwmG12YU7c2zKw6pbRZ.jpg"
-   },
-   {
-    "time": "07:20",
-    "channel": "Bom Cine",
-    "title": "El mercader de Venecia",
-    "originalTitle": "El mercader de Venecia",
-    "year": 1967,
-    "duration": "69 min",
-    "genre": "Cine",
-    "director": "Pedro Amalio López",
-    "cast": [
-     "Pablo Sanz",
-     "Julio Navarro",
-     "Fernando Nogueras",
-     "Víctor Valverde"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Drama,Romance) Venecia, siglo XVI. El joven noble Bassanio (Joseph Fiennes) recurre a su amigo Antonio (Jeremy Irons) para que le preste 3.000 ducados con el propósito de pedir la mano de Portia.\n· País: Reino Unido, Italia, Estados Unidos\n· Dirección: Michael Radford.\n· Reparto: Al Pacino, Jeremy Irons, Joseph Fiennes, Lynn Collins, Zuleikha Robinson, Mackenzie Crook, Charlie Cox, Ron Cook, Kris Marshall, Allan Corduner, Anton Rodgers, Gregor Fisher, David Harewood, John Sessions, Heather Goldenhersh.\n· Música: Jocelyn Pook.\n· Producción: Cary Brokaw, Michael Cowan, Barry Navidi, Jason Piette, Spice Factory Ltd., UK Film Council, Film Fund Luxembourg, Delux Productions.",
-    "poster": "https://image.tmdb.org/t/p/w500/lWZyUnO3LHjBupLXwo57KfsGo87.jpg"
-   },
-   {
-    "time": "08:11",
-    "channel": "Be Mad",
-    "title": "Luchar o morir",
-    "originalTitle": "Run Hide Fight",
-    "year": 2021,
-    "duration": "109 min",
-    "genre": "Acción",
-    "director": "Kyle Rankin",
-    "cast": [
-     "Isabel May",
-     "Thomas Jane",
-     "Radha Mitchell",
-     "Eli Brown"
-    ],
-    "criticScore": null,
-    "audienceScore": 6.5,
-    "synopsis": "(Cine,Drama) Zoe es una joven adolescente de 17 años a punto de terminar el instituto y graduarse. Pero las cosas dan un giro en su vida cuando, en plena clase, cuatro asaltantes armados sitian su instituto.\n· País: Estados Unidos\n· Dirección: Kyle Rankin.\n· Reparto: James Healy Jr, Corin Nemec, Ashley Wood, Phuong Kubacki, Grady McCardell, Garrett Schenck.\n· Guion: Kyle Rankin.\n· Productora: Dallas Sonnier, Ben Shapiro, David Gilbery, Bobby Campbell, Media Finance Capital, Amanda Presmyk.",
-    "poster": "https://image.tmdb.org/t/p/w500/w611XZfBpHSG9aMEgrPQM1NqRsP.jpg"
-   },
-   {
-    "time": "09:24",
-    "channel": "Bom Cine",
-    "title": "Hacha de guerra",
-    "originalTitle": "Mohawk",
-    "year": 1956,
-    "duration": "79 min",
-    "genre": "Acción",
-    "director": "Kurt Neumann",
-    "cast": [
-     "Scott Brady",
-     "Rita Gam",
-     "Neville Brand",
-     "Lori Nelson"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Western) Reed regresa a su campamento después de un encuentro con los indios. Trae consigo un tomahawk pintado de amarillo como declaración de guerra para el comandante Ives, responsable de una masacre.\n· País: Estados Unidos\n· Dirección: Kurt Neumann.\n· Reparto: Neville Brand, Scott Brady, Lori Nelson, John Hoyt, Rita Gam, Allison Hayes, Barbara Jo Allen, Rhys Williams.\n· Música: Edward L. Alperson Jr..\n· Producción: Edward L. Alperson.",
-    "poster": "https://image.tmdb.org/t/p/w500/951iAlZG8NRNjLnRYkUDeDO8gbB.jpg"
-   },
-   {
-    "time": "10:00",
-    "channel": "Be Mad",
-    "title": "Sin rastro",
-    "originalTitle": "Stolen Girl",
-    "year": 2025,
-    "duration": "110 min",
-    "genre": "Suspense",
-    "director": "James Kent",
-    "cast": [
-     "Kate Beckinsale",
-     "Scott Eastwood",
-     "Jordan Duvigneau",
-     "Matt Craven"
-    ],
-    "criticScore": null,
-    "audienceScore": 6.5,
-    "synopsis": "(Cine,Acción) Mara, una madre decidida, viaja a Beirut con un exmarine especializado en secuestros para rescatar a su hija secuestrada por su exmarido.\n· País: Estados Unidos e Italia\n· Dirección: James Kent.\n· Reparto: Kate Beckinsale, Maria Laila Fernandez, Scott Eastwood, Jordan Duvigneau, Stefano Sergio, Matt Craven.\n· Guion: Kas Graham, Rebecca Pollock.\n· Producción: Frida Torresblanco, Monika Bacardi, Andrea Iervolino, Scott Lambert.\n· Productora: Hangtime International Pictures, Sipario Movies, David Tickle, Giovanna Randall, David Polemeni, Danielle Maloni.",
-    "poster": "https://image.tmdb.org/t/p/w500/fFKcNfjOUbfaC8hPuiMxJ8PAudy.jpg"
-   },
-   {
-    "time": "10:52",
-    "channel": "Bom Cine",
-    "title": "Madron",
-    "originalTitle": "Madron",
-    "year": 1970,
-    "duration": "90 min",
-    "genre": "Western",
-    "director": "Jerry Hopper",
-    "cast": [
-     "Richard Boone",
-     "Leslie Caron",
-     "גבי עמרני",
-     "Mosko Alkalai"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Western) Una monja es la única superviviente de una matanza a manos de los indios. Después de escapar se encuentra con Madron, un viejo pistolero que le ayudará.\n· País: Israel, Estados Unidos\n· Dirección: Jerry Hopper.\n· Reparto: Richard Boone, Leslie Caron, Paul Smith, Aharon Ipalé, Paul L. Smith, Gabi Amrani, Mosko Alkalai, Chaim Banai, Ya'ackov Banai, Willy Gafni.",
-    "poster": "https://image.tmdb.org/t/p/w500/ncls2XhA8XJJiuBkOJnpwgW7It6.jpg"
-   },
-   {
-    "time": "11:21",
-    "channel": "La 2",
-    "title": "Tequila",
-    "originalTitle": "Uccidi Django... uccidi per primo!",
-    "year": 1971,
-    "duration": "97 min",
-    "genre": "Western",
-    "director": "Sergio Garrone",
-    "cast": [
-     "Giacomo Rossi Stuart",
-     "George Wang",
-     "Aldo Sambrell",
-     "Pietro Tordi"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Oeste) Johnny llega a un poblado minero en el que todas las minas están pasando, poco a poco, a manos del banquero Burton, un hombre con un oscuro pasado y un más negro presente que cuenta con la ayuda del bandido Martínez.\n· País: España e Italia\n· Dirección: Sergio Garrone.\n· Reparto: Aldo Sambrell, Giacomo Rossi-Stuart, George Wang, Pietro Tordi, Krista Nell, Diana Lorys, Silvio Bagolini, Mario Novelli, Anthony Steffen, Roberto Camardiel.\n· Guion: Sergio Garrone, Víctor Andrés Catena, Ambrogio Molteni.\n· Música: Elsio Mancuso.\n· Producción: Sebastiano Cimino.\n· Productora: Sebastiano Cimino, Tusisa Fonexa Films, Walkiria Pictures.",
-    "poster": "https://image.tmdb.org/t/p/w500/kbraf3IxHvOmrZnPHZh9cMPKuHL.jpg"
-   },
-   {
-    "time": "11:55",
-    "channel": "Be Mad",
-    "title": "El último héroe",
-    "originalTitle": "Герой",
-    "year": 2019,
-    "duration": "121 min",
-    "genre": "Acción",
-    "director": "Карен Оганесян",
-    "cast": [
-     "Александр Петров",
-     "Svetlana Jódchenkova",
-     "Vladímir Mashkov",
-     "Марина Петренко"
-    ],
-    "criticScore": null,
-    "audienceScore": 5.9,
-    "synopsis": "(Cine,Acción) Hace quince años, Andrei, bajo la tutela de su padre, el coronel Rodin, fue entrenado en una escuela secreta, donde los agentes eran preparados siendo adolescentes.\n· País: Rusia\n· Dirección: Karen Oganesyan.\n· Reparto: Alexander Petrov, Anastasiya Todoresku, Marina Petrenko, Konstantin Lavronenko, Vladimir Mashkov, Svetlana Khodchenkova, Yan Alabushev, Tobias Aspelin, Artem Grigoryev, Jurijs Krüze.\n· Guion: Nikolay Kulikov.\n· Productora: Russia 1, Central Partnership, Polina Ivanova, Kargo Film.",
-    "poster": "https://image.tmdb.org/t/p/w500/wcbpETz1zXYyeJy58se0IULmbt5.jpg"
-   },
-   {
-    "time": "12:20",
-    "channel": "Bom Cine",
-    "title": "El aventurero de Guaynas",
-    "originalTitle": "El aventurero de Guaynas",
-    "year": 1966,
-    "duration": "111 min",
-    "genre": "Western",
-    "director": "Joaquín Romero Marchent",
-    "cast": [
-     "John Richardson",
-     "Fernando Sancho Les",
-     "Eduardo Fajardo",
-     "Gloria Milland"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Acción,Western) El anciano O'Hara, propietario de una fortuna en esmeraldas, ofrece la mitad de su patrimonio a quien consiga sacarlo de la cárcel. El aventurero Don Casey llega al pueblo de Guaynas dispuesto a liberarlo y conseguir el botín.\n· País: España, Italia\n· Dirección: Joaquín Luis Romero Marchent.\n· Reparto: John Richardson, Eduardo Fajardo, Fernando Sancho, Gloria Milland, Luis Gaspar, Chiro Bermejo, Luis Induni, José María Caffarel, Evi Marandi, Patrizia Giammei, Xan das Bolas.\n· Música: Gianni Ferrio.",
-    "poster": "https://image.tmdb.org/t/p/w500/86z2dNB5WwdjxN9MV9YShEYAykf.jpg"
-   },
-   {
-    "time": "12:47",
-    "channel": "La 2",
-    "title": "Joaquín Murrieta",
-    "originalTitle": "Joaquín Murrieta",
-    "year": 1965,
-    "duration": "105 min",
-    "genre": "Drama",
-    "director": "George Sherman",
-    "cast": [
-     "Jeffrey Hunter",
-     "Diana Lorys",
-     "Arthur Kennedy",
-     "Roberto Camardiel"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Oeste) Tras el asesinato de su esposa, Joaquín abandona su vida respetable y se convierte en bandolero para vengarse.\n· País: España\n· Dirección: George Sherman.\n· Reparto: Jeffrey Hunter, Diana Lorys, Arthur Kennedy, Roberto Camardiel, Sara Lezana.\n· Guion: James O'Hanlon.\n· Música: Antonio Pérez Olea.\n· Producción: José Antonio Sáinz de Vicuña.\n· Productora: Pro Artis Ibérica.",
-    "poster": "https://image.tmdb.org/t/p/w500/mIYpHT7h5jOPKPiFiyyjVvVlfGM.jpg"
-   },
-   {
-    "time": "14:03",
-    "channel": "Be Mad",
-    "title": "Set Up",
-    "originalTitle": "Set Up",
-    "year": null,
-    "duration": "87 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Acción) Un grupo de amigos planea el robo de unos diamantes, pero no cuentan con que uno de ellos los traicionará. Uno de los supervivientes del golpe no descansará hasta vengarse del traidor.\n· País: Estados Unidos\n· Dirección: Mike Gunther.\n· Reparto: Theo Williamson, D.J Howard, Richard Franklin, Ambyr Childers, Rory Markham, Richard Goteri, Jordan\t Trovillion, Antonio Esfandiari, George Manisco, Phil Laak, Aaron Cobb, Mark Nicholas Buren, Bruce Willis, Ryan Phillippe, Jenna Dewan, Randy Couture, 50 Cent, Brett Granstaff.\n· Guion: Mike Gunther, Mike Behrman.\n· Música: The Newton Brothers.\n· Producción: Randall Emmett, 50 Cent, George Furla.\n· Productora: Ted Fox, Anthony Gudas, Richard Jackson, Jewels C Hall, Grindstone Entertainment Group, Cheetah Vision, Action Jackson Films.",
-    "poster": ""
-   },
-   {
-    "time": "14:11",
-    "channel": "Bom Cine",
-    "title": "Chantaje nuclear",
-    "originalTitle": "The Peacekeeper",
-    "year": 1997,
-    "duration": "98 min",
-    "genre": "Acción",
-    "director": "Frédéric Forestier",
-    "cast": [
-     "Dolph Lundgren",
-     "Roy Scheider",
-     "Michael Sarrazin",
-     "Montel Williams"
-    ],
-    "criticScore": null,
-    "audienceScore": 4.8,
-    "synopsis": "(Cine,Acción,Drama,Suspense) Amenazan con utilizar armas nucleares contra Washington a menos que el Presidente de Estados Unidos se suicide ante las cámaras de televisión. Sólo un militar, infiltrado entre los terroristas, podría evitar la catástrofe.\n· País: Canadá, Estados Unidos\n· Dirección: Frédéric Forestier.\n· Reparto: Dolph Lundgren, Michael Sarrazin, Roy Scheider, Christopher Heyerdahl, Montel Williams, Ken Rush, Allen Altman, Martin Neufeld, Monika Schnarre.\n· Música: François Forestier.\n· Producción: Nicolas Clermont, Robert Geoffrion, Stewart Harding.",
-    "poster": "https://image.tmdb.org/t/p/w500/92M2CZwqmYZMBizHvwzTlOqYKEs.jpg"
-   },
-   {
-    "time": "14:50",
-    "channel": "Trece",
-    "title": "El capitán Jones",
-    "originalTitle": "John Paul Jones",
-    "year": 1959,
-    "duration": "126 min",
-    "genre": "Bélica",
-    "director": "John Farrow",
-    "cast": [
-     "Robert Stack",
-     "Marisa Pavan",
-     "Charles Coburn",
-     "Erin O'Brien"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Histórico) Durante la Guerra de Independencia de los Estados Unidos, John Paul Jones fue el primer gran héroe de la marina americana. Valiente y líder, consiguió grandes victorias frente a la marina británica.\n· País: Estados Unidos y España\n· Dirección: John Farrow.\n· Reparto: Ford Rainey, Frank Latimore, John Crawford, José Nieto, Robert Stack, Charles Coburn, Marisa Pavan.\n· Guion: Clements Ripley, Ben Hecht, John Farrow, Jesse Lasky Jr.\n· Productora: Samuel Bronston, Samuel Bronston Productions, Suevia Films P.C. S.A.",
-    "poster": "https://image.tmdb.org/t/p/w500/3TrDpr3i0DrixtC862izdZV3hA9.jpg"
-   },
-   {
-    "time": "15:30",
-    "channel": "Be Mad",
-    "title": "Soldados de fortuna",
-    "originalTitle": "Soldiers of Fortune",
-    "year": 2012,
-    "duration": "94 min",
-    "genre": "Acción",
-    "director": "Максим Коростышевский",
-    "cast": [
-     "Christian Slater",
-     "Colm Meaney",
-     "Ving Rhames",
-     "Sean Bean"
-    ],
-    "criticScore": null,
-    "audienceScore": 4.7,
-    "synopsis": "(Cine,Acción) Hombres adinerados buscan emociones fuertes y pagan enormes cantidades para poder participar en aventuras militares. Pero esta vez las cosas no salen exactamente como esperaban.\n· País: Estados Unidos y Rusia\n· Dirección: Maksim Korostyshevsky, Maxim Korostyshevsky.\n· Reparto: Nikolay Sileverstov, Rydell Danzie, Jeff Hamilton, Brett Lynch, Jon Barton, Irina Ponomaryova.\n· Guion: Robert Crombie, Joe Kelbley, Alexandre Coscas.\n· Productora: Most / Rice Films, Crombie Film, Jeff Most Productions, Globus Film, Natalya Smirnova, Jeff Most.",
-    "poster": "https://image.tmdb.org/t/p/w500/oJ2sXMzTDID7FRZMXMO94pAMA7W.jpg"
-   },
-   {
-    "time": "15:47",
-    "channel": "Bom Cine",
-    "title": "Eclipse total",
-    "originalTitle": "Full Eclipse",
-    "year": 1993,
-    "duration": "97 min",
-    "genre": "Terror",
-    "director": "Anthony Hickox",
-    "cast": [
-     "Mario Van Peebles",
-     "Patsy Kensit",
-     "Bruce Payne",
-     "Tony Denison"
-    ],
-    "criticScore": null,
-    "audienceScore": 5.1,
-    "synopsis": "(Cine,Ciencia Ficción,Drama,Acción) John Brighton, científico de la NASA, descubre que un grupo de meteoritos se dirige hacia la Tierra.\n· País: Estados Unidos\n· Dirección: Rex Piano.\n· Reparto: Thomas Calabro, Cynthia Gibb, William Gregory Lee, Jon Briddell, Brett Chukerman, Randy Crowder, Chira Cassel, William Lee, Christopher Rocha, Bob Rumnock.\n· Música: Eric Allaman.\n· Producción: Paul Colichman, Stephen P. Jarchow.",
-    "poster": "https://image.tmdb.org/t/p/w500/ajWGxXnrLOAyuCrVGGfH8oFFjey.jpg"
-   },
-   {
-    "time": "17:10",
-    "channel": "Be Mad",
-    "title": "The Mexican",
-    "originalTitle": "The Mexican",
-    "year": 2001,
-    "duration": "123 min",
-    "genre": "Acción",
-    "director": "Gore Verbinski",
-    "cast": [
-     "Brad Pitt",
-     "Julia Roberts",
-     "James Gandolfini",
-     "J.K. Simmons"
-    ],
-    "criticScore": null,
-    "audienceScore": 6.0,
-    "synopsis": "(Cine,Acción) Jerry recibe dos ultimátum. El primero, de su jefe, un gánster que le encarga viajar a México para recuperar una pistola. El segundo, de su novia, quien le exige que deje la mafia.\n· País: Estados Unidos y México\n· Dirección: Gore Verbinski.\n· Reparto: Brad Pitt, Julia Roberts, James Gandolfini, Gene Hackman, Bob Balaban, David Krumholtz, Michael Cerveris, J.K. Simmons, Sherman Augustus, Maira Serbulo.\n· Guion: J. H. Wyman, J.H. Wyman.\n· Música: Alan Silvestri.\n· Producción: John Baldecchi, Lawrence Bender.\n· Productora: Tri Pictures, DreamWorks SKG.",
-    "poster": "https://image.tmdb.org/t/p/w500/nkbZ0eAfVZIScUhtsyliK0euKe5.jpg"
-   },
-   {
-    "time": "17:10",
-    "channel": "Trece",
-    "title": "La isla de los corsarios",
-    "originalTitle": "Against All Flags",
-    "year": 1952,
-    "duration": "81 min",
-    "genre": "Drama",
-    "director": "George Sherman",
-    "cast": [
-     "Errol Flynn",
-     "Maureen O'Hara",
-     "Anthony Quinn",
-     "Alice Kelley"
-    ],
-    "criticScore": null,
-    "audienceScore": 6.0,
-    "synopsis": "(Cine,Aventuras) Año 1700. Errol Flynn es un capitán del ejército británico infiltrado entre los piratas del puerto de Madagascar, en una isla del Caribe, con la intención de destruir las defensas de los temibles bucaneros.\n· País: Estados Unidos\n· Dirección: George Sherman.\n· Reparto: Tudor Owen, James Fairfax, James Craven, Maurice Marsac, Lester Matthews, John Alderson, Phil Tully, Errol Flynn, Anthony Quinn, Maureen O'Hara, Mildred Natwick, Alice Kelley, Robert Warwick, Harry Cording.\n· Guion: Joseph Hoffman, Aeneas MacKenzie.\n· Productora: Universal International Pictures (UI), Howard Christie.",
-    "poster": "https://image.tmdb.org/t/p/w500/XTV85E2OuVS3LA2bTNBxNFgSI9.jpg"
-   },
-   {
-    "time": "17:19",
-    "channel": "Bom Cine",
-    "title": "Serpiente roja",
-    "originalTitle": "Red Serpent",
-    "year": 2002,
-    "duration": "90 min",
-    "genre": "Acción",
-    "director": "Gino Tanasescu",
-    "cast": [
-     "Michael Paré",
-     "Roy Scheider",
-     "Олег Тактаров",
-     "Ирина Апексимова"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Acción) Steve viaja a Moscú por negocios de farmacéuticas. Involuntariamente, se ve atrapado en el contrabando de drogas y los narcos secuestran a su hija para obligarle a cooperar en su peligroso plan.\n· País: Alemania, Rusia, Estados Unidos\n· Dirección: Gino Tanasescu.\n· Reparto: Michael Paré, Roy Scheider, Oleg Taktarov, Irina Apeksimova, John Mastando, Alexander Nevsky, Ignat Akrachkov.",
-    "poster": "https://image.tmdb.org/t/p/w500/9NjXnZW4SdiNCnUNHe848kuxJyD.jpg"
-   },
-   {
-    "time": "18:39",
-    "channel": "Squirrel",
-    "title": "Entre lobos",
-    "originalTitle": "Among Wolves",
-    "year": 2023,
-    "duration": "108 min",
-    "genre": "Western",
-    "director": "Justin Lee",
-    "cast": [
-     "Trace Adkins",
-     "Jeff Fahey",
-     "James Russo",
-     "Tom Berenger"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "Kara y Elisabeth son dos misioneras que, tras presenciar un asesinato, huyen hasta llegar a una cabaña en la que viven dos asesinos a sueldo retirados.",
-    "poster": "https://image.tmdb.org/t/p/w500/wU7sXlFBFaFeCxlbTpbF0oSRNrr.jpg"
-   },
-   {
-    "time": "18:50",
-    "channel": "Trece",
-    "title": "Sed de inocencia",
-    "originalTitle": "Sed de inocencia",
-    "year": null,
-    "duration": "115 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Oeste) Clay Santell es confundido con un asesino llamado Travers. Los ciudadanos del pueblo lo entregan al 'sheriff', pero Santell escapa y secuestra a una hermosa mujer como rehén.\n· País: Estados Unidos\n· Dirección: George Sherman.\n· Reparto: Olan Soule, Bob Steele, Audie Murphy, Stephen McNally, Felicia Farr, Robert Middleton, James Westmoreland.\n· Guion: Christopher Knopf.\n· Música: William Lava, Irving Gertz.\n· Producción: Gordon Kay.\n· Productora: Gordon Kay, Universal International Pictures (UI).",
-    "poster": ""
-   },
-   {
-    "time": "18:52",
-    "channel": "Bom Cine",
-    "title": "Dos hijos de trinidad",
-    "originalTitle": "Dos hijos de trinidad",
-    "year": null,
-    "duration": "95 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Western) Franco y Ciccio son dos primos que, en el viejo oeste, han abierto una estación de servicio, donde llevan a cabo el lavado y secado de los caballos y un servicio de bar para los jinetes que pasan.\n· País: Italia\n· Dirección: Osvaldo Civirani.\n· Reparto: Andrea Scotti, Ciccio Ingrassia, Franco Franchi, Fortunato Arena, Freddy Hungar, Gianni Pulone, Angelo Susani, Lucrezia Love, Anna Degli Uberti, Franco Ressel, Lucretia Love, Anny Degli Uberti, Goffredo Unger.",
-    "poster": ""
-   },
-   {
-    "time": "19:12",
-    "channel": "Be Mad",
-    "title": "Mad Max: Furia en la carretera",
-    "originalTitle": "Mad Max: Fury Road",
-    "year": 2015,
-    "duration": "120 min",
-    "genre": "Acción",
-    "director": "George Miller",
-    "cast": [
-     "Tom Hardy",
-     "Charlize Theron",
-     "Nicholas Hoult",
-     "Hugh Keays-Byrne"
-    ],
-    "criticScore": null,
-    "audienceScore": 7.6,
-    "synopsis": "(Cine,Acción) Tras la guerra termonuclear que ha convertido a la Tierra en un páramo, el antiguo policía Max Rockatansky, atormentado por los espíritus de aquellos a los que no pudo proteger, se ha convertido en un hombre con un solo instinto: sobrevivir.\n· País: Australia y Estados Unidos\n· Dirección: George Miller.\n· Reparto: Tom Hardy, Charlize Theron, Nicholas Hoult, Hugh Keays-Byrne, Rosie Huntington-Whiteley, Zoë Kravitz, Riley Keough, Angus Sampson, Nathan Jones, Josh Helman.\n· Guion: George Miller, Brendan McCarthy, Nick Lathouris.\n· Música: Junkie XL.\n· Producción: George Miller, Doug Mitchell, P.J. Voeten.\n· Productora: Warner Bros, Kennedy Miller Productions, Village Roadshow Pictures.",
-    "poster": "https://image.tmdb.org/t/p/w500/fnY0VRsb31A5RLVCBjuR6EFUlo2.jpg"
-   },
-   {
-    "time": "20:27",
-    "channel": "Bom Cine",
-    "title": "La muerte llega arrastrándose",
-    "originalTitle": "Hai sbagliato... dovevi uccidermi subito!",
-    "year": 1972,
-    "duration": "94 min",
-    "genre": "Western",
-    "director": "Mario Bianchi",
-    "cast": [
-     "Robert Woods",
-     "Frank Braña",
-     "Nieves Navarro",
-     "Carlo Gaddi"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Western) Un agente federal, encubierto como empleado de Lloyds de Londres, llega a un pueblo de Oeste para descubrir al autor del robo a un banco y responsable de la muerte de sus dos cómplices.\n· País: España, Italia\n· Dirección: Mario Bianchi.\n· Reparto: Robert Woods, Ivano Staccioli, Nieves Navarro, Frank Braña, Saturno Cerra, Carlo Gaddi, Ernesto Colli, Francesco D'adda, Vittorio Fanfoni, Tino Braña.\n· Música: Carlo Savina.",
-    "poster": "https://image.tmdb.org/t/p/w500/aSqyFphxPS3BMBkoME8lpEG5z92.jpg"
-   },
-   {
-    "time": "20:30",
-    "channel": "Squirrel",
-    "title": "Rebelión en las aulas II",
-    "originalTitle": "Rebelión en las aulas II",
-    "year": null,
-    "duration": "95 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "Después de 30 años, Mark decide dejar su puesto en una escuela londinense. Lo que verdaderamente desea es reencontrarse con la mujer de su vida. Su destino estará en Chicago, donde tendrá que enseñar a unos chavales rebeldes e indisciplinados.",
-    "poster": ""
-   },
-   {
-    "time": "21:09",
-    "channel": "Be Mad",
-    "title": "Mad Max, más allá de la cúpula del trueno",
-    "originalTitle": "Mad Max, más allá de la cúpula del trueno",
-    "year": null,
-    "duration": "119 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Acción) Mientras busca al ladrón que lo asaltó en el desierto, Max Rockatansky llega a Negociudad, un enclave gobernado por la cruel Tía Ama. El corazón de la ciudad es la Cúpula del Trueno, donde los ciudadanos resuelven sus diferencias en combates a muerte.\n· País: Australia y Estados Unidos\n· Dirección: George Miller.\n· Reparto: Mel Gibson, Tina Turner, Helen Buday, Bruce Spence, Angelo Rossitto, Paul Larsson, Frank Thring.\n· Guion: George Miller, Terry Hayes.\n· Música: Maurice Jarre.\n· Producción: George Miller.\n· Productora: Kennedy Miller Productions.",
-    "poster": ""
-   },
-   {
-    "time": "22:02",
-    "channel": "Bom Cine",
-    "title": "La fortaleza",
-    "originalTitle": "La Fortaleza",
-    "year": 2023,
-    "duration": "92 min",
-    "genre": "Comedia",
-    "director": "Chiqui Carabante",
-    "cast": [
-     "Fernando Cayo",
-     "Vito Sanz",
-     "José Manuel Poga",
-     "Goya Toledo"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Drama,Acción) Cuando se presentan a la lectura del testamento de su patriarca fallecido con esperanzas de obtener su fortuna, los herederos de la mansión descubren que deben participar en un juego que su padre orquestó como una broma póstuma.\n· País: Dinamarca, Serbia, Estados Unidos\n· Dirección: Sydney Pollack.\n· Reparto: Burt Lancaster, Patrick O'Neal, Jean-Pierre Aumont, Peter Falk, Astred Heeren, Tony Bill, Scott Wilson, Astrid Heeren.\n· Música: Michel Legrand.\n· Producción: John Calley, Martin Ransohoff.",
-    "poster": "https://image.tmdb.org/t/p/w500/c0uASfmClvybYdX9TONXO6yM77p.jpg"
-   },
-   {
-    "time": "22:05",
-    "channel": "Squirrel",
-    "title": "Misión secreta: Extraction",
-    "originalTitle": "Extraction",
-    "year": 2013,
-    "duration": "102 min",
-    "genre": "Acción",
-    "director": "Tony Giglio",
-    "cast": [
-     "Jonathan Patrick Foo",
-     "Danny Glover",
-     "Sean Astin",
-     "Joanne Kelly"
-    ],
-    "criticScore": null,
-    "audienceScore": 5.0,
-    "synopsis": "Un soldado de las Fuerzas Especiales de Estados Unidos deberá liberar a un preso bajo el estricto régimen de Chechenia.",
-    "poster": "https://image.tmdb.org/t/p/w500/zhOuHS7dPEHsVH8U8ZkP1t5cxgD.jpg"
-   },
-   {
-    "time": "22:35",
-    "channel": "La 2",
-    "title": "Historias lamentables",
-    "originalTitle": "Historias lamentables",
-    "year": 2021,
-    "duration": "126 min",
-    "genre": "Comedia",
-    "director": "Javier Fesser",
-    "cast": [
-     "Pol López",
-     "Chani Martín",
-     "Laura Gómez-Lacueva",
-     "Janick"
-    ],
-    "criticScore": null,
-    "audienceScore": 6.8,
-    "synopsis": "(Cine,Comedia) Don Horacio sorprende a sus invitados con su inesperada reacción ante el regalo que le han hecho. Bermejo intenta llegar a la playa, pero inesperados acontecimientos le empujan hacia las tierras del interior.\n· País: España\n· Dirección: Javier Fesser.\n· Reparto: José Troncoso, Ana Fesser, Oscar Hernandez, Janfri Topera, Elisa Espinosa, Itziar Castro, Mariano Llorente, Mar Corzo, Pol López, Fernando Sansegundo, Chani Martín, Matías Janick, Laura Gómez de la Cueva, Alberto Castrillo Ferrer.\n· Guion: Javier Fesser, Claro García.\n· Productora: Televisión Española (TVE), Pilar Benito, Luis Manso, Películas Pendelton, Morena Films S.L.",
-    "poster": "https://image.tmdb.org/t/p/w500/vijoU09NBYoQ5VpawXj2AfGOmCw.jpg"
-   },
-   {
-    "time": "22:50",
-    "channel": "ATV",
-    "title": "Cine",
-    "originalTitle": "Cine",
-    "year": null,
-    "duration": "120 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "Programa por determinar...",
-    "poster": ""
-   },
-   {
-    "time": "22:55",
-    "channel": "FDF",
-    "title": "A Working Man",
-    "originalTitle": "A Working Man",
-    "year": 2025,
-    "duration": "116 min",
-    "genre": "Acción",
-    "director": "David Ayer",
-    "cast": [
-     "Jason Statham",
-     "Jason Flemyng",
-     "Merab Ninidze",
-     "Maximilian Osinski"
-    ],
-    "criticScore": null,
-    "audienceScore": 6.7,
-    "synopsis": "Levon Cade dejó atrás una brillante carrera militar en operaciones encubiertas para llevar una vida sencilla trabajando en la construcción. Pero cuando la hija de su jefe, a la que considera su familia, es secuestrada por unos traficantes de personas, su búsqueda para llevarla de nuevo a casa destapa un mundo de corrupción mucho mayor de lo que jamás habría imaginado. Protagonizada por Jason Statham, con Michael Peña y David Harbour, dirigida por David Ayer, con guion de Sylvester Stallone y Ayer, y basada en la novela “Levon’s Trade” de Chuck Dixon.",
-    "poster": "https://image.tmdb.org/t/p/w500/eLBWBW4hariYCgTS5BL1tpMAYiG.jpg"
-   },
-   {
-    "time": "23:08",
-    "channel": "Be Mad",
-    "title": "Mad Max, salvajes de autopista",
-    "originalTitle": "Mad Max, salvajes de autopista",
-    "year": null,
-    "duration": "101 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Acción) En un futuro cercano, en una Australia postapocalíptica, la sociedad se encuentra en una decadencia total y las bandas callejeras son las que imponen su ley, mientras la policia intenta contener a los numerosos grupos armados que atacan las carreteras.\n· País: Australia\n· Dirección: George Miller.\n· Reparto: Mel Gibson, Joanne Samuel, Roger Ward, Tim Burns, Steve Bisley, Hugh Keays-Byrne.\n· Guion: George Miller, James McCausland.\n· Música: Brian May.\n· Producción: Byron Kennedy.\n· Productora: Kennedy Miller Productions, Mad Max.",
-    "poster": ""
-   },
-   {
-    "time": "23:15",
-    "channel": "Nova",
-    "title": "El Dr. T. y las mujeres",
-    "originalTitle": "Dr. T & the Women",
-    "year": 2000,
-    "duration": "120 min",
-    "genre": "Comedia",
-    "director": "Robert Altman",
-    "cast": [
-     "Richard Gere",
-     "Helen Hunt",
-     "Farrah Fawcett",
-     "Laura Dern"
-    ],
-    "criticScore": null,
-    "audienceScore": 5.7,
-    "synopsis": "(Cine,Comedia) Un prestigioso y atractivo ginecólogo tiene enamorado a todas las mujeres. Felizmente casado, su bucólica vida está a punto de dar un giro de 180 grados.\n· País: Alemania y Estados Unidos\n· Dirección: Robert Altman.\n· Reparto: Richard Gere, Helen Hunt, Farrah Fawcett, Liv Tyler.\n· Guion: Anne Rapp.\n· Música: Lyle Lovett.\n· Producción: James McLindon, Robert Altman.\n· Productora: Splendid Medien AG, Sandcastle 5 Productions, Dr. T Inc.",
-    "poster": "https://image.tmdb.org/t/p/w500/7rA2lbPqw9HYtkOKSGx15EkMIRo.jpg"
-   },
-   {
-    "time": "23:56",
-    "channel": "Squirrel",
-    "title": "Gunpowder Milkshake",
-    "originalTitle": "Gunpowder Milkshake",
-    "year": 2021,
-    "duration": "114 min",
-    "genre": "Acción",
-    "director": "Navot Papushado",
-    "cast": [
-     "Karen Gillan",
-     "Lena Headey",
-     "Chloe Coleman",
-     "Carla Gugino"
-    ],
-    "criticScore": null,
-    "audienceScore": 6.3,
-    "synopsis": "Un 'thriller' de acción (mucha acción) con tres generaciones de mujeres de armas tomar... que no se lo piensan dos veces a la hora de tomar las armas y unir fuerzas para enfrentarse a un poderoso sindicato del crimen.",
-    "poster": "https://image.tmdb.org/t/p/w500/54rcNkxmG3EEBU5GuI3NL0W6gz.jpg"
-   },
-   {
-    "time": "23:57",
-    "channel": "Bom Cine",
-    "title": "Sirenas",
-    "originalTitle": "Mermaids",
-    "year": 1990,
-    "duration": "110 min",
-    "genre": "Comedia",
-    "director": "Richard Benjamin",
-    "cast": [
-     "Cher",
-     "Bob Hoskins",
-     "Winona Ryder",
-     "Michael Schoeffling"
-    ],
-    "criticScore": null,
-    "audienceScore": 6.7,
-    "synopsis": "(Cine,Drama,Romance) Un clérigo inglés, que alega ser un liberal, es puesto a prueba por una artista bohemia con ansias de escándalos.\n· País: Australia, Reino Unido\n· Dirección: John Duigan.\n· Reparto: Elle Macpherson, Sam Neill, Hugh Grant, Portia de Rossi, Tara Fitzgerald, Kate Fischer, Ben Mendelsohn, Pamela Rabe, Tziporah Malkah.\n· Música: Rachel Portman.\n· Producción: Sue Milliken.",
-    "poster": "https://image.tmdb.org/t/p/w500/qYghTXdIHx40PMzDL9Tr2aImpGe.jpg"
-   }
-  ],
   "2026-11-25": [
-   {
-    "time": "00:35",
-    "channel": "La 2",
-    "title": "Formentera Lady",
-    "originalTitle": "Formentera Lady",
-    "year": 2018,
-    "duration": "85 min",
-    "genre": "Comedia",
-    "director": "Pau Durà",
-    "cast": [
-     "José Sacristán",
-     "Nora Navas",
-     "Sandro Ballesteros",
-     "Jordi Sánchez"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Drama) Samuel llegó a la Formentera hippie de los 70 y allí sigue. Vive sin luz y toca el banjo en un garito. Un día recibe la visita, después de muchos años, de su hija Anna y de su nieto Marc.\n· País: España\n· Dirección: Pau Durà.\n· Reparto: José Sacristán, Sandro Ballesteros, Nora Navas, Jordi Sánchez, Pepa Juan, Juli Mira, Ferran Rañé, Mireia Ros, Pau Durà.\n· Guion: Pau Durà.\n· Producción: Ramiro Acero.\n· Productora: FoscaFilms, Consell Insular de Formentera, Good Machine Films.",
-    "poster": "https://image.tmdb.org/t/p/w500/sHI3mAsZQm01WKpeHkFDkjZy5RE.jpg"
-   },
-   {
-    "time": "00:49",
-    "channel": "Be Mad",
-    "title": "Mad Max II: El guerrero de la carretera",
-    "originalTitle": "Mad Max 2",
-    "year": 1981,
-    "duration": "97 min",
-    "genre": "Acción",
-    "director": "George Miller",
-    "cast": [
-     "Mel Gibson",
-     "Bruce Spence",
-     "Michael Preston",
-     "Max Phipps"
-    ],
-    "criticScore": null,
-    "audienceScore": 7.4,
-    "synopsis": "(Cine,Acción) Max, un héroe solitario, exoficial de la Patrulla Central de Carretera, viaja por el despoblado interior de Australia en una interminable búsqueda de gasolina, el bien más escaso y codiciado de este mundo postapocalíptico.\n· País: Australia\n· Dirección: George Miller.\n· Reparto: Mel Gibson, Bruce Spence, Vernon Wells, Emil Minty, Michael Preston, Kjell Nilsson.\n· Guion: George Miller, Terry Hayes.\n· Música: Brian May.\n· Producción: Byron Kennedy.\n· Productora: Kennedy Miller Productions.",
-    "poster": "https://image.tmdb.org/t/p/w500/udpVgRB3xz5ZN553apthn4TyT6G.jpg"
-   },
-   {
-    "time": "00:50",
-    "channel": "Canal Sur",
-    "title": "Implacable",
-    "originalTitle": "Ruthless",
-    "year": 2023,
-    "duration": "93 min",
-    "genre": "Acción",
-    "director": "Art Camacho",
-    "cast": [
-     "Dermot Mulroney",
-     "Jeff Fahey",
-     "Melissa Diaz",
-     "Mauricio Mendoza"
-    ],
-    "criticScore": null,
-    "audienceScore": 6.4,
-    "synopsis": "(Cine,Thriller) Un entrenador de lucha libre no está dispuesto a ignorar los signos de abuso físico contra su alumna, Catia, sobre todo después de que haber sido su hija asesinada.\n· País: Estados Unidos\n· Dirección: Art Camacho.\n· Reparto: Dermot Mulroney, Jeff Fahey, Melissa Diaz, Mauricio Mendoza, Tonantzin Esparza, Veronica Mitsuk.\n· Guion: Javier Reyna, Koji Steven Sakai, Art Camacho, James Dean Simington.\n· Música: Mauricio Yazigi.\n· Producción: Al Bravo, HemDee Kiwanuka.\n· Productora: Premiere Entertainment Group, AXI-ON, Al Bravo Films, BondIt Media Capital, Matthew Helderman, Grady Craig.",
-    "poster": "https://image.tmdb.org/t/p/w500/bGsagD1rvgqb0c59YuYzkCcj7bM.jpg"
-   },
-   {
-    "time": "01:08",
-    "channel": "FDF",
-    "title": "Revolver",
-    "originalTitle": "Revolver",
-    "year": 2005,
-    "duration": "115 min",
-    "genre": "Drama",
-    "director": "Guy Ritchie",
-    "cast": [
-     "Jason Statham",
-     "Ray Liotta",
-     "Vincent Pastore",
-     "André 3000"
-    ],
-    "criticScore": null,
-    "audienceScore": 6.4,
-    "synopsis": "Jake Green es un hábil jugador que tiene la mala suerte de desplumar a Dorothy Macha, un mafioso local. La jugada le saldrá cara, ya que Macha no parará hasta vengarse de él.",
-    "poster": "https://image.tmdb.org/t/p/w500/gD60YicJodbPu5xBlTfEjXiTJyT.jpg"
-   },
    {
     "time": "01:30",
     "channel": "Bom Cine",
@@ -890,28 +24,8 @@
     ],
     "criticScore": null,
     "audienceScore": null,
-    "synopsis": "(Cine,Drama,Acción,Aventuras) Un violento y peligroso tirano domina a los habitantes de una montaña. Su autoridad peligra con la llegada de un veterano de la I Guerra Mundial, por lo que pretenderá darle caza y eliminarlo.\n· País: Estados Unidos\n· Dirección: Richard Weinman.\n· Reparto: Burt Reynolds, Keith Carradine, Hayley DuMond, Pat Hingle, 'Wild' Bill Mock, Emmy Collins, Kate Barclay, Brion James, Tim Boles, Willie C. Carpenter, Ann Wedgeworth, Andrew Hawkes Hawkes.\n· Música: Greg De Belles.\n· Producción: Bill Blake, Jack Chartoff.",
+    "synopsis": "(Cine,Drama,Acción,Aventuras) Un violento y peligroso tirano domina a los habitantes de una montaña. Su autoridad peligra con la llegada de un veterano de la I Guerra Mundial, por lo que pretenderá darle caza y eliminarlo.",
     "poster": "https://image.tmdb.org/t/p/w500/v8UL2wVGhFXdgvJc63qH0AbqtwD.jpg"
-   },
-   {
-    "time": "01:40",
-    "channel": "Nova",
-    "title": "Atrapada en la oscuridad",
-    "originalTitle": "Penthouse North",
-    "year": 2013,
-    "duration": "82 min",
-    "genre": "Suspense",
-    "director": "Joseph Ruben",
-    "cast": [
-     "Michelle Monaghan",
-     "Michael Keaton",
-     "Barry Sloane",
-     "Andrew W. Walker"
-    ],
-    "criticScore": null,
-    "audienceScore": 5.8,
-    "synopsis": "(Cine,Thriller) Una exreportera gráfica, que ha perdido la vista en Irak, vive con su novio en un lujoso ático de Nueva York. Un día, cuando regresa a casa, se encuentra a su novio muerto y un sádico criminal que busca unos diamantes escondidos por su novio en el piso.\n· País: Estados Unidos\n· Dirección: Joseph Ruben, Johanna St Michaels.\n· Reparto: Michelle Monaghan, Michael Keaton, Barry Sloane, Olivier Surprenant, Kaniehtiio Horn, Zhaida Uddin, Trevor Hayes, Namukasa Basudde, Phillip Jarrett, Timothy Paul Coderre, Lindsey Reeves-Whit, Andrew W. Walker, Jasmine Chan.\n· Guion: David Loughery.\n· Música: Mark Mancina.\n· Producción: David Loughery, Michael Baker, Joseph Ruben, Robert Menzies, Jeff Sackman.\n· Productora: Mark C. Manuel, Ted O'Neal, William D. Johnson, Demarest Films, Lionsgate Films, Kilburn Media, Lionsgate Productions.",
-    "poster": "https://image.tmdb.org/t/p/w500/k7z3d7jGwo2m7Jj4gOlGji4I9jJ.jpg"
    },
    {
     "time": "01:50",
@@ -928,25 +42,10 @@
      "J.W. Fails",
      "Kathie Sileno"
     ],
-    "criticScore": null,
+    "criticScore": 3.0,
     "audienceScore": 6.3,
     "synopsis": "Un joven deberá enfrentarse al sindicato del crimen con la ayuda de un experto en artes marciales del más allá.",
     "poster": "https://image.tmdb.org/t/p/w500/sMSPeec7sDXl0JBvCtJtVThbIP.jpg"
-   },
-   {
-    "time": "02:20",
-    "channel": "Canal Sur",
-    "title": "Una de cine",
-    "originalTitle": "Una de cine",
-    "year": null,
-    "duration": "115 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Programa de cine) Emisión de una película.\n· País: España",
-    "poster": ""
    },
    {
     "time": "03:07",
@@ -963,7 +62,7 @@
      "Forrest Goodluck",
      "Kiowa Gordon"
     ],
-    "criticScore": null,
+    "criticScore": 6.3,
     "audienceScore": 5.8,
     "synopsis": "(Cine,Terror,Drama,Suspense) Los muertos se alzan como zombis en las afueras de la aislada reserva del noreste de Canadá.\n· País: Canadá\n· Dirección: Jeff Barnaby.\n· Reparto: Michael Greyeyes, Forrest Goodluck, Elle-Máijá Tailfeathers, Kiowa Gordon, Olivia Scriven, Maija Tailfeathers, Brandon Oakes, Stonehorse Lone Goeman, William Belleau, Goeman Lone Stornhorse, Devery Jacobs, Gary Farmer.",
     "poster": "https://image.tmdb.org/t/p/w500/c0ePPkUfOZ31a8U104pH5mSc5Tv.jpg"
@@ -983,50 +82,10 @@
      "Francisco Rabal",
      "Amidou"
     ],
-    "criticScore": null,
+    "criticScore": 6.8,
     "audienceScore": 7.5,
     "synopsis": "Cuatro hombres que no pueden volver a sus respectivos países acaban en un pueblo sudamericano donde aceptan el encargo de transportar nitroglicerina por un peligroso trayecto de doscientas millas.",
     "poster": "https://image.tmdb.org/t/p/w500/bQDI2LFEoNJWgmsQIaVvfV0jnOi.jpg"
-   },
-   {
-    "time": "03:25",
-    "channel": "La 2",
-    "title": "La mujer dormida",
-    "originalTitle": "La mujer dormida",
-    "year": 2024,
-    "duration": "110 min",
-    "genre": "Suspense",
-    "director": "Laura Alvea",
-    "cast": [
-     "Almudena Amor",
-     "Javier Rey",
-     "Amanda Goldsmith",
-     "Yaneli Hernández"
-    ],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Fantástico) Ana, auxiliar de enfermería, comienza a sentirse atraída por Agustín, el marido de una mujer en estado vegetativo a la que ella cuida.\n· País: España\n· Dirección: Laura Alvea.\n· Reparto: Almudena Amor, Guacimara Correa, Pino Montesdeoca, Javier Rey, Sergio San, Marta Zubiría, Fran Torres, Leo Venosa, Sofía Privitera, Angelo Olivier.\n· Guion: Daniel González, Miguel Ibáñez Monroy, Marta Armengol, Laura Alvea, José Ortuño.\n· Producción: Olmo Figueredo Gonzalez-Quevedo, Marta Ramírez.\n· Productora: Radio Televisión Española (RTVE), Televisió de Catalunya (TV3), Instituto de la Cinematografía y de las Artes Audiovisuales (ICAA), Carlos Rosado Sibon, Olmo Figueredo Gonzalez-Quevedo.",
-    "poster": "https://image.tmdb.org/t/p/w500/iUi9cgPUv0Mellt8eARSCK7lVzK.jpg"
-   },
-   {
-    "time": "03:31",
-    "channel": "Be Mad",
-    "title": "El cuarto pasajero",
-    "originalTitle": "El cuarto pasajero",
-    "year": 2022,
-    "duration": "99 min",
-    "genre": "Comedia",
-    "director": "Álex de la Iglesia",
-    "cast": [
-     "Blanca Suárez",
-     "Alberto San Juan",
-     "Rubén Cortada",
-     "Ernesto Alterio"
-    ],
-    "criticScore": null,
-    "audienceScore": 6.2,
-    "synopsis": "(Cine,Comedia) Julián es un divorciado que comparte su coche con desconocidos, en especial, con alguien que ya no lo es tanto: Lorena. Julián quiere aprovechar el viaje para declararse, pero incluye por error a un pasajero que cambiará el rumbo de los acontecimientos.\n· País: España\n· Dirección: Álex de la Iglesia.\n· Reparto: Alberto San Juan, Blanca Suárez, Ernesto Alterio, Adrián López, Rubén Cortada, Arturo de la Torre.\n· Guion: Jorge Guerricaechevarría, Álex de la Iglesia.\n· Música: Roque Baños.\n· Producción: Carolina Bang, Álex de la Iglesia.\n· Productora: Telecinco Cinema, Pokeepsie Films, Te has venido arriba, A.I.E, Mediaset España, Movistar Plus+, Movistar+.",
-    "poster": "https://image.tmdb.org/t/p/w500/nJNxJdD5F3cAXglCtwjumTB5tl7.jpg"
    },
    {
     "time": "04:39",
@@ -1050,26 +109,6 @@
    },
    {
     "time": "05:18",
-    "channel": "Be Mad",
-    "title": "Menudas piezas",
-    "originalTitle": "Menudas piezas",
-    "year": 2024,
-    "duration": "99 min",
-    "genre": "Comedia",
-    "director": "Nacho G. Velilla",
-    "cast": [
-     "Alexandra Jiménez",
-     "María Adánez",
-     "Francesc Orella",
-     "Miguel Rellán"
-    ],
-    "criticScore": null,
-    "audienceScore": 7.0,
-    "synopsis": "(Cine,Comedia) A Candela le han sido infiel, la han despedido de su trabajo en un colegio privado y ahora no le queda más remedio que pedir ayuda a su hermana y a su padre, esos a los que lleva años mirando por encima del hombro.\n· País: España\n· Dirección: Nacho G. Velilla.\n· Reparto: Alexandra Jiménez, Luis Callejo, Francesc Orella, María Adánez, Kiko Bena, Verónica Senra, Rocío Velayos, Pablo Louazel.\n· Guion: David S. Olivas, Marta Sánchez Guillén, Nacho G. Velilla.\n· Música: Juanjo Javierre.\n· Producción: Ghislain Barrois, Álvaro Augustín.\n· Productora: Telecinco Cinema, Menudas piezas, A.I.E..",
-    "poster": "https://image.tmdb.org/t/p/w500/epxMmvLaQmInLeRNOIMfRaJrhSZ.jpg"
-   },
-   {
-    "time": "05:18",
     "channel": "Squirrel",
     "title": "Torremolinos 73",
     "originalTitle": "Torremolinos 73",
@@ -1083,13 +122,13 @@
      "Juan Diego",
      "Fernando Tejero"
     ],
-    "criticScore": null,
+    "criticScore": 6.2,
     "audienceScore": 6.2,
     "synopsis": "Alfredo López es un cansado vendedor de enciclopedias a domicilio y Carmen, su esposa fiel, es peluquera. Sus vidas cambian para siempre cuando se empiezan a vender en los quioscos las enciclopedias por fascículos semanales. Es entonces cuando la editorial Montoya, en la que trabaja Alfredo, les hace una proposición: realizar películas eróticas de súper 8 'caseras' que se venderán en los países escandinavos bajo la excusa de una falsa enciclopedia de la reproducción en el mundo. Debido a una situación económica muy difícil y al deseo de Carmen de tener un hijo, la pareja acepta la oferta, pero antes debe participar en un curso acelerado sobre \"cómo hacer películas eróticas\".",
     "poster": "https://image.tmdb.org/t/p/w500/6lyeXgjOHYG81LxIebSJ9byrEMi.jpg"
    },
    {
-    "time": "06:30",
+    "time": "06:29",
     "channel": "Bom Cine",
     "title": "Tercera identidad",
     "originalTitle": "A Different Loyalty",
@@ -1123,7 +162,7 @@
      "Jenna Fischer",
      "Michael Sheen"
     ],
-    "criticScore": null,
+    "criticScore": 7.1,
     "audienceScore": 6.3,
     "synopsis": "A pesar de tener una buena carrera profesional y una familia feliz, Brad está obsesionado con el éxito y las fortunas que poseen sus antiguos compañeros de la escuela. Un viaje a la Costa Este acompañando a su hijo, le obligará a enfrentarse a ello.",
     "poster": "https://image.tmdb.org/t/p/w500/iPC1Hdj8kaNYd7b8mbYKeKRpIuj.jpg"
@@ -1149,7 +188,7 @@
     "poster": "https://image.tmdb.org/t/p/w500/7doCBDNnEITiRg4LPI7wK1jdb4p.jpg"
    },
    {
-    "time": "08:05",
+    "time": "08:04",
     "channel": "Bom Cine",
     "title": "Submarino X-1",
     "originalTitle": "Submarine X-1",
@@ -1209,7 +248,7 @@
     "poster": "https://image.tmdb.org/t/p/w500/q0wlmX9tMW8hgASpIKFNmBjaehz.jpg"
    },
    {
-    "time": "10:10",
+    "time": "10:09",
     "channel": "Be Mad",
     "title": "Ocho apellidos vascos",
     "originalTitle": "Ocho apellidos vascos",
@@ -1229,7 +268,7 @@
     "poster": "https://image.tmdb.org/t/p/w500/9212udpJsvp01Cb5RkoKEpchtpX.jpg"
    },
    {
-    "time": "11:15",
+    "time": "11:10",
     "channel": "La 2",
     "title": "Mestizo",
     "originalTitle": "Mestizo",
@@ -1249,7 +288,7 @@
     "poster": "https://image.tmdb.org/t/p/w500/eelyFBoasWYDA9zV1qIxdtSxzo1.jpg"
    },
    {
-    "time": "11:25",
+    "time": "11:26",
     "channel": "Bom Cine",
     "title": "F.I.S.T.",
     "originalTitle": "F.I.S.T.",
@@ -1263,7 +302,7 @@
      "Peter Boyle",
      "Melinda Dillon"
     ],
-    "criticScore": null,
+    "criticScore": 5.4,
     "audienceScore": 6.5,
     "synopsis": "(Cine,Drama,Negro) Crónica de un joven inocente e idealista, corrompido por el poder y el éxito, en la época de la aparición del movimiento obrero en Estados Unidos.\n· País: Estados Unidos\n· Dirección: Norman Jewison.\n· Reparto: Sylvester Stallone, Melinda Dillon, David Huffman, Rod Steiger, Peter Boyle, Tony Lo Bianco, Henry Wilcoxon, Cassie Yates, Kevin Conway, Peter Donat.",
     "poster": "https://image.tmdb.org/t/p/w500/tR61moMGFko3UGJuJcAgEVZPRIU.jpg"
@@ -1289,7 +328,7 @@
     "poster": "https://image.tmdb.org/t/p/w500/jOM2VjDlu6h4hFvmG2BMHPEU9Vz.jpg"
    },
    {
-    "time": "12:50",
+    "time": "12:49",
     "channel": "La 2",
     "title": "Los desesperados",
     "originalTitle": "Los desesperados",
@@ -1305,7 +344,7 @@
     ],
     "criticScore": null,
     "audienceScore": null,
-    "synopsis": "(Cine,Oeste) Un antiguo convicto que intenta salir adelante es acusado erroneamente de robar un banco, delito que ha cometido la banda a la que había pertenecido en el pasado.\n· País: Estados Unidos\n· Dirección: Charles Vidor.\n· Reparto: Edward Peil Sr, Eddie Laughton, Lee Moore, Bud Osborne, Bill Patton, Edward Pawley, Glenn Ford, Randolph Scott, Claire Trevor, Joan Woodbury, Evelyn Keyes, Edgar Buchanan, Porter Hall, Irving Bacon, Guinn 'Big Boy' Williams, Raymond Walburn, Bernard Nedell, Glenn Strange, Ethan Laidlaw.\n· Guion: Ben Jonson, Robert Carson.\n· Música: John Leipold.\n· Producción: Harry Joe Brown.\n· Productora: Columbia Pictures, Harry Joe Brown, Columbia Pictures Corporation.",
+    "synopsis": "(Cine,Drama) Guerra de Secesión. El soldado John Warner deserta de su unidad en el frente de batalla al enterarse de que su novia, Rosa Sandoval, va a dar a luz un hijo fruto de su relación. Pero en la ciudad donde viven los Sandoval, se ha declarado la peste.\n· País: Estados Unidos, España e Italia\n· Dirección: Charles Vidor, Julio Buchs.\n· Reparto: Edward Peil Sr, Luis Barboo, Eddie Laughton, Fernando Sánchez Polack, Lee Moore, Lorenzo Robledo.\n· Guion: José Luis Martínez Molla, Ben Jonson, Federico De Urrutia, Ugo Guerra, Julio Buchs, Robert Carson.\n· Música: John Leipold.\n· Producción: Harry Joe Brown.\n· Productora: Atlantida Films, Columbia Pictures, Harry Joe Brown, José Frade, Columbia Pictures Corporation, Atlántida Films S.A.",
     "poster": "https://image.tmdb.org/t/p/w500/1LcxPBrhEXxGsBjbXPs3MHYRK5N.jpg"
    },
    {
@@ -1398,13 +437,13 @@
      "Jack Hawkins",
      "Stephen Boyd"
     ],
-    "criticScore": null,
+    "criticScore": 5.1,
     "audienceScore": 5.6,
     "synopsis": "(Cine,Drama) Un grupo de aristócratas europeos son atacados por los apaches durante su estancia en Nuevo México.\n· País: Alemania, España y Reino Unido\n· Dirección: Edward Dmytryk.\n· Reparto: Chief Tug Smith, Philip Ettington, Robert Cunningham, José Terrón, Bob Cunningham, Hans De Vries.\n· Guion: James Griffith, Scott Finch, J.J Griffith, Hal Hopper, Clarke Reynolds.\n· Música: Robert Farnon.\n· Producción: Artur Brauner, Euan Lloyd.\n· Productora: Kingston Film Productions Ltd, Palomar Pictures International, Artur Brauner, Euan Lloyd, Dimitri De Grunwald, Hal Mason.",
     "poster": "https://image.tmdb.org/t/p/w500/t3XJGHLNpe0YTtRweVjNUZ2aHE5.jpg"
    },
    {
-    "time": "16:59",
+    "time": "17:00",
     "channel": "Bom Cine",
     "title": "Las aventuras de Errol Flynn",
     "originalTitle": "In Like Flynn",
@@ -1418,7 +457,7 @@
      "Clive Standen",
      "William Moseley"
     ],
-    "criticScore": null,
+    "criticScore": 6.6,
     "audienceScore": 4.9,
     "synopsis": "(Cine,Comedia,Biográfico) Biopic sobre Errol Flynn que se centra en sus años en Australia, antes de convertirse en una celebridad internacional.\n· País: Australia, Canadá\n· Dirección: Russell Mulcahy.\n· Reparto: Corey grande, Thomas Cocquerel, William Moseley, David Wenham, Dan Fogler, David Hennessey Hennessey, Callan Mulvey, Costas Mandylor, Clive Standen, Corey Large, Isabel Lucas, Nathalie Kelley.\n· Producción: Corey Large, Marc Furmie, Steve M. Albert, Luke Flynn.",
     "poster": "https://image.tmdb.org/t/p/w500/8bz5PcLiKilt0BielDkwBTE5vDy.jpg"
@@ -1438,7 +477,7 @@
      "Paul Giamatti",
      "Jascha Washington"
     ],
-    "criticScore": null,
+    "criticScore": 3.3,
     "audienceScore": 5.8,
     "synopsis": "(Cine,Comedia) Todo vale para atrapar a un peligroso ladrón de bancos, incluso disfrazarse de una abuela un tanto especial.\n· País: Alemania y Estados Unidos\n· Dirección: Raja Gosnell.\n· Reparto: Martin Lawrence, Nia Long, Brian Palermo, Paul Giamatti, Jascha Washington, Tameka Holmes.\n· Guion: Darryl Quarles, Don Rhymer.\n· Música: Richard Gibbs, Conchita Alonso.\n· Producción: Michael Green, David T. Friendly.\n· Productora: Regency Enterprises, Friendly Productions, Twentieth Century Fox.",
     "poster": "https://image.tmdb.org/t/p/w500/q5lXyHlqli0cJF2HYK84Qm6BkF6.jpg"
@@ -1498,7 +537,7 @@
      "Kevin Durand",
      "Dan Lauria"
     ],
-    "criticScore": null,
+    "criticScore": 3.4,
     "audienceScore": 5.7,
     "synopsis": "(Cine,Comedia) El agente del FBI Malcolm Turner vuelve a disfrazarse de abuela para infiltrarse como niñera en la casa de un informático.\n· País: Estados Unidos\n· Dirección: John Whitesell.\n· Reparto: Martin Lawrence, Nia Long, Emily Procter, Marisol Nichols, Zachary Levi.\n· Guion: Don Rhymer.\n· Música: George S Clinton.\n· Producción: Michael Green, David T. Friendly.\n· Productora: Firm Films, Twentieth Century Fox, Runteldat Entertainment.",
     "poster": "https://image.tmdb.org/t/p/w500/wBE1CYff72jD7CVGzvXUWqHHTev.jpg"
@@ -1538,7 +577,7 @@
      "Jessica Lucas",
      "Portia Doubleday"
     ],
-    "criticScore": null,
+    "criticScore": 2.2,
     "audienceScore": 5.5,
     "synopsis": "(Cine,Comedia) testigo de un asesinato a manos de unos gánsteres rusos- deben esconderse en una Escuela de Arte sólo para chicas para intentar encontrar al asesino antes de que él los encuentre a ellos.\n· País: Estados Unidos\n· Dirección: John Whitesell.\n· Reparto: Martin Lawrence, Brandon T. Jackson, Jessica Lucas, Michelle Ang, Portia Doubleday.\n· Guion: Matthew Fogel.\n· Música: David Newman.\n· Productora: Twentieth Century Fox.",
     "poster": "https://image.tmdb.org/t/p/w500/lpoEjnxHPQmkvyyEbnfVA9GzNbY.jpg"
@@ -1551,7 +590,7 @@
     "year": 1961,
     "duration": "90 min",
     "genre": "Drama",
-    "director": "José Antonio de la Loma, Robert Vernay",
+    "director": "Robert Vernay, José Antonio de la Loma",
     "cast": [
      "Robert Berri",
      "Maruja Bustos",
@@ -1564,7 +603,7 @@
     "poster": "https://image.tmdb.org/t/p/w500/sGC6CqIQaa4NYgsbwAksOM74sfA.jpg"
    },
    {
-    "time": "22:00",
+    "time": "22:03",
     "channel": "Bom Cine",
     "title": "Rescate al amanecer",
     "originalTitle": "Rescue Dawn",
@@ -1578,7 +617,7 @@
      "Toby Huss",
      "François Chau"
     ],
-    "criticScore": null,
+    "criticScore": 7.7,
     "audienceScore": 7.0,
     "synopsis": "(Cine,Aventuras,Biográfico) Durante la Guerra de Vietnam, un piloto de la Marina de E. U. en misión secreta sobre Laos es derribado, capturado y torturado por miembros del Pathet Lao y luego y entregado a Vietnam del Norte donde él y otros prisioneros planean un escape audaz.\n· País: Luxemburgo, Tailandia, Estados Unidos\n· Dirección: Werner Herzog.\n· Reparto: Zach Grenier, Marshall Bell, Christian Bale, Toby Huss, Pat Healy, Steve Zahn, Evan Jones, François Chau, Jeremy Davies, Craig Gellis, Gregory J. Qaiyum, James Aaron Oliver.\n· Música: Klaus Badelt.\n· Producción: Elton Brand, Harry Knapp.",
     "poster": "https://image.tmdb.org/t/p/w500/bgvO8KrCmHVtcpyB7mbSz0iCePt.jpg"
@@ -1598,28 +637,13 @@
      "Aislinn Derbez",
      "Matt Lauria"
     ],
-    "criticScore": null,
+    "criticScore": 4.1,
     "audienceScore": 6.3,
     "synopsis": "La ganadora de un concurso de belleza se ve obligada a trabajar para un jefe del crimen después de ser testigo de un asesinato. Una nueva versión de la película de 2011, 'Miss Bala', dirigida por Gerardo Naranjo y protagonizada por Stephanie Sigman.",
     "poster": "https://image.tmdb.org/t/p/w500/z5Vy2ZI38NxRUxZSOw0rdwuH2QA.jpg"
    },
    {
-    "time": "22:05",
-    "channel": "Neox",
-    "title": "Cine",
-    "originalTitle": "Cine",
-    "year": null,
-    "duration": "135 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "Programa por determinar...",
-    "poster": ""
-   },
-   {
-    "time": "22:16",
+    "time": "22:17",
     "channel": "Be Mad",
     "title": "Instinto",
     "originalTitle": "Instinct",
@@ -1633,7 +657,7 @@
      "Donald Sutherland",
      "Maura Tierney"
     ],
-    "criticScore": null,
+    "criticScore": 4.3,
     "audienceScore": 6.5,
     "synopsis": "(Cine,Drama) Un psiquiatra desaparece en África cuando estudiaba a unos simios. Al aparecer mata a dos personas. Algo extraño le ha ocurrido.\n· País: Estados Unidos\n· Dirección: Jon Turteltaub.\n· Reparto: Jim Grimshaw, Tim Goodwin, David Deever, Roger Floyd, Vivienne Sendaydiego, Pat McNamara, Ivonne Coll, Christopher John Harris, Donald Sutherland, Anthony Hopkins, George Dzundza, Cuba Gooding Jr., Maura Tierney, John Ashton.\n· Guion: Gerald Di Pego, Gerald Dipego.\n· Música: Danny Elfman.\n· Producción: Michael Taylor, Barbara Boyle.\n· Productora: Spyglass Entertainment, Barbara Boyle, Touchstone Pictures, Spyglass Ent., Touchstone Pict.",
     "poster": "https://image.tmdb.org/t/p/w500/1LGdOZITaJL1cpwdMCuRfGHIaqr.jpg"
@@ -1660,18 +684,23 @@
    },
    {
     "time": "22:55",
-    "channel": "ATV",
-    "title": "Cine",
-    "originalTitle": "Cine",
-    "year": null,
-    "duration": "85 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "Programa por determinar...",
-    "poster": ""
+    "channel": "Canal Sur",
+    "title": "Acción judicial",
+    "originalTitle": "Class Action",
+    "year": 1991,
+    "duration": "110 min",
+    "genre": "Drama",
+    "director": "Michael Apted",
+    "cast": [
+     "Gene Hackman",
+     "Mary Elizabeth Mastrantonio",
+     "Colin Friels",
+     "Joanna Merlin"
+    ],
+    "criticScore": 5.8,
+    "audienceScore": 6.3,
+    "synopsis": "(Cine,Drama) Dos prestigiosos abogados, padre e hija, tras años de distanciamiento personal, tienen que enfrentarse profesionalmente.\n· País: Estados Unidos y España\n· Dirección: Michael Apted.\n· Reparto: Gene Hackman, Mary Elizabeth Mastrantonio, Jonathan Silverman, Colin Friels, Laurence Fishburne, Joanna Merlin, Donald Moffat, Matt Clark, Jan Rubes, Fred Dalton Thompson, David Byron, Anne Elizabeth Ramsay, Joan McMurtrey.\n· Guion: Christopher Ames, Samantha Shad, Carolyn Shelby.\n· Música: James Horner.\n· Producción: Robert W Cort, Ted Field, Scott Kroopf.\n· Productora: Robert W Cort, Twentieth Century Fox, Interscope Communications.",
+    "poster": "https://image.tmdb.org/t/p/w500/y55E4W2RVge5zvCncQ9KhyGzAgx.jpg"
    },
    {
     "time": "22:55",
@@ -1689,6 +718,21 @@
     "poster": ""
    },
    {
+    "time": "23:45",
+    "channel": "ATV",
+    "title": "Dónde está?",
+    "originalTitle": "Dónde está?",
+    "year": null,
+    "duration": "95 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "(Documentales,Documental cine) Vicente Moreno cuenta su triste vida en el programa de televisión ¿Dónde está?\n· País: España\n· Dirección: Juan Carlos Claver, Juan Carlos Clavier.\n· Reparto: Elvira Mínguez, Juli Cantó, Paco Sarro, Pep Ricart, Ferran Pina, Manolo Melero, Berna Llobell, Isabel Carmona, Gloria Muñoz, Juan Diego, Jorge Bosch, Juan Carlos Claver.\n· Guion: Agustín Madariaga.\n· Productora: Dacsa Produccions, Kines Producciones S.L..",
+    "poster": ""
+   },
+   {
     "time": "23:54",
     "channel": "Squirrel",
     "title": "White Boy Rick",
@@ -1703,7 +747,7 @@
      "Jennifer Jason Leigh",
      "Bel Powley"
     ],
-    "criticScore": null,
+    "criticScore": 5.9,
     "audienceScore": 6.4,
     "synopsis": "1984. El adolescente Rick vive en un deteriorado suburbio de Detroit junto a su padre, un perdedor buscavidas que sueña con abrir un videoclub y que, mientras, trapichea con armas con ayuda de su hijo.",
     "poster": "https://image.tmdb.org/t/p/w500/amM0t95H9ep0ZUcv0rWRxlLY0D6.jpg"
@@ -1711,7 +755,7 @@
   ],
   "2026-11-26": [
    {
-    "time": "00:12",
+    "time": "00:15",
     "channel": "Bom Cine",
     "title": "Archenemy",
     "originalTitle": "Archenemy",
@@ -1725,25 +769,10 @@
      "Zolee Griggs",
      "Paul Scheer"
     ],
-    "criticScore": null,
+    "criticScore": 5.7,
     "audienceScore": 5.2,
     "synopsis": "(Cine,Acción,Suspense,Fantasía) Max Fist asegura ser un héroe de otra dimensión que cayó por accidente en la Tierra, donde no puede emplear sus poderes, a través de una brecha en el espacio-tiempo.\n· País: Reino Unido, Estados Unidos\n· Dirección: Adam Egypt Mortimer.\n· Reparto: Joe Manganiello, Paul Scheer, Amy Seimetz, Joseph D. Reitman, Skylan Brooks, Zolee Griggs, Kieran Gallagher, Jessica Allain, Mac Brandt, Jeremy Hawkins, Glenn Howerton, Christopher Guyton, Roy Lee Jones.",
     "poster": "https://image.tmdb.org/t/p/w500/4H54bQrCM6NBm9sqw911scGd4hb.jpg"
-   },
-   {
-    "time": "00:20",
-    "channel": "Neox",
-    "title": "Cine",
-    "originalTitle": "Cine",
-    "year": null,
-    "duration": "100 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "Programa por determinar...",
-    "poster": ""
    },
    {
     "time": "00:42",
@@ -1760,30 +789,10 @@
      "Thandiwe Newton",
      "Mark Strong"
     ],
-    "criticScore": null,
+    "criticScore": 5.3,
     "audienceScore": 7.0,
     "synopsis": "(Cine,Acción) Un mafioso ruso organiza un acuerdo de compraventa ilegal de terrenos con millones de dólares en juego. Toda la delincuencia londinense quiere participar, desde el delincuente de poca monta \"Uno dos\" hasta un mafioso de la vieja escuela, Lenny.\n· País: Estados Unidos, Francia y Reino Unido\n· Dirección: Guy Ritchie.\n· Reparto: Gerard Butler, Tom Wilkinson, Thandie Newton, Mark Strong, Idris Elba, Tom Hardy, Karel Roden, Toby Kebbell, Jeremy Piven.\n· Guion: Guy Ritchie.\n· Música: Steve Isles.\n· Producción: Steve Clark-Hall, Susan Downey, Guy Ritchie, Joel Silver.\n· Productora: Warner Bros. Pictures, Dark Castle Entertainment, StudioCanal.",
     "poster": "https://image.tmdb.org/t/p/w500/fToZMkSQ1xSrhETOfBIdNXQWCyp.jpg"
-   },
-   {
-    "time": "01:38",
-    "channel": "Bom Cine",
-    "title": "Aviso de tormenta",
-    "originalTitle": "Storm Warning",
-    "year": 2007,
-    "duration": "82 min",
-    "genre": "Terror",
-    "director": "Jamie Blanks",
-    "cast": [
-     "Nadia Farès",
-     "Robert Taylor",
-     "John Brumpton",
-     "David Lyons"
-    ],
-    "criticScore": null,
-    "audienceScore": 5.5,
-    "synopsis": "(Cine,Negro) Durante una excursión en barco, marido y mujer Rob y Pia, se pierden en una fuerte tormenta y acaban en un sitio muy extraño.\n· País: Estados Unidos\n· Dirección: Jamie Blanks, Stuart Heisler.\n· Reparto: Nadia Farès, Robert Taylor, David Lyons, Mathew Wilkinson, John Brumpton, Ginger Rogers, Doris Day, Steve Cochran, Ronald Reagan, Hugh Sanders.",
-    "poster": "https://image.tmdb.org/t/p/w500/variC3TMDqJqACCtpIIUu9Nhi4a.jpg"
    },
    {
     "time": "01:40",
@@ -1806,19 +815,24 @@
     "poster": "https://image.tmdb.org/t/p/w500/13zNLqdzLqMESGbOUPhqmsRD1LO.jpg"
    },
    {
-    "time": "02:00",
-    "channel": "Neox",
-    "title": "Cine",
-    "originalTitle": "Cine",
-    "year": null,
-    "duration": "90 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
+    "time": "01:43",
+    "channel": "Bom Cine",
+    "title": "Aviso de tormenta",
+    "originalTitle": "Storm Warning",
+    "year": 2007,
+    "duration": "82 min",
+    "genre": "Terror",
+    "director": "Jamie Blanks",
+    "cast": [
+     "Nadia Farès",
+     "Robert Taylor",
+     "John Brumpton",
+     "David Lyons"
+    ],
     "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "Programa por determinar...",
-    "poster": ""
+    "audienceScore": 5.5,
+    "synopsis": "(Cine,Negro) Durante una excursión en barco, marido y mujer Rob y Pia, se pierden en una fuerte tormenta y acaban en un sitio muy extraño.\n· País: Estados Unidos\n· Dirección: Jamie Blanks, Stuart Heisler.\n· Reparto: Nadia Farès, Robert Taylor, David Lyons, Mathew Wilkinson, John Brumpton, Ginger Rogers, Doris Day, Steve Cochran, Ronald Reagan, Hugh Sanders.",
+    "poster": "https://image.tmdb.org/t/p/w500/variC3TMDqJqACCtpIIUu9Nhi4a.jpg"
    },
    {
     "time": "02:45",
@@ -1861,22 +875,22 @@
     "poster": "https://image.tmdb.org/t/p/w500/r42KL6I0Scog1K2fJBHX77eiwqT.jpg"
    },
    {
-    "time": "02:59",
+    "time": "03:04",
     "channel": "Bom Cine",
     "title": "Nosferatu, el vampiro de la noche",
     "originalTitle": "Nosferatu, el vampiro de la noche",
     "year": null,
-    "duration": "96 min",
+    "duration": "97 min",
     "genre": "Cine",
     "director": "",
     "cast": [],
     "criticScore": null,
     "audienceScore": null,
-    "synopsis": "(Cine,Terror,Drama) Adaptación de la famosa novela de Bram Stoker que toma como punto de referencia la insuperable adaptación de Murnau.\n· País: Alemania\n· Dirección: Werner Herzog.\n· Reparto: Klaus Kinski, Isabelle Adjani, Bruno Ganz, Roland Topor, Walter Ladengast, Dan van Husen, Clemens Scheitz, Rijk de Gooyer, Jan Groth, Martje Grohmann, Carsten Bodinus, Lo van Hensbergen, John Leddy, Tim Beekman, Margiet van Hartingsveld, Jacques Dufilho.\n· Música: Popol Vuh.\n· Producción: Michael Gruskoff, Werner Herzog, Bram Stoker.",
+    "synopsis": "(Cine,Terror,Drama) Adaptación de la famosa novela de Bram Stoker que toma como punto de referencia la insuperable adaptación de Murnau.\n· País: Alemania, Francia\n· Dirección: Werner Herzog.\n· Reparto: Klaus Kinski, Isabelle Adjani, Bruno Ganz, Roland Topor, Walter Ladengast, Dan van Husen, Clemens Scheitz, Rijk de Gooyer, Jan Groth, Martje Grohmann, Carsten Bodinus, Lo van Hensbergen, John Leddy, Tim Beekman, Margiet van Hartingsveld, Jacques Dufilho.\n· Música: Popol Vuh.\n· Producción: Michael Gruskoff, Werner Herzog, Bram Stoker.",
     "poster": ""
    },
    {
-    "time": "03:40",
+    "time": "03:41",
     "channel": "Be Mad",
     "title": "Al filo de la medianoche",
     "originalTitle": "10 to Midnight",
@@ -1890,7 +904,7 @@
      "Andrew Stevens",
      "Geoffrey Lewis"
     ],
-    "criticScore": null,
+    "criticScore": 1.2,
     "audienceScore": 6.2,
     "synopsis": "(Cine,Acción) Un ciudadano decide atrapar él mismo a un psicópata que está aterrorizando a los alumnos de un colegio.\n· País: Estados Unidos\n· Dirección: J. Lee Thompson.\n· Reparto: Charles Bronson, Lisa Eilbacher, Andrew Stevens, Gene Davis, Geoffrey Lewis, Wilford Brimley, Robert F. Lyons.\n· Guion: William Roberts, J. Lee Thompson.\n· Música: Robert O Ragland.\n· Productora: City Films, The Cannon Group, Cannon Group.",
     "poster": "https://image.tmdb.org/t/p/w500/yz1Xq1AhRVYe71PNUSlqboEyuaS.jpg"
@@ -1916,7 +930,7 @@
     "poster": "https://image.tmdb.org/t/p/w500/cE0eyD6RStdJVzM8wC3VApItvtt.jpg"
    },
    {
-    "time": "04:35",
+    "time": "04:41",
     "channel": "Bom Cine",
     "title": "Dalí",
     "originalTitle": "Dalí",
@@ -1936,7 +950,7 @@
     "poster": "https://image.tmdb.org/t/p/w500/9hLk4XfdAldJ6FwL0BIZfoNEkIL.jpg"
    },
    {
-    "time": "05:20",
+    "time": "05:27",
     "channel": "Be Mad",
     "title": "Ola de crímenes",
     "originalTitle": "Ola de crímenes",
@@ -1957,6 +971,21 @@
    },
    {
     "time": "07:00",
+    "channel": "Be Mad",
+    "title": "Séptimo",
+    "originalTitle": "Séptimo",
+    "year": null,
+    "duration": "77 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "(Cine,Thriller) Un padre. Dos hijos. Un juego: ser el primero en alcanzar la calle desde el séptimo piso en el que viven. El padre, en el ascensor; los chicos, por las escaleras. Arranca la carrera: mientras el padre pisa el portal en primer lugar, los niños no llegan.\n· País: Argentina y España\n· Dirección: Patxi Amézcua.\n· Reparto: Ricardo Darín, Belén Rueda, Luis Ziembroswi, Osvaldo Santoro, Jorge D'Elía.\n· Guion: Patxi Amézcua, Alejo Flah.\n· Música: Roque Baños.\n· Producción: Andrés Longares, Álvaro Augustín, Ghislain Barrois, Jordi Gasull, Edmon Roch, Hugo Sigman, Matías Mosteirin.\n· Productora: Telecinco, El Toro Pictures, Ikiru Films, CEPA Audiovisual, K&S Films, El Toro Productions.",
+    "poster": ""
+   },
+   {
+    "time": "07:00",
     "channel": "Bom Cine",
     "title": "Bom Cine",
     "originalTitle": "Bom Cine",
@@ -1971,22 +1000,7 @@
     "poster": ""
    },
    {
-    "time": "07:10",
-    "channel": "Be Mad",
-    "title": "Séptimo",
-    "originalTitle": "Séptimo",
-    "year": null,
-    "duration": "80 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "(Cine,Thriller) Un padre. Dos hijos. Un juego: ser el primero en alcanzar la calle desde el séptimo piso en el que viven. El padre, en el ascensor; los chicos, por las escaleras. Arranca la carrera: mientras el padre pisa el portal en primer lugar, los niños no llegan.\n· País: Argentina y España\n· Dirección: Patxi Amézcua.\n· Reparto: Ricardo Darín, Belén Rueda, Luis Ziembroswi, Osvaldo Santoro, Jorge D'Elía.\n· Guion: Patxi Amézcua, Alejo Flah.\n· Música: Roque Baños.\n· Producción: Andrés Longares, Álvaro Augustín, Ghislain Barrois, Jordi Gasull, Edmon Roch, Hugo Sigman, Matías Mosteirin.\n· Productora: Telecinco, El Toro Pictures, Ikiru Films, CEPA Audiovisual, K&S Films, El Toro Productions.",
-    "poster": ""
-   },
-   {
-    "time": "08:30",
+    "time": "08:17",
     "channel": "Be Mad",
     "title": "Malnazidos",
     "originalTitle": "Malnazidos",
@@ -2006,7 +1020,7 @@
     "poster": "https://image.tmdb.org/t/p/w500/4z9fsQTypbwzaWa4kLERtJjjM83.jpg"
    },
    {
-    "time": "10:15",
+    "time": "09:54",
     "channel": "Be Mad",
     "title": "El secreto de Marrowbone",
     "originalTitle": "El secreto de Marrowbone",
@@ -2020,7 +1034,7 @@
      "Charlie Heaton",
      "Mia Goth"
     ],
-    "criticScore": null,
+    "criticScore": 6.3,
     "audienceScore": 7.3,
     "synopsis": "(Cine,Thriller) En 1969, tras huir de Inglaterra, cuatro hermanos y su madre enferma comienzan una nueva vida en EE UU, en la casa materna de Marrowbone. Cuando la madre fallece, Jack, Billy, Jane y el pequeño Sam deciden ocultarlo hasta la mayoría de edad de Jack.\n· País: Estados Unidos y España\n· Dirección: Sergio Gutiérrez Sánchez.\n· Reparto: George MacKay, Anya Taylor-Joy, Charlie Heaton, Mia Goth, Matthew Stagg.\n· Guion: Sergio Gutiérrez Sánchez.\n· Música: Fernando Velázquez.\n· Producción: Juan Antonio Bayona, Ghislain Barrois, Álvaro Augustín, Belén Atienza.\n· Productora: Lions Gate International, Marrowbone, Telecinco Cinema.",
     "poster": "https://image.tmdb.org/t/p/w500/sQYr9634GY0ZRX68pyEh1XNXhCR.jpg"
@@ -2041,27 +1055,47 @@
     "poster": ""
    },
    {
-    "time": "12:00",
+    "time": "11:10",
     "channel": "La 2",
-    "title": "Cine",
-    "originalTitle": "Cine",
+    "title": "John, el bastardo · John, el Bastardo",
+    "originalTitle": "John, el bastardo · John, el Bastardo",
     "year": null,
-    "duration": "90 min",
+    "duration": "105 min",
     "genre": "Cine",
     "director": "",
     "cast": [],
     "criticScore": null,
     "audienceScore": null,
-    "synopsis": "Programa por determinar...",
+    "synopsis": "(Cine,Oeste) Herido en un tiroteo, un hombre recuerda su vida con John el Bastardo, bandolero seductor obsesionado con hallar a su padre.\n· País: Italia\n· Dirección: Armando Crispino.\n· Reparto: John Richardson, Claudio Camaso, Martine Beswick, Claudio Gora.\n· Guion: Armando Crispino, Lucio Battistrada, Sauro Scavolini.\n· Música: Nico Fidenco.\n· Productora: Hercules Cinematografica.",
     "poster": ""
    },
    {
-    "time": "12:00",
+    "time": "11:10",
+    "channel": "La 2",
+    "title": "John, el bastardo",
+    "originalTitle": "John il bastardo",
+    "year": 1967,
+    "duration": "116 min",
+    "genre": "Western",
+    "director": "Armando Crispino",
+    "cast": [
+     "John Richardson",
+     "Claudio Camaso",
+     "Martine Beswick",
+     "Luisa Della Noce"
+    ],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Un hombre cae herido en un tiroteo. En su última declaración recuerda su vida junto a John el bastardo, un famoso bandolero, y un gran seductor, que vivía obsesionado con conocer la identidad de su padre para encontrarlo.",
+    "poster": "https://image.tmdb.org/t/p/w500/i7rlTNBiif3sV9QkkFRxJGNCCbl.jpg"
+   },
+   {
+    "time": "11:45",
     "channel": "Be Mad",
     "title": "Mortal",
     "originalTitle": "Mortal",
     "year": null,
-    "duration": "105 min",
+    "duration": "108 min",
     "genre": "Cine",
     "director": "",
     "cast": [],
@@ -2071,7 +1105,27 @@
     "poster": ""
    },
    {
-    "time": "13:45",
+    "time": "12:55",
+    "channel": "La 2",
+    "title": "Llega Sartana",
+    "originalTitle": "Una nuvola di polvere… un grido di morte… arriva Sartana",
+    "year": 1970,
+    "duration": "96 min",
+    "genre": "Western",
+    "director": "Giuliano Carnimeo",
+    "cast": [
+     "Gianni Garko",
+     "Nieves Navarro",
+     "Massimo Serato",
+     "Piero Lulli"
+    ],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "(Cine,Oeste) Sartana provoca su arresto para contactar en prisión con Grand Full y hallar un botín de 500.000$, pero no es el único con ese plan.\n· País: España e Italia\n· Dirección: Giuliano Carnimeo.\n· Reparto: Gianni Garko, Nieves Navarro, Massimo Serato, Piero Lulli, Bruno Corazzari, Frank Braña, José Jaspe.\n· Guion: Eduardo Brochero, Eduardo Manzanos, Tito Carpi, Ernesto Gastaldi.\n· Música: Bruno Nicolai.\n· Producción: Eduardo Brochero, Luciano Martino, Eduardo Manzanos.\n· Productora: Devon Film, Copercines, Cooperativa Cinematográfica.",
+    "poster": "https://image.tmdb.org/t/p/w500/pLLMzsdDXbjRBQ68bGM8dcTBIR0.jpg"
+   },
+   {
+    "time": "13:33",
     "channel": "Be Mad",
     "title": "Jeepers Creepers 2",
     "originalTitle": "Jeepers Creepers 2",
@@ -2085,7 +1139,7 @@
      "Jonathan Breck",
      "Al Santos"
     ],
-    "criticScore": null,
+    "criticScore": 3.6,
     "audienceScore": 6.2,
     "synopsis": "(Cine,Terror) Un autobús de estudiantes que viene de ganar un campeonato de basket sufrirá una extraña avería en una carretera comarcal alejada de la civilización. Pero ni ellos ni las animadoras que los acompañan imaginan el terrible peligro que les acecha.\n· País: Estados Unidos\n· Dirección: Víctor Salva.\n· Reparto: Ray Wise, Nicki Aycox, Jonathan Breck, Kasan Butcher, Josh Hammond, Nick George.\n· Guion: Víctor Salva.\n· Música: Bennett Salvay.\n· Producción: Tom Luse.\n· Productora: Tom Luse, Lucas Foster, Francis Ford Coppola, Myriad Pictures, Kirk D'Amico, Bobby Rock.",
     "poster": "https://image.tmdb.org/t/p/w500/q6RYpWhrlCtqsBI3VzSsAem5Q8o.jpg"
@@ -2126,7 +1180,7 @@
     "poster": ""
    },
    {
-    "time": "15:30",
+    "time": "15:24",
     "channel": "Be Mad",
     "title": "V de Vendetta",
     "originalTitle": "V for Vendetta",
@@ -2140,7 +1194,7 @@
      "Stephen Rea",
      "Stephen Fry"
     ],
-    "criticScore": null,
+    "criticScore": 6.2,
     "audienceScore": 7.9,
     "synopsis": "(Cine,Acción) En la Inglaterra de un futuro no muy lejano, convertida en un estado totalitario, Evey, una joven de clase trabajadora, es rescatada por V, un misterioso enmascarado que dedica su vida a liberar a los ciudadanos de aquellos que los someten con el terror.\n· País: Alemania, Estados Unidos y Reino Unido\n· Dirección: James McTeigue.\n· Reparto: Natalie Portman, Hugo Weaving, Stephen Rea, Stephen Fry, John Hurt, Tim Pigott-Smith, Rupert Graves, Roger Allam, Ben Miles.\n· Guion: Lana Wachowski, Lilly Wachowski.\n· Música: Dario Marianelli.\n· Producción: Grant Hill, Lorne Orleans, Joel Silver, Lilly Wachowski, Lana Wachowski.\n· Productora: Warner Bros. Pictures, DC Comics, Silver Pictures, Warner Bros.",
     "poster": "https://image.tmdb.org/t/p/w500/RGtqJD856BJ7kZ88v7ZPz84tU6.jpg"
@@ -2166,7 +1220,7 @@
     "poster": "https://image.tmdb.org/t/p/w500/7Jt8JECxJUWgfJQmgR3tFDyMvHz.jpg"
    },
    {
-    "time": "17:30",
+    "time": "17:47",
     "channel": "Be Mad",
     "title": "The Boy",
     "originalTitle": "The Boy",
@@ -2180,7 +1234,7 @@
      "James Russell",
      "Jim Norton"
     ],
-    "criticScore": null,
+    "criticScore": 4.2,
     "audienceScore": 6.0,
     "synopsis": "(Cine,Terror) Greta Evans es una joven estadounidense que es contratada como niñera en la casa de los Heelshire, una lujosa mansión alejada de la civilización. Pero el hijo del señor y la señora Heelshire no es un niño como los demás: es un muñeco llamado Brahms.\n· País: Canadá, China y Estados Unidos\n· Dirección: William Brent Bell.\n· Reparto: Lauren Cohan, Rupert Evans, Jim Norton, Diana Hardcastle, Ben Robson, James Russell.\n· Guion: Stacey Menear.\n· Música: Bear McCreary.\n· Producción: Matt Berenson, Roy Lee, Tom Rosenberg, Jim Wedaa.\n· Productora: Lakeshore Entertainment, STX Entertainment, Vertigo Entertainment, Huayi Brothers Media.",
     "poster": "https://image.tmdb.org/t/p/w500/i8BexaL67WNDhUMNN6XK3QSTumA.jpg"
@@ -2221,7 +1275,7 @@
     "poster": ""
    },
    {
-    "time": "19:15",
+    "time": "19:19",
     "channel": "Be Mad",
     "title": "La maldición de Rookford",
     "originalTitle": "The Awakening",
@@ -2235,13 +1289,13 @@
      "Imelda Staunton",
      "Isaac Hempstead Wright"
     ],
-    "criticScore": null,
+    "criticScore": 5.3,
     "audienceScore": 6.4,
     "synopsis": "(Cine,Terror) Inglaterra, 1921. Florence es una escéptica mujer que viaja hasta un internado de la campiña inglesa con el fin de desvelar el fraude de un supuesto caso paranormal. Su mente racional no lográ entender lo que está viviendo allí.\n· País: Reino Unido\n· Dirección: Nick Murphy.\n· Reparto: Rebecca Hall, Dominic West, Imelda Staunton, Isaac Hempstead Wright, Shaun Dooley, Joseph Mawle, Diana Kent, Richard Durden, John Shrapnel.\n· Guion: Stephen Volk, Nick Murphy.\n· Música: Daniel Pemberton.\n· Producción: Sarah Curtis, Julia Stannard, David M. Thompson.\n· Productora: StudioCanal, BBC Films, Creative Scotland.",
     "poster": "https://image.tmdb.org/t/p/w500/1LfTdz8u7A25pODn6E7zeEZanMS.jpg"
    },
    {
-    "time": "21:00",
+    "time": "21:07",
     "channel": "Be Mad",
     "title": "Muere otra vez",
     "originalTitle": "Boss Level",
@@ -2255,48 +1309,53 @@
      "Naomi Watts",
      "Will Sasso"
     ],
-    "criticScore": null,
+    "criticScore": 5.6,
     "audienceScore": 6.9,
     "synopsis": "(Cine,Acción) Un oficial de las fuerzas especiales ya retirado se ve obligado a vivir una y otra vez en bucle el día de su muerte.\n· País: Australia, Estados Unidos y Reino Unido\n· Dirección: Joe Carnahan.\n· Reparto: Frank Grillo, Mel Gibson, Naomi Watts, Annabelle Wallis, Michelle Yeoh.\n· Guion: Chris Borey, Eddie Borey, Joe Carnahan.\n· Música: Clinton Shorter.",
     "poster": "https://image.tmdb.org/t/p/w500/hlHAeVkX5xdfSw17j9sR2vChULc.jpg"
    },
    {
-    "time": "22:05",
+    "time": "22:00",
     "channel": "Neox",
-    "title": "Cine",
-    "originalTitle": "Cine",
-    "year": null,
-    "duration": "135 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
+    "title": "El pregón",
+    "originalTitle": "El pregón",
+    "year": 2016,
+    "duration": "85 min",
+    "genre": "Comedia",
+    "director": "Dani de la Orden",
+    "cast": [
+     "Andreu Buenafuente",
+     "Berto Romero",
+     "Belén Cuesta",
+     "Jorge Sanz"
+    ],
     "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "Programa por determinar...",
-    "poster": ""
+    "audienceScore": 5.1,
+    "synopsis": "(Cine,Comedia) Los hermanos Osorio, olvidadas estrellas del tecno de los 90, vuelven a su pueblo por dinero para dar el pregón, desatando un divertidísimo caos.\n· País: España\n· Dirección: Dani de la Orden.\n· Reparto: Berto Romero, Andreu Buenafuente, Belén Cuesta, Jorge Sanz, Goyo Jiménez.\n· Guion: David Serrano, Diego San José, Daniel González.\n· Producción: Andreu Buenafuente, Berto Romero, Mikel Lejarza.\n· Productora: El Terrat, Atresmedia Cine.",
+    "poster": "https://image.tmdb.org/t/p/w500/andk1U3PJpnyFKYbFbZcm4aTKFx.jpg"
    },
    {
-    "time": "22:40",
+    "time": "22:35",
     "channel": "La 2",
-    "title": "Cine",
-    "originalTitle": "Cine",
+    "title": "Historia de nuestro cine",
+    "originalTitle": "Historia de nuestro cine",
     "year": null,
-    "duration": "115 min",
+    "duration": "145 min",
     "genre": "Cine",
     "director": "",
     "cast": [],
     "criticScore": null,
     "audienceScore": null,
-    "synopsis": "Programa por determinar...",
+    "synopsis": "(Cine,Programa de cine) Espacio que ofrece un recorrido por lo mejor del cine español desde los años 30 hasta nuestros días de la mano de un grupo de expertos que introducirán cada película.\n· País: España\n· Dirección: Elena S Sánchez.",
     "poster": ""
    },
    {
-    "time": "22:45",
+    "time": "22:43",
     "channel": "Be Mad",
     "title": "El corruptor",
     "originalTitle": "El corruptor",
     "year": null,
-    "duration": "105 min",
+    "duration": "128 min",
     "genre": "Cine",
     "director": "",
     "cast": [],
@@ -2322,18 +1381,23 @@
    },
    {
     "time": "22:55",
-    "channel": "ATV",
-    "title": "Cine",
-    "originalTitle": "Cine",
-    "year": null,
-    "duration": "75 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "Programa por determinar...",
-    "poster": ""
+    "channel": "FDF",
+    "title": "Los Juegos del Hambre: Balada de pájaros cantores y serpientes",
+    "originalTitle": "The Hunger Games: The Ballad of Songbirds & Snakes",
+    "year": 2023,
+    "duration": "157 min",
+    "genre": "Ciencia ficción",
+    "director": "Francis Lawrence",
+    "cast": [
+     "Tom Blyth",
+     "Rachel Zegler",
+     "Peter Dinklage",
+     "Jason Schwartzman"
+    ],
+    "criticScore": 5.4,
+    "audienceScore": 7.0,
+    "synopsis": "En el Capitolio, Coriolanus Snow, de dieciocho años, se prepara para una oportunidad única: alcanzar la gloria como mentor de los Juegos. La casa de los Snow, antes tan influyente, atraviesa tiempos difíciles, y su destino depende de que Coriolanus consiga superar a sus compañeros en ingenio, estrategia y encanto como mentor del tributo que le sea adjudicado.",
+    "poster": "https://image.tmdb.org/t/p/w500/2vIK81ikjvdewSLmrwIg7AMoJIv.jpg"
    },
    {
     "time": "23:00",
@@ -2349,9 +1413,49 @@
     "audienceScore": null,
     "synopsis": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
     "poster": ""
+   },
+   {
+    "time": "23:30",
+    "channel": "ATV",
+    "title": "Yo no soy guerrillero",
+    "originalTitle": "Yo no soy guerrillero",
+    "year": 2017,
+    "duration": "104 min",
+    "genre": "Comedia",
+    "director": "Sergio Sánchez Suárez",
+    "cast": [
+     "Luis Arrieta",
+     "Edgar Vivar",
+     "Silverio Palacios",
+     "Carla Nieto"
+    ],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "(Cine,Comedia) Actuando como soldados de la guerrilla, un joven millonario y sus amigos secuestran un avión para rescatar a la mujer que ama, raptada por militares durante la guerra sucia mexicana.\n· País: España y México\n· Dirección: Sergio Sánchez Suárez.\n· Reparto: Oswaldo Zárate, Juan Pablo Castañeda, Luis Velázquez, Arnulfo Reyes Sanchez, Javier Rivera, Edgar Vivar, Manuel Uriza, Luis Arrieta, Silverio Palacios.\n· Guion: Eli Garcia Ruiz, Andronico Gonzalez.\n· Productora: Angeles Morales, Escuadron Cinema, Film Republic.",
+    "poster": "https://image.tmdb.org/t/p/w500/9i8rtWQ4iVXgmGO7BlcNDIT4fPY.jpg"
    }
   ],
   "2026-11-27": [
+   {
+    "time": "00:00",
+    "channel": "Neox",
+    "title": "Killers",
+    "originalTitle": "Killers",
+    "year": 2010,
+    "duration": "101 min",
+    "genre": "Acción",
+    "director": "Robert Luketic",
+    "cast": [
+     "Ashton Kutcher",
+     "Katherine Heigl",
+     "Tom Selleck",
+     "Catherine O'Hara"
+    ],
+    "criticScore": 2.1,
+    "audienceScore": 6.0,
+    "synopsis": "(Cine,Comedia) Spencer es un agente secreto con licencia para matar que decide abandonar su trabajo cuando encuentra a la mujer de sus sueños y se casa con ella. Sin embargo, la felicidad de la pareja dura poco, ya que han puesto precio a la cabeza de Spencer.\n· País: Estados Unidos\n· Dirección: Robert Luketic.\n· Reparto: Ashton Kutcher, Katherine Heigl, Tom Selleck, Catherine O'Hara, Mary Birdsong, John Atwood.\n· Guion: Ted Griffin, Bob DeRosa.\n· Música: Rolfe Kent.\n· Producción: Ashton Kutcher, Jason Goldberg, Mike Karz, Scott Aversano.\n· Productora: John Sacchi, Josie Rosen, Karyn Murphy, William S. Beasley, Chad Marting, Peter Morgan.",
+    "poster": "https://image.tmdb.org/t/p/w500/kb1RumwxMGwslRG0DG4VPjl5LwX.jpg"
+   },
    {
     "time": "00:10",
     "channel": "Canal Sur",
@@ -2367,28 +1471,13 @@
      "Naomie Harris",
      "巩俐"
     ],
-    "criticScore": null,
+    "criticScore": 6.6,
     "audienceScore": 6.2,
     "synopsis": "(Cine,Acción) Los agentes antivicio Sonny Crockett y Ricardo Tubbs descubren que un soplo ha causado la muerte de un confidente y dos agentes federales. La investigación no tarda en llevarlos ante la puerta de los brutales asesinos de la Hermandad Aria.\n· País: Alemania y Estados Unidos\n· Dirección: Michael Mann.\n· Reparto: Colin Farrell, Jamie Foxx, Gong Li, Naomie Harris, Ciarán Hinds, Justin Theroux, Barry Shabaka Henley, Luis Tosar, John Ortiz, Elizabeth Rodriguez.\n· Guion: Michael Mann, Anthony Yerkovich.\n· Música: John Murphy.\n· Producción: Michael Mann, Pieter Jan Brugge.\n· Productora: Universal Pictures, Forward Pass, Metropolis Films, Foqus Arte Digital, Michael Mann Productions.",
     "poster": "https://image.tmdb.org/t/p/w500/nvS3fyzSBVDMP6wjQKo0Z8GVWo3.jpg"
    },
    {
-    "time": "00:20",
-    "channel": "Neox",
-    "title": "Cine",
-    "originalTitle": "Cine",
-    "year": null,
-    "duration": "100 min",
-    "genre": "Cine",
-    "director": "",
-    "cast": [],
-    "criticScore": null,
-    "audienceScore": null,
-    "synopsis": "Programa por determinar...",
-    "poster": ""
-   },
-   {
-    "time": "00:30",
+    "time": "00:51",
     "channel": "Be Mad",
     "title": "Ajuste de cuentas",
     "originalTitle": "Reckless",
@@ -2410,20 +1499,75 @@
    {
     "time": "02:00",
     "channel": "Neox",
-    "title": "Cine",
-    "originalTitle": "Cine",
+    "title": "La sombra del faraón",
+    "originalTitle": "Tale of the Mummy",
+    "year": 1998,
+    "duration": "115 min",
+    "genre": "Terror",
+    "director": "Russell Mulcahy",
+    "cast": [
+     "Jason Scott Lee",
+     "Louise Lombard",
+     "Sean Pertwee",
+     "Lysette Anthony"
+    ],
+    "criticScore": null,
+    "audienceScore": 4.7,
+    "synopsis": "(Cine,Terror) Siglos atrás, bajo las arenas del antiguo Egipto, un malvado príncipe fue enterrado y su tumba eternamente maldita para que ningún mortal volviera a sufrir su maléfico poder. Cientos de años después, se rompe la maldición.\n· País: Estados Unidos, Luxemburgo y Reino Unido\n· Dirección: Russell Mulcahy.\n· Reparto: Cyril Nri, David Sterne, Alex Torino, Waris, Yoann Provenzano, Ann Overstall Comfort, Jamie Treacher, Anthony Beselle, Jason Scott Lee, Lysette Anthony, Christopher Lee, Michael Lerner, Sean Pertwee, Honor Blackman, Louise Lombard.\n· Guion: Russell Mulcahy, John Esposito, Keith L. Williams.\n· Música: Stefano Mainetti.\n· Producción: Silvio Muraglia, Tom Reeve, Daniel Sladek, Romain Schroeder, Jeffrey White, Sterling Belafant.\n· Productora: Silvio Muraglia, Daniel Sladeck, Lauren Films, The Carousel Picture Company, 7th Voyage, Cine Grande Corporation, K.N.B. EFX Group, Inc, The Pharaohs Company, Ltd.",
+    "poster": "https://image.tmdb.org/t/p/w500/kcC2r377OCv0lbbKXaNj91spJdX.jpg"
+   },
+   {
+    "time": "03:00",
+    "channel": "Bom Cine",
+    "title": "Bom Cine",
+    "originalTitle": "Bom Cine",
     "year": null,
-    "duration": "90 min",
+    "duration": "240 min",
     "genre": "Cine",
     "director": "",
     "cast": [],
     "criticScore": null,
     "audienceScore": null,
-    "synopsis": "Programa por determinar...",
+    "synopsis": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
     "poster": ""
    },
    {
-    "time": "03:30",
+    "time": "03:15",
+    "channel": "La 2",
+    "title": "Cuerpo abierto · O corpo aberto",
+    "originalTitle": "Cuerpo abierto · O corpo aberto",
+    "year": null,
+    "duration": "85 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "(Cine,Drama) Miguel, un joven profesor, es destinado a una pequeña aldea entre España y Portugal. Allí conoce a una mujer que le intriga enormemente, y poco a poco todo el lugar se va barnizando de misterio.\n· País: España y Portugal\n· Dirección: Ángeles Huerta.\n· Reparto: Tamar Novas, Víctor Fernández, Víctor Fábregas, Victoria Guerra, Manuela González, José Benito, María Vázquez, Rebeca Dobaño, Elena Seijo, José Fidalgo, Gabriel Dobaño, Nicolás Otero, Alejandra Cerquera, Rodrigo Gonzalez, Federico Pérez Rey, Miquel Insúa.\n· Guion: Daniel D García, Ángeles Huerta.\n· Productora: Axencia Galega das Industrias Culturais (AGADIC), Radio Televisión Española (RTVE), Fasten Films, Xunta de Galicia, Adrià Monés, Instituto de la Cinematografía y de las Artes Audiovisuales (ICAA), Ana Costa.",
+    "poster": ""
+   },
+   {
+    "time": "03:15",
+    "channel": "La 2",
+    "title": "Cuerpo abierto",
+    "originalTitle": "O Corpo Aberto",
+    "year": 2022,
+    "duration": "88 min",
+    "genre": "Terror",
+    "director": "Ángeles Huerta",
+    "cast": [
+     "Tamar Novas",
+     "Victoria Guerra",
+     "José Fidalgo",
+     "María Vázquez"
+    ],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Miguel, un joven profesor, es destinado a una pequeña aldea entre España y Portugal. Allí conoce a una mujer que le intriga enormemente, y poco a poco todo el lugar se va barnizando de misterio.",
+    "poster": "https://image.tmdb.org/t/p/w500/jO9AyoMI8bNWPLligWu23bXm6NJ.jpg"
+   },
+   {
+    "time": "03:28",
     "channel": "Be Mad",
     "title": "Apex",
     "originalTitle": "Apex",
@@ -2437,25 +1581,100 @@
      "Eric Bana",
      "Caitlin Stasey"
     ],
-    "criticScore": null,
+    "criticScore": 5.8,
     "audienceScore": 6.9,
     "synopsis": "(Cine,Acción) Cinco cazadores de élite pagan para cazar a un hombre en una isla desierta. Pero cuando su presa comienza a defenderse, los roles de cazadores y de la presa cambian.\n· País: Canadá y Estados Unidos\n· Dirección: Edward Drake.\n· Reparto: Cole Hauser, Neal McDonough, Bruce Willis, Kaitlind Doig, Corey Large, Laurence Mark Leeke.\n· Guion: Corey Large.\n· Productora: 308 Ent Production, BondIt Media Capital, Brian O'Shea, Brandt Andersen, Grady Craig, Matthew Helderman.",
     "poster": "https://image.tmdb.org/t/p/w500/mV7uFS1U8iP0p4CcXZp4znBVpch.jpg"
    },
    {
-    "time": "05:00",
+    "time": "05:02",
     "channel": "Be Mad",
-    "title": "Blackout: sin identidad",
-    "originalTitle": "Blackout: sin identidad",
+    "title": "Corre o muere",
+    "originalTitle": "You Can't Run Forever",
+    "year": 2024,
+    "duration": "102 min",
+    "genre": "Suspense",
+    "director": "Michelle Schumacher",
+    "cast": [
+     "J.K. Simmons",
+     "Fernanda Urrejola",
+     "Allen Leech",
+     "Isabelle Anaya"
+    ],
+    "criticScore": null,
+    "audienceScore": 5.6,
+    "synopsis": "(Cine,Drama) Una chica con un pasado trágico se convierte en el objetivo de un asesino en serie. Ahora necesita reunir todas sus fuerzas para sobrevivir y escapar de él en medio del bosque.\n· País: Estados Unidos\n· Dirección: Michelle Schumacher.\n· Reparto: J.K. Simmons, Fernanda Urrejola, Allen Leech, Johanna Ciampa, Sean Manny Manraksa, Andy Taylor.\n· Guion: Carolyn Carpenter.\n· Productora: Rubber Tree Productions, Randle Schumacher.",
+    "poster": "https://image.tmdb.org/t/p/w500/zUYEt6OWkppLIJuDpxVqLVLq5JY.jpg"
+   },
+   {
+    "time": "06:40",
+    "channel": "Be Mad",
+    "title": "Los 33: una historia de esperanza",
+    "originalTitle": "The 33",
+    "year": 2015,
+    "duration": "127 min",
+    "genre": "Drama",
+    "director": "Patricia Riggen",
+    "cast": [
+     "Antonio Banderas",
+     "Rodrigo Santoro",
+     "Kate del Castillo",
+     "Juliette Binoche"
+    ],
+    "criticScore": 5.5,
+    "audienceScore": 6.4,
+    "synopsis": "(Cine,Drama) La historia real de los treinta y tres mineros chilenos que el 5 de agosto de 2010 quedaron atrapados a más de setecientos metros de profundidad tras el derrumbe de la mina en la que trabajaban, y de los dos meses que duraron los trabajos de rescate.\n· País: Chile, Colombia y Estados Unidos\n· Dirección: Patricia Riggen.\n· Reparto: Antonio Banderas, Rodrigo Santoro, Juliette Binoche, Lou Diamond Phillips, Kate del Castillo, Gabriel Byrne, James Brolin, Mario Casas.\n· Guion: José Rivera, Mikko Alanne, Craig Borten, Michael Thomas.\n· Música: James Horner.\n· Productora: Phoenix Pictures.",
+    "poster": "https://image.tmdb.org/t/p/w500/428swQoL0VH65ixfsYxnWCJqGrG.jpg"
+   },
+   {
+    "time": "07:00",
+    "channel": "Bom Cine",
+    "title": "Bom Cine",
+    "originalTitle": "Bom Cine",
     "year": null,
-    "duration": "81 min",
+    "duration": "240 min",
     "genre": "Cine",
     "director": "",
     "cast": [],
     "criticScore": null,
     "audienceScore": null,
-    "synopsis": "(Cine,Acción) Caín se despierta en un hospital mejicano con amnesia y sin saber quién es. Después de conocer a Anna, y con su ayuda, descubre su identidad: es un agente de la DEA.\n· País: Estados Unidos y México\n· Dirección: Sam Maccarone, Sam Macaroni.\n· Reparto: Rolando Gonzalez, Bane Kovacevic, Roberto Sosa, Lino Quintana, Alec Gillis, Ronald Diez.\n· Guion: Van B. Nguyen.\n· Productora: Santiago Garcia Galvan, Bavand Karim, Lety Camacho, Jason Sallee, Fernando Pérez Gavilán, Natalie Perrotta.",
+    "synopsis": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
     "poster": ""
+   },
+   {
+    "time": "11:00",
+    "channel": "Bom Cine",
+    "title": "Bom Cine",
+    "originalTitle": "Bom Cine",
+    "year": null,
+    "duration": "240 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
+    "poster": ""
+   },
+   {
+    "time": "11:32",
+    "channel": "Be Mad",
+    "title": "Mortal Kombat",
+    "originalTitle": "Mortal Kombat",
+    "year": 2021,
+    "duration": "110 min",
+    "genre": "Acción",
+    "director": "Simon McQuoid",
+    "cast": [
+     "Lewis Tan",
+     "Jessica McNamee",
+     "Mehcad Brooks",
+     "Josh Lawson"
+    ],
+    "criticScore": 4.4,
+    "audienceScore": 7.0,
+    "synopsis": "(Cine,Acción) Durante nueve generaciones un malvado brujo ha conseguido que un poderoso príncipe venciera a sus enemigos.\n· País: Estados Unidos\n· Dirección: Paul W. S. Anderson.\n· Reparto: Christopher Lambert, Linden Ashby, Robin Shou, Talisa Soto, Cary-Hiroyuki Tagawa, Bridgette Wilson-Sampras.\n· Productora: New Line Cinema.",
+    "poster": "https://image.tmdb.org/t/p/w500/t2GbiMJfO8txoihdJC8RsfK1ds7.jpg"
    },
    {
     "time": "11:55",
@@ -2487,10 +1706,65 @@
      "Stephen Young",
      "Michael Strong"
     ],
-    "criticScore": null,
+    "criticScore": 8.6,
     "audienceScore": 7.4,
     "synopsis": "(Cine,Biopic) Biografía del general George S. Patton, quien tras vencer a Rommel en el norte de África, condujo a sus tropas de manera imparable a través de Europa hasta llegar al corazón de Alemania.\n· País: Estados Unidos\n· Dirección: Franklin J. Schaffner.\n· Reparto: Douglas Wilmer, David Healy, Lionel Murton, Peter Barkworth, Jack Gwillim, Gerald Flood.\n· Guion: Francis Ford Coppola, Edmund H North.\n· Música: Jerry Goldsmith.\n· Producción: Frank McCarthy.\n· Productora: Frank McCarthy, Frank Caffey, Twentieth Century Fox.",
     "poster": "https://image.tmdb.org/t/p/w500/1jCaXkBMi9onVxeqqN9v7kovp3u.jpg"
+   },
+   {
+    "time": "15:00",
+    "channel": "Bom Cine",
+    "title": "Bom Cine",
+    "originalTitle": "Bom Cine",
+    "year": null,
+    "duration": "240 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
+    "poster": ""
+   },
+   {
+    "time": "16:02",
+    "channel": "Be Mad",
+    "title": "El Contratista",
+    "originalTitle": "El Contratista",
+    "year": 2018,
+    "duration": "100 min",
+    "genre": "Acción",
+    "director": "JoJo Henrickson",
+    "cast": [
+     "Alejandro De Hoyos",
+     "Ana Layevska",
+     "Reinaldo Zavarce",
+     "Lyduan Gonzalez"
+    ],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "(Cine,Thriller) El sargento de las Fuerzas Especiales James Harper (Chris Pine), es dado de baja del ejército y privado de su pensión.\n· País: Estados Unidos\n· Dirección: Tarik Saleh.\n· Reparto: Chris Pine, Gillian Jacobs, Sander Thomas, Toby Dixon.\n· Guion: J.P Davis.\n· Música: Alex Belcher.\n· Productora: 30West, Icon Films.",
+    "poster": "https://image.tmdb.org/t/p/w500/mF94urK8492nQJTPZwW7sHDhfvb.jpg"
+   },
+   {
+    "time": "18:00",
+    "channel": "Be Mad",
+    "title": "Código de defensa",
+    "originalTitle": "The Numbers Station",
+    "year": 2013,
+    "duration": "89 min",
+    "genre": "Acción",
+    "director": "Kasper Barfoed",
+    "cast": [
+     "John Cusack",
+     "Malin Akerman",
+     "Hannah Murray",
+     "Liam Cunningham"
+    ],
+    "criticScore": 3.9,
+    "audienceScore": 5.5,
+    "synopsis": "(Cine,Acción) A un agente especial caído en desgracia se le encarga la protección de una joven de veinte años. Después de sufrir un ataque, protegida y protector se pierden en el desierto de Nevada, donde empieza para ellos una auténtica lucha por la supervivencia.\n· País: Bélgica, Estados Unidos y Reino Unido\n· Dirección: Kasper Barfoed.\n· Reparto: John Cusack, Malin Akerman, Brian Nickels, Liam Cunningham, David Wenden, Richard Brake.\n· Guion: F. Scott Frazier.\n· Música: Paul Leonard-Morgan.\n· Producción: Sean Furst, Bryan Furst, Nigel Thomas.\n· Productora: Doug Mankoff, Chris Fenton, Christopher Figg, Atlantic Swiss Productions, James Gibb, Furst Films.",
+    "poster": "https://image.tmdb.org/t/p/w500/mQYKypdkEZfX7JYAxqx9aq047z0.jpg"
    },
    {
     "time": "18:00",
@@ -2507,10 +1781,45 @@
      "Gary Grimes",
      "Neville Brand"
     ],
-    "criticScore": null,
+    "criticScore": 6.1,
     "audienceScore": 6.1,
     "synopsis": "(Cine,Oeste) Es un duro e implacable sheriff temido por los delincuentes. Su empeño por hacer cumplir la ley le ha hecho descuidar su familia.\n· País: Estados Unidos\n· Dirección: Andrew V. McLaglen.\n· Reparto: John Wayne, George Kennedy, Gary Grimes, Neville Brand, Clay O'Brien, Chuck Roberson, Ralph Volkie, Hank Worden.\n· Guion: Harry Julian Fink, Rita M. Fink.\n· Música: Elmer Bernstein.\n· Producción: Michael Wayne.\n· Productora: Warner Bros, John Wayne, Batjac Productions, Michael Wayne.",
     "poster": "https://image.tmdb.org/t/p/w500/kQEwZjvmkvVSQvqRWPd9ByKFbbr.jpg"
+   },
+   {
+    "time": "19:00",
+    "channel": "Bom Cine",
+    "title": "Bom Cine",
+    "originalTitle": "Bom Cine",
+    "year": null,
+    "duration": "240 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
+    "poster": ""
+   },
+   {
+    "time": "19:30",
+    "channel": "Be Mad",
+    "title": "Operación AWOL-72",
+    "originalTitle": "AWOL-72",
+    "year": 2015,
+    "duration": "79 min",
+    "genre": "Suspense",
+    "director": "Christian Sesma",
+    "cast": [
+     "Luke Goss",
+     "RZA",
+     "Bokeem Woodbine",
+     "Louis Mandylor"
+    ],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "(Cine,Thriller) La detective Rose se verá envuelta en medio de un conflicto cuando descubre que, un marine que posee información secreta del gobierno, es perseguido por operaciones especiales rusas, la policía de Los Ángeles y un peligroso asesino.\n· País: Estados Unidos\n· Dirección: Christian Sesma.\n· Reparto: Luke Goss, RZA, Bokeem Woodbine, Heather Roop, Nicole Crowther, Justene Jaro.\n· Guion: Christian Sesma, Cecil Chambers.\n· Música: Michael John Mollo.\n· Productora: Cedric Magnin, Marius Haugan, Elias Axume, Woody Andrews, Malik Barnhardt, Lock n' Load Pictures.",
+    "poster": "https://image.tmdb.org/t/p/w500/7UZ1hQYzft6otq9qrFg0SmnmfJi.jpg"
    },
    {
     "time": "20:00",
@@ -2531,6 +1840,26 @@
     "audienceScore": 6.7,
     "synopsis": "(Cine,Oeste) Tras liberar a una mujer blanca de los comanches, Jeff Cody se dirige a entregarla a su familia para cobrar la recompensa.\n· País: Estados Unidos\n· Dirección: Budd Boetticher.\n· Reparto: Randolph Scott, Nancy Gates, Skip Homeier, Claude Akins, Rand Brooks, Richard Rust.\n· Guion: Burt Kennedy.\n· Música: Heinz Roemheld.\n· Producción: Budd Boetticher.\n· Productora: Columbia Pictures, Columbia Pictures Corporation.",
     "poster": "https://image.tmdb.org/t/p/w500/AuPcJrd2vh6oNhv1P2RIBZ9xQd.jpg"
+   },
+   {
+    "time": "21:00",
+    "channel": "Be Mad",
+    "title": "Última llamada",
+    "originalTitle": "Phone Booth",
+    "year": 2003,
+    "duration": "81 min",
+    "genre": "Suspense",
+    "director": "Joel Schumacher",
+    "cast": [
+     "Colin Farrell",
+     "Kiefer Sutherland",
+     "Forest Whitaker",
+     "Radha Mitchell"
+    ],
+    "criticScore": 5.6,
+    "audienceScore": 6.9,
+    "synopsis": "(Cine,Thriller) Stu Shepard, un asesor de publicidad de medio pelo, oye sonar insistentemente el teléfono de una cabina pública. Sabe que no tiene nada que ver con él, pero el instinto lo obliga a descolgar. A partir de ese momento se verá preso de un tortuoso juego.\n· País: Estados Unidos\n· Dirección: Joel Schumacher.\n· Reparto: Colin Farrell, Forest Whitaker, Saffron Burrows, Katie Holmes, Colin Patrick Lynch, Radha Mitchell, Dean Cochran, Kiefer Sutherland, Shu Lan Tuan, Zidu Chen, Karara Muhoro, Julio Oscar Mechoso, Tom Reynolds, Paula Jai Parker.\n· Guion: Larry Cohen.\n· Música: Harry Gregson-Williams.\n· Producción: David Zucker, Gil Netter.\n· Productora: Fox 2000 Pictures, Eli Richbourg, Zucker/Netter Productions.",
+    "poster": "https://image.tmdb.org/t/p/w500/5NfIQnpdimdr6uXkB46YQUJnjLZ.jpg"
    },
    {
     "time": "21:45",
@@ -2577,10 +1906,30 @@
      "Paul Henreid",
      "Claude Rains"
     ],
-    "criticScore": null,
+    "criticScore": 10.0,
     "audienceScore": 8.1,
     "synopsis": "(Cine,Drama romántico) El propietario de un club en Marruecos, se reencuentra con la mujer a la que amó en París dos años atrás.\n· País: Estados Unidos\n· Dirección: Michael Curtiz.\n· Reparto: Humphrey Bogart, Ingrid Bergman, S.Z. Sakall, Madeleine LeBeau, Conrad Veidt, Peter Lorre, Sydney Greenstreet, Paul Henreid, Claude Rains, Dooley Wilson.\n· Guion: Julius J. Epstein, Philip G. Epstein, Howard Koch, Casey Robinson.\n· Música: Max Steiner.\n· Producción: Hal B. Wallis.\n· Productora: Warner Bros.",
     "poster": "https://image.tmdb.org/t/p/w500/a7EjycGNSYw6QqJqDooD9eQGZ4r.jpg"
+   },
+   {
+    "time": "22:15",
+    "channel": "Be Mad",
+    "title": "El último hombre",
+    "originalTitle": "Last Man Standing",
+    "year": 1996,
+    "duration": "103 min",
+    "genre": "Acción",
+    "director": "Walter Hill",
+    "cast": [
+     "Bruce Willis",
+     "Bruce Dern",
+     "William Sanderson",
+     "Christopher Walken"
+    ],
+    "criticScore": 4.4,
+    "audienceScore": 6.4,
+    "synopsis": "(Cine,Acción) En el camino a imponer su propia justicia, un pistolero interpretado por Bruce Willis se ve atrapado en un juego entre dos bandas de gánsters.",
+    "poster": "https://image.tmdb.org/t/p/w500/lMzXEtP0kSwxeo3AfUfGkb2Ykia.jpg"
    },
    {
     "time": "22:35",
@@ -2600,16 +1949,31 @@
    {
     "time": "23:00",
     "channel": "Cuatro",
-    "title": "Cine",
-    "originalTitle": "Cine",
+    "title": "El blockbuster",
+    "originalTitle": "El blockbuster",
     "year": null,
-    "duration": "120 min",
+    "duration": "150 min",
     "genre": "Cine",
     "director": "",
     "cast": [],
     "criticScore": null,
     "audienceScore": null,
-    "synopsis": "Programa por determinar...",
+    "synopsis": "(Cine) El blockbuster -.",
+    "poster": ""
+   },
+   {
+    "time": "23:00",
+    "channel": "Bom Cine",
+    "title": "Bom Cine",
+    "originalTitle": "Bom Cine",
+    "year": null,
+    "duration": "240 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
     "poster": ""
    },
    {
@@ -2660,6 +2024,26 @@
   ],
   "2026-11-28": [
    {
+    "time": "00:15",
+    "channel": "Be Mad",
+    "title": "L.A. Confidential",
+    "originalTitle": "L.A. Confidential",
+    "year": 1997,
+    "duration": "138 min",
+    "genre": "Crimen",
+    "director": "Curtis Hanson",
+    "cast": [
+     "Kevin Spacey",
+     "Russell Crowe",
+     "Guy Pearce",
+     "James Cromwell"
+    ],
+    "criticScore": 9.1,
+    "audienceScore": 7.8,
+    "synopsis": "(Cine,Thriller) Los Ángeles, 1953. Mientras el cine de Hollywood vende una imagen esplendorosa de la ciudad, el tráfico de drogas y los agentes corruptos están a la orden del día.\n· País: Estados Unidos\n· Dirección: Curtis Hanson.\n· Reparto: Kevin Spacey, Kim Basinger, Russell Crowe, Norman Howell, Guy Pearce, Michael Warwick.\n· Guion: Brian Helgeland, Curtis Hanson.\n· Música: Jerry Goldsmith.\n· Producción: Michael G. Nathanson, Arnon Milchan, Curtis Hanson.\n· Productora: Regency Enterprises, Monarchy Enterprises B.V, Warner Bros, Arnon Milchan, David L. Wolper, New Regency Productions.",
+    "poster": "https://image.tmdb.org/t/p/w500/3xQXLqCXMTizZ7ibSERqaBKvPhY.jpg"
+   },
+   {
     "time": "00:20",
     "channel": "Neox",
     "title": "Cine",
@@ -2675,12 +2059,12 @@
     "poster": ""
    },
    {
-    "time": "01:00",
+    "time": "01:30",
     "channel": "Cuatro",
     "title": "Cine",
     "originalTitle": "Cine",
     "year": null,
-    "duration": "130 min",
+    "duration": "165 min",
     "genre": "Cine",
     "director": "",
     "cast": [],
@@ -2735,6 +2119,26 @@
     "poster": ""
    },
    {
+    "time": "04:15",
+    "channel": "Be Mad",
+    "title": "El último héroe",
+    "originalTitle": "Герой",
+    "year": 2019,
+    "duration": "121 min",
+    "genre": "Acción",
+    "director": "Карен Оганесян",
+    "cast": [
+     "Александр Петров",
+     "Svetlana Jódchenkova",
+     "Vladímir Mashkov",
+     "Марина Петренко"
+    ],
+    "criticScore": null,
+    "audienceScore": 5.9,
+    "synopsis": "(Cine,Acción) Hace quince años, Andrei, bajo la tutela de su padre, el coronel Rodin, fue entrenado en una escuela secreta, donde los agentes eran preparados siendo adolescentes.\n· País: Rusia\n· Dirección: Karen Oganesyan.\n· Reparto: Alexander Petrov, Anastasiya Todoresku, Marina Petrenko, Konstantin Lavronenko, Vladimir Mashkov, Svetlana Khodchenkova, Yan Alabushev, Tobias Aspelin, Artem Grigoryev, Jurijs Krüze.\n· Guion: Nikolay Kulikov.\n· Productora: Russia 1, Central Partnership, Polina Ivanova, Kargo Film.",
+    "poster": "https://image.tmdb.org/t/p/w500/wcbpETz1zXYyeJy58se0IULmbt5.jpg"
+   },
+   {
     "time": "04:25",
     "channel": "Trece",
     "title": "Sitting Bull: Casta de guerreros",
@@ -2762,7 +2166,7 @@
     "year": 1985,
     "duration": "43 min",
     "genre": "Documental",
-    "director": "Michel Gómez, Julio Vizcarra Coloma",
+    "director": "Julio Vizcarra Coloma, Michel Gómez",
     "cast": [],
     "criticScore": null,
     "audienceScore": null,
@@ -2784,7 +2188,7 @@
      "Connie Nielsen",
      "Logan Marshall-Green"
     ],
-    "criticScore": null,
+    "criticScore": 4.8,
     "audienceScore": 6.6,
     "synopsis": "(Cine,Acción) Mientras la Segunda Guerra Mundial hace estragos, un batallón de élite avanza 30 millas tras las líneas enemigas para liberar a más de 500 prisioneros de guerra estadounidenses.\n· País: Australia y Estados Unidos\n· Dirección: John Dahl.\n· Reparto: Joseph Fiennes, Benjamin Bratt, Sam Worthington, Connie Nielsen, Max Martini, Marton Csokas, James Franco.\n· Guion: Doug Miro, Carlo Bernard.\n· Música: Trevor Rabin.\n· Producción: Lawrence Bender, Marty Katz.\n· Productora: Miramax Films, Village Roadshow Pictures, Lawrence Bender Productions, Marty Katz Productions.",
     "poster": "https://image.tmdb.org/t/p/w500/nHUKestiF0G493AWzuoxbMv2DS9.jpg"
@@ -2854,7 +2258,7 @@
      "Shannyn Sossamon",
      "Paul Bettany"
     ],
-    "criticScore": null,
+    "criticScore": 5.6,
     "audienceScore": 6.9,
     "synopsis": "(Cine,Aventuras) William, hijo de un campesino, tiene un sueño desde su infancia: convertirse en Caballero. Pero en la Europa del siglo XIV la fortuna no se hace, sino que se nace con ella. Un día, durante un torneo, el destino ofrecerá a William la oportunidad esperada.\n· País: Estados Unidos\n· Dirección: Brian Helgeland.\n· Reparto: Heath Ledger, Rufus Sewell, Shannyn Sossamon, Paul Bettany, Laura Fraser, Mark Addy, Alan Tudyk.\n· Guion: Brian Helgeland.\n· Música: Carter Burwell.\n· Producción: Todd Black, Brian Helgeland, Tim Van Rellim.\n· Productora: Columbia Pictures.",
     "poster": "https://image.tmdb.org/t/p/w500/mfOXbEtFmKdPPFt4SC46M0yDKL8.jpg"
@@ -3051,7 +2455,7 @@
      "Ewan McGregor",
      "Stanley Tucci"
     ],
-    "criticScore": null,
+    "criticScore": 5.1,
     "audienceScore": 5.9,
     "synopsis": "(Cine,Aventuras) Una milenaria guerra renace cuando Jack, un joven peón de labranza, abre involuntariamente un portal entre nuestro mundo y el de una temible raza de gigantes. Libres por primera vez en siglos, los gigantes buscan reclamar la tierra que perdieron una vez.\n· País: Estados Unidos y Reino Unido\n· Dirección: Bryan Singer.\n· Reparto: Nicholas Hoult, Eleanor Tomlinson, Ewan McGregor, Stanley Tucci, Ian McShane, Ewen Bremner, Eddie Marsan.\n· Guion: Darren Lemke, Christopher McQuarrie, Dan Studney.\n· Música: John Ottman.\n· Productora: New Line Cinema, Legendary Entertainment, Legendary Pictures, Original Film.",
     "poster": "https://image.tmdb.org/t/p/w500/e2QO4XUXIDvaRlix6Ybjal4pTqd.jpg"
@@ -3563,6 +2967,248 @@
     "criticScore": null,
     "audienceScore": null,
     "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "02:00",
+    "channel": "Neox",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "90 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "11:45",
+    "channel": "La 2",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "105 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "14:50",
+    "channel": "Trece",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "130 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "17:00",
+    "channel": "Trece",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "120 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "19:00",
+    "channel": "Trece",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "105 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "22:05",
+    "channel": "Neox",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "135 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "22:35",
+    "channel": "La 2",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "130 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "22:45",
+    "channel": "Canal Sur",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "100 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "22:55",
+    "channel": "ATV",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "90 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "23:00",
+    "channel": "laSexta",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "210 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "23:15",
+    "channel": "Nova",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "115 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   }
+  ],
+  "2026-12-02": [
+   {
+    "time": "00:20",
+    "channel": "Neox",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "100 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "00:25",
+    "channel": "Canal Sur",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "85 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "00:45",
+    "channel": "La 2",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "105 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "01:10",
+    "channel": "Nova",
+    "title": "Cine",
+    "originalTitle": "Cine",
+    "year": null,
+    "duration": "95 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Programa por determinar...",
+    "poster": ""
+   },
+   {
+    "time": "01:50",
+    "channel": "Canal Sur",
+    "title": "Una de cine",
+    "originalTitle": "Una de cine",
+    "year": null,
+    "duration": "130 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "(Cine,Programa de cine) Emisión de una película.\n· País: España",
     "poster": ""
    },
    {
