@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T20:22+01:00",
+ "generated": "2026-11-26T05:35+01:00",
  "source": [
   "https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv_sincolor.xml.gz",
   "https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiaiptv.xml",
@@ -970,6 +970,26 @@
     "poster": "https://image.tmdb.org/t/p/w500/rpxMp4CzP1cDAPJtXyKjSiogmy2.jpg"
    },
    {
+    "time": "06:44",
+    "channel": "Squirrel",
+    "title": "Mentiras e ilusiones",
+    "originalTitle": "Lies & Illusions",
+    "year": 2009,
+    "duration": "93 min",
+    "genre": "Acción",
+    "director": "Tibor Takács",
+    "cast": [
+     "Christian Slater",
+     "Cuba Gooding Jr.",
+     "Sarah Ann Schultz",
+     "Christa Campbell"
+    ],
+    "criticScore": null,
+    "audienceScore": 4.0,
+    "synopsis": "Wes Wilson es un novelista de éxito, cuyos libros sobre autoayuda han sido leídos por millones de personas en todo el mundo. De repente, la vida de Wes se convierte en una pesadilla, después de enfrentarse al dolor por el asesinado de su prometida, es perseguido por un asesino a sueldo. ¿Por qué la mafia internacional más sanguinaria le persigue? Pronto hallará una respuesta a este interrogante, aunque en realidad es mucho más compleja de lo que parecía.",
+    "poster": "https://image.tmdb.org/t/p/w500/23H4EBEfXjxislGvjQOuM0CgFNS.jpg"
+   },
+   {
     "time": "07:00",
     "channel": "Be Mad",
     "title": "Séptimo",
@@ -1200,6 +1220,26 @@
     "poster": "https://image.tmdb.org/t/p/w500/RGtqJD856BJ7kZ88v7ZPz84tU6.jpg"
    },
    {
+    "time": "16:09",
+    "channel": "Squirrel",
+    "title": "Sahara: La última misión",
+    "originalTitle": "Sahara",
+    "year": 1995,
+    "duration": "106 min",
+    "genre": "Acción",
+    "director": "Brian Trenchard-Smith",
+    "cast": [
+     "Jim Belushi",
+     "Jerome Ehlers",
+     "Michael Massee",
+     "Robert Wisdom"
+    ],
+    "criticScore": null,
+    "audienceScore": 6.7,
+    "synopsis": "Segunda Guerra Mundial en el Norte de Africa. Después de tomar la ciudad libia de Tobruk, el sargento Joe Gunn, un auténtico veterano en el combate, debe emprender la retirada con su pelotón. Lo hace en un tanque, a través del árido desierto. Durante el viaje recogen seis soldados. Gunn se erige como líder de esta tremenda aventura, donde la búsqueda de agua, y los continuos enfrentamientos con los alemanes, la convierten en un auténtico infierno.",
+    "poster": "https://image.tmdb.org/t/p/w500/7bb1QgtsSxEPEjztZ1Ek8Bzalzi.jpg"
+   },
+   {
     "time": "16:50",
     "channel": "Trece",
     "title": "Nevada Express",
@@ -1238,6 +1278,26 @@
     "audienceScore": 6.0,
     "synopsis": "(Cine,Terror) Greta Evans es una joven estadounidense que es contratada como niñera en la casa de los Heelshire, una lujosa mansión alejada de la civilización. Pero el hijo del señor y la señora Heelshire no es un niño como los demás: es un muñeco llamado Brahms.\n· País: Canadá, China y Estados Unidos\n· Dirección: William Brent Bell.\n· Reparto: Lauren Cohan, Rupert Evans, Jim Norton, Diana Hardcastle, Ben Robson, James Russell.\n· Guion: Stacey Menear.\n· Música: Bear McCreary.\n· Producción: Matt Berenson, Roy Lee, Tom Rosenberg, Jim Wedaa.\n· Productora: Lakeshore Entertainment, STX Entertainment, Vertigo Entertainment, Huayi Brothers Media.",
     "poster": "https://image.tmdb.org/t/p/w500/i8BexaL67WNDhUMNN6XK3QSTumA.jpg"
+   },
+   {
+    "time": "18:00",
+    "channel": "Squirrel",
+    "title": "El libro negro",
+    "originalTitle": "Zwartboek",
+    "year": 2006,
+    "duration": "145 min",
+    "genre": "Drama",
+    "director": "Paul Verhoeven",
+    "cast": [
+     "Carice van Houten",
+     "Sebastian Koch",
+     "Thom Hoffman",
+     "Halina Reijn"
+    ],
+    "criticScore": 7.1,
+    "audienceScore": 7.5,
+    "synopsis": "Tras la ejecución de su familia a manos de los nazis, una joven judía se une a la resistencia que lucha contra la ocupación en Holanda. Su misión será infiltrarse en el cuartel general nazi, seduciendo a un alto oficial alemán para obtener información y poder liberar a un grupo de combatientes que ha sido capturado.",
+    "poster": "https://image.tmdb.org/t/p/w500/vFXu9BYpCQQCKMH8U23mnIvUQ80.jpg"
    },
    {
     "time": "18:40",
@@ -1295,6 +1355,21 @@
     "poster": "https://image.tmdb.org/t/p/w500/1LfTdz8u7A25pODn6E7zeEZanMS.jpg"
    },
    {
+    "time": "20:28",
+    "channel": "Squirrel",
+    "title": "Asesino de tiburones",
+    "originalTitle": "Asesino de tiburones",
+    "year": null,
+    "duration": "93 min",
+    "genre": "Cine",
+    "director": "",
+    "cast": [],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Chase Walker tiene que dar caza a un gran tiburón de aleta negra para recuperar un valioso diamante que el escualo se tragó durante una transacción.",
+    "poster": ""
+   },
+   {
     "time": "21:07",
     "channel": "Be Mad",
     "title": "Muere otra vez",
@@ -1333,6 +1408,26 @@
     "audienceScore": 5.1,
     "synopsis": "(Cine,Comedia) Los hermanos Osorio, olvidadas estrellas del tecno de los 90, vuelven a su pueblo por dinero para dar el pregón, desatando un divertidísimo caos.\n· País: España\n· Dirección: Dani de la Orden.\n· Reparto: Berto Romero, Andreu Buenafuente, Belén Cuesta, Jorge Sanz, Goyo Jiménez.\n· Guion: David Serrano, Diego San José, Daniel González.\n· Producción: Andreu Buenafuente, Berto Romero, Mikel Lejarza.\n· Productora: El Terrat, Atresmedia Cine.",
     "poster": "https://image.tmdb.org/t/p/w500/andk1U3PJpnyFKYbFbZcm4aTKFx.jpg"
+   },
+   {
+    "time": "22:01",
+    "channel": "Squirrel",
+    "title": "Monster Hunter",
+    "originalTitle": "Monster Hunter",
+    "year": 2020,
+    "duration": "103 min",
+    "genre": "Acción",
+    "director": "Paul W. S. Anderson",
+    "cast": [
+     "Milla Jovovich",
+     "Tony Jaa",
+     "Ron Perlman",
+     "T.I."
+    ],
+    "criticScore": 4.7,
+    "audienceScore": 6.5,
+    "synopsis": "El director, guionista y productor Paul W. S. Anderson, todo un especialista en el cine de ciencia ficción y, especialmente, del basado en videojuegos (saga \"Resident Evil\"), vuelve al género con la adaptación a la gran pantalla de la longeva y exitosa colección de juegos para videoconsola \"Monster Hunter\", nacida en 2004 para PlayStation 2.",
+    "poster": "https://image.tmdb.org/t/p/w500/la7nc6pG4vmPJEzl3gV08jboQWX.jpg"
    },
    {
     "time": "22:35",
@@ -1395,7 +1490,7 @@
      "Jason Schwartzman"
     ],
     "criticScore": 5.4,
-    "audienceScore": 7.0,
+    "audienceScore": 6.9,
     "synopsis": "En el Capitolio, Coriolanus Snow, de dieciocho años, se prepara para una oportunidad única: alcanzar la gloria como mentor de los Juegos. La casa de los Snow, antes tan influyente, atraviesa tiempos difíciles, y su destino depende de que Coriolanus consiga superar a sus compañeros en ingenio, estrategia y encanto como mentor del tributo que le sea adjudicado.",
     "poster": "https://image.tmdb.org/t/p/w500/2vIK81ikjvdewSLmrwIg7AMoJIv.jpg"
    },
@@ -1433,6 +1528,26 @@
     "audienceScore": null,
     "synopsis": "(Cine,Comedia) Actuando como soldados de la guerrilla, un joven millonario y sus amigos secuestran un avión para rescatar a la mujer que ama, raptada por militares durante la guerra sucia mexicana.\n· País: España y México\n· Dirección: Sergio Sánchez Suárez.\n· Reparto: Oswaldo Zárate, Juan Pablo Castañeda, Luis Velázquez, Arnulfo Reyes Sanchez, Javier Rivera, Edgar Vivar, Manuel Uriza, Luis Arrieta, Silverio Palacios.\n· Guion: Eli Garcia Ruiz, Andronico Gonzalez.\n· Productora: Angeles Morales, Escuadron Cinema, Film Republic.",
     "poster": "https://image.tmdb.org/t/p/w500/9i8rtWQ4iVXgmGO7BlcNDIT4fPY.jpg"
+   },
+   {
+    "time": "23:49",
+    "channel": "Squirrel",
+    "title": "R.I.P.D. 2: La rebelión de los condenados",
+    "originalTitle": "R.I.P.D. 2: Rise of the Damned",
+    "year": 2022,
+    "duration": "102 min",
+    "genre": "Fantasía",
+    "director": "Paul Leyden",
+    "cast": [
+     "Jeffrey Donovan",
+     "Penelope Mitchell",
+     "Jake Choi",
+     "Richard Brake"
+    ],
+    "criticScore": null,
+    "audienceScore": 6.2,
+    "synopsis": "Secuela espiritual de \"R.I.P.D\" (2013) ambientada en el antiguo oeste estadounidense.",
+    "poster": "https://image.tmdb.org/t/p/w500/oJJWjiMKExSi241NpKUqVIxWfH6.jpg"
    }
   ],
   "2026-11-27": [
@@ -1497,6 +1612,26 @@
     "poster": "https://image.tmdb.org/t/p/w500/m9eKFDSRFkCBoFw2oPRAUvTEUCH.jpg"
    },
    {
+    "time": "01:30",
+    "channel": "Squirrel",
+    "title": "Cazador de demonios",
+    "originalTitle": "Cazador de Demonios",
+    "year": 1983,
+    "duration": "93 min",
+    "genre": "Fantasía",
+    "director": "Gilberto de Anda",
+    "cast": [
+     "Rafael Sánchez Navarro",
+     "Tito Junco",
+     "Roxana Chávez",
+     "Roberto Montiel"
+    ],
+    "criticScore": null,
+    "audienceScore": null,
+    "synopsis": "Un viejo demonio aparece en un pequeño pueblo de Alaska, dejando un reguero de muerte y destrucción. La única esperanza es un cazador de demonios que buscará la manera de acabar con la criatura.",
+    "poster": "https://image.tmdb.org/t/p/w500/7rvWV0DICTqCqbcG2WB3JjILSqP.jpg"
+   },
+   {
     "time": "02:00",
     "channel": "Neox",
     "title": "La sombra del faraón",
@@ -1515,6 +1650,26 @@
     "audienceScore": 4.7,
     "synopsis": "(Cine,Terror) Siglos atrás, bajo las arenas del antiguo Egipto, un malvado príncipe fue enterrado y su tumba eternamente maldita para que ningún mortal volviera a sufrir su maléfico poder. Cientos de años después, se rompe la maldición.\n· País: Estados Unidos, Luxemburgo y Reino Unido\n· Dirección: Russell Mulcahy.\n· Reparto: Cyril Nri, David Sterne, Alex Torino, Waris, Yoann Provenzano, Ann Overstall Comfort, Jamie Treacher, Anthony Beselle, Jason Scott Lee, Lysette Anthony, Christopher Lee, Michael Lerner, Sean Pertwee, Honor Blackman, Louise Lombard.\n· Guion: Russell Mulcahy, John Esposito, Keith L. Williams.\n· Música: Stefano Mainetti.\n· Producción: Silvio Muraglia, Tom Reeve, Daniel Sladek, Romain Schroeder, Jeffrey White, Sterling Belafant.\n· Productora: Silvio Muraglia, Daniel Sladeck, Lauren Films, The Carousel Picture Company, 7th Voyage, Cine Grande Corporation, K.N.B. EFX Group, Inc, The Pharaohs Company, Ltd.",
     "poster": "https://image.tmdb.org/t/p/w500/kcC2r377OCv0lbbKXaNj91spJdX.jpg"
+   },
+   {
+    "time": "02:48",
+    "channel": "Squirrel",
+    "title": "Fuerza máxima",
+    "originalTitle": "Drive",
+    "year": 1997,
+    "duration": "100 min",
+    "genre": "Acción",
+    "director": "Steve Wang",
+    "cast": [
+     "Mark Dacascos",
+     "Kadeem Hardison",
+     "John Pyper-Ferguson",
+     "Brittany Murphy"
+    ],
+    "criticScore": null,
+    "audienceScore": 6.2,
+    "synopsis": "Año 2008. Toby Wong escapa de los hombres de la siniestra corporación Leung. En su huida, Toby acaba por involucrar a un pobre perdedor. Los dos son sometidos a una brutal persecución. Los hombres de Leung van detrás de un prototipo que está en poder de Toby: un artefacto biotecnológico que aumenta la fuerza física de quien lo lleva implantado.",
+    "poster": "https://image.tmdb.org/t/p/w500/bZ0PektAP1lopdJkd8buaShXJyP.jpg"
    },
    {
     "time": "03:00",
